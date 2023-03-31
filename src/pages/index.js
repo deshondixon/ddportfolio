@@ -1,6 +1,6 @@
 import React from 'react';
 import Nav from '/components/nav';
-import { Text } from '@nextui-org/react';
+import { Text, Spacer } from '@nextui-org/react';
 
 export default function Home() {
   return (
@@ -18,6 +18,8 @@ export default function Home() {
         >
           DESHON DIXON
         </Text>
+        <Spacer />
+
         <p className='flex justify-center text-xl'>
           I am a Software Developer based in Washington.
         </p>
