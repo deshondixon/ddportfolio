@@ -18,7 +18,6 @@ export default function Home() {
         >
           DESHON DIXON
         </Text>
-        <Spacer />
 
         <p className='flex justify-center text-xl'>
           I am a Software Developer based in Washington.
