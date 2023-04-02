@@ -19,9 +19,9 @@ export default function Home() {
           DESHON DIXON
         </Text>
 
-        <p className='flex justify-center text-xl'>
+        <Text className='flex justify-center text-xl'>
           I am a Software Developer based in Washington.
-        </p>
+        </Text>
       </div>
     </>
   );
