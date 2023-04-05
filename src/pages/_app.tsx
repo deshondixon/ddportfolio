@@ -27,6 +27,9 @@ function MyApp({ Component, pageProps }) {
       }}
     >
       <NextUIProvider>
+        <div className='grid gap-6 grid-col-12'>
+          <div>Sidebar</div>
+        </div>
         <Component {...pageProps} />
       </NextUIProvider>
     </NextThemesProvider>
