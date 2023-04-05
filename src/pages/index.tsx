@@ -1,11 +1,8 @@
-import React from 'react';
-import Nav from '/components/nav';
-import { Text, Spacer } from '@nextui-org/react';
+import { Text } from '@nextui-org/react';
 
-export default function Home() {
+const Home = () => {
   return (
     <>
-      <Nav />
       <div className='flex flex-col justify-center'>
         <Text
           className='flex justify-center text-6xl font-bold underline'
@@ -24,4 +21,6 @@ export default function Home() {
       </div>
     </>
   );
-}
+};
+
+export default Home;
