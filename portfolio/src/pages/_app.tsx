@@ -1,5 +1,5 @@
 import '@/styles/globals.css';
-import Sidebar from 'components/Sidebar.js';
+import Sidebar from 'portfolio/components/Sidebar.tsx';
 
 export default function App({
   Component,
