@@ -1,13 +1,7 @@
 import '@/styles/globals.css';
-import Sidebar from 'portfolio/components/Sidebar.tsx';
+import Sidebar from '/Users/deshondixon/projects/side_projects/ddportfolio/portfolio/components/Sidebar';
 
-export default function App({
-  Component,
-  pageProps,
-}: {
-  Component: any;
-  pageProps: object;
-}) {
+function MyApp({ Component, pageProps }) {
   return (
     <div>
       <div className='grid grid-cols-12 gap-6 my-14 lg:px-48 px-5'>
@@ -21,3 +15,5 @@ export default function App({
     </div>
   );
 }
+
+export default MyApp;
