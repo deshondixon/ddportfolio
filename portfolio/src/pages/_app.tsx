@@ -1,7 +1,8 @@
 import '/Users/deshondixon/projects/side_projects/ddportfolio/portfolio/src/styles/globals.css';
 import Sidebar from '/Users/deshondixon/projects/side_projects/ddportfolio/portfolio/components/Sidebar';
+import dynamic from 'next/dynamic';
 
-function MyApp({ Component, pageProps }) {
+export default function MyApp({ Component, pageProps }) {
   return (
     <div>
       <div className='grid grid-cols-12 gap-6 px-5 my-14 lg:px-48'>
@@ -15,5 +16,3 @@ function MyApp({ Component, pageProps }) {
     </div>
   );
 }
-
-export default MyApp;

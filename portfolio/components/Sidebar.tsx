@@ -17,6 +17,7 @@ const Sidebar = () => {
       </p>
       <div>
         <div>
+          <GoLocation />
           <span> Tacoma, Washington</span>
         </div>
         <p>deshondixon@gmail.com</p>
