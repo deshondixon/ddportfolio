@@ -17,6 +17,8 @@ const Sidebar = () => {
         <p>deshondixon@gmail.com</p>
         <p>253-878-0685</p>
       </div>
+      <button>Email Me</button>
+      <button>Toggle Theme</button>
     </div>
   );
 };
