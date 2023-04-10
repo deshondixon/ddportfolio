@@ -1,4 +1,4 @@
-import '@/styles/globals.css';
+import '/Users/deshondixon/projects/side_projects/ddportfolio/portfolio/src/styles/globals.css';
 import Sidebar from '/Users/deshondixon/projects/side_projects/ddportfolio/portfolio/components/Sidebar';
 
 function MyApp({ Component, pageProps }) {
