@@ -10,6 +10,13 @@ const Sidebar = () => {
       </h3>
       <p>Software Engineer</p>
       <p>Download Resume</p>
+      <div>
+        <div>
+          <span> Tacoma, Washington</span>
+        </div>
+        <p>deshondixon@gmail.com</p>
+        <p>253-878-0685</p>
+      </div>
     </div>
   );
 };
