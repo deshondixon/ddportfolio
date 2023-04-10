@@ -10,6 +10,7 @@ const Sidebar = () => {
       </h3>
       <p>Software Engineer</p>
       <p>Download Resume</p>
+      <p>Works</p>
     </div>
   );
 };
