@@ -16,6 +16,14 @@ const Sidebar = () => {
         <GiTie className='w-6 h-6' /> Download Resume
       </p>
       <div>
+        <a href=''>
+          <AiFillGithub className='w-8 h-8' />
+        </a>
+        <a href=''>
+          <AiFillLinkedin className='w-8 h-8' />
+        </a>
+      </div>
+      <div>
         <div>
           <GoLocation />
           <span> Tacoma, Washington</span>
