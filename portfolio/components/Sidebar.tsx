@@ -12,7 +12,9 @@ const Sidebar = () => {
         Dixon
       </h3>
       <p>Software Engineer</p>
-      <p>Download Resume</p>
+      <p>
+        <GiTie className='w-6 h-6' /> Download Resume
+      </p>
       <div>
         <div>
           <span> Tacoma, Washington</span>
