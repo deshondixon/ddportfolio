@@ -5,7 +5,7 @@ import { GiTie } from 'react-icons/gi';
 import { useTheme as useNextTheme } from 'next-themes';
 import { Switch, useTheme, Button, Text, Badge } from '@nextui-org/react';
 
-const Sidebar = () => {
+export default function Sidebar({}) {
   const { setTheme } = useNextTheme();
   const { isDark, type } = useTheme();
   return (
@@ -89,6 +89,4 @@ const Sidebar = () => {
       />
     </div>
   );
-};
-
-export default Sidebar;
+}
