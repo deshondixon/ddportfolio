@@ -38,14 +38,14 @@ const Navbar = () => {
   }, []);
 
   return (
-    <div>
+    <div className='flex justify-between px-5 py-3 my-3'>
       <Text
         size={40}
         css={{
           textGradient: '45deg, $yellow600 -20%, $red600 100%',
         }}
         weight='bold'
-        className='my-4 text-3xl font-medium tracking-wider'
+        className='tracking-normal'
       >
         {activeItem}
       </Text>
