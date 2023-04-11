@@ -6,24 +6,39 @@ import { GiTie } from 'react-icons/gi';
 const Sidebar = () => {
   return (
     <div className=''>
-      <Image src='/profile.jpg' alt='avatar' width={500} height={500} />
-      <h3>
-        <span>DeShon</span>
-        Dixon
+      <Image
+        src='/profile.jpg'
+        alt='avatar'
+        width={500}
+        height={500}
+        className='mx-auto rounded-full '
+      />
+      <h3 className='my-4 text-3xl font-medium tracking-wider'>
+        <span>DESHON </span>
+        DIXON
       </h3>
-      <p>Software Engineer</p>
-      <p>
-        <GiTie className='w-6 h-6' /> Download Resume
+      <p className='px-2 py-1 my-3 bg-gray-200 rounded-full'>
+        Software Engineer
       </p>
-      <div>
+      <a
+        className='flex items-center justify-center px-2 py-1 my-3 bg-gray-200 rounded-full'
+        href=''
+        download='name'
+      >
+        <GiTie className='w-6 h-6' /> Download Resume
+      </a>
+      <div className='flex w-9/12 mx-auto my-5 text-green-500 justify-evenly md:w-full'>
         <a href=''>
-          <AiFillGithub className='w-8 h-8' />
+          <AiFillGithub className='w-20 h-20 cursor-pointer' />
         </a>
         <a href=''>
-          <AiFillLinkedin className='w-8 h-8' />
+          <AiFillLinkedin className='w-20 h-20 cursor-pointer' />
         </a>
       </div>
-      <div>
+      <div
+        className='py-4 my-5 bg-gray-200'
+        style={{ marginLeft: '-1rem', marginRight: '-1rem' }}
+      >
         <div>
           <GoLocation />
           <span> Tacoma, Washington</span>
