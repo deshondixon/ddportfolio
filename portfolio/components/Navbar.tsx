@@ -11,7 +11,7 @@ const NavItem: FunctionComponent<{
   route: string;
 }> = ({ activeItem, name, route, setActiveItem }) => {
   return (
-    activeItem !== name && (
+    activeItem !== name ? (
       <Link href='/'>
         <Text
           size={18}
