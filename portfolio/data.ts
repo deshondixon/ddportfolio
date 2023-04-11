@@ -6,12 +6,12 @@ export const services: IService[] = [
     Icon: RiComputerLine,
     title: 'Frontend Development',
     about:
-      'HTML, CSS, Javascript, Bootstrap, React.js, React Native, Next.js, Tailwind, Chakra UI, Astro',
+      'HTML, CSS, Javascript, Typescript, Tailwind, Bootstrap, React.js, React Native, Next.js, Chakra UI, Astro,',
   },
   {
-    Icon: RiComputerLine,
-    title: 'title',
-    about: 'lorem....',
+    Icon: FaServer,
+    title: 'Backend Development',
+    about: 'Python, Django, Flask, Node.js, Express.js, Golang',
   },
   {
     Icon: RiComputerLine,
