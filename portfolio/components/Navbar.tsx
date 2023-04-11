@@ -1,7 +1,7 @@
 import { useState } from 'react';
-import Link from 'next/link';
+import { Link } from '@nextui-org/react';
 
-export default function Navbar({}) {
+const Navbar = () => {
   const [activeItem, setActiveItem] = useState<string>('');
 
   return (
@@ -16,14 +16,14 @@ export default function Navbar({}) {
           </Link>
         )}
         {activeItem !== 'Projects' && (
-          <Link href='/'>
+          <Link href='/projects'>
             <a>
               <span>Projects</span>
             </a>
           </Link>
         )}
         {activeItem !== 'Resume' && (
-          <Link href='/'>
+          <Link href='/resume'>
             <a>
               <span>Resume</span>
             </a>
@@ -32,4 +32,6 @@ export default function Navbar({}) {
       </div>
     </div>
   );
-}
+};
+
+export default Navbar;
