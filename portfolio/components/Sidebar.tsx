@@ -22,6 +22,7 @@ export default function Sidebar({}) {
       </Tilt>
       <Tilt>
         <Text
+          size={35}
           css={{
             textGradient: '45deg, $yellow600 -20%, $red600 100%',
           }}
@@ -32,11 +33,17 @@ export default function Sidebar({}) {
           DIXON
         </Text>
       </Tilt>
-      <div className='flex justify-center p-3'>
+      <div className='flex justify-center '>
         <Tilt>
-          <Button color='error' auto className='text-center'>
+          <Text
+            css={{
+              textGradient: '45deg, $white -20%, $white 100%',
+            }}
+            weight='bold'
+            className='my-2 tracking-wider text-md'
+          >
             Software Engineer
-          </Button>
+          </Text>
         </Tilt>
       </div>
       <div className='flex justify-center p-3'>
