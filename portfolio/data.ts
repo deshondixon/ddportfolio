@@ -1,9 +1,21 @@
 import { RiComputerLine } from 'react-icons/ri';
+import { IconType } from 'react-icons';
 
-export const services = [
+interface IService {
+  title: string;
+  about: string;
+  Icon: IconType;
+}
+
+export const services: IService[] = [
   {
     title: 'Frontend Dev',
     about: 'lorem....',
-    Icon: '',
+    Icon: 'RiComputerLine',
+  },
+  {
+    title: 'title',
+    about: 'lorem....',
+    Icon: 'RiComputerLine',
   },
 ];
