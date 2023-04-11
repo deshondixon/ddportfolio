@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
+import { AiFillGithub, AiFillLinkedin, AiOutlineMail } from 'react-icons/ai';
 import { GoLocation } from 'react-icons/go';
 import { GiTie } from 'react-icons/gi';
 import { useTheme as useNextTheme } from 'next-themes';
@@ -107,10 +107,10 @@ export default function Sidebar({}) {
           </Text>
         </Tilt>
       </div>
-      <div className='flex justify-center '>
+      <div className='flex justify-center p-3'>
         <Tilt>
-          <Button className='flex w-8/12 px-5 py-2 my-2 text-white rounded-full bg-gradient-to-r from-green-400 to-blue-400'>
-            Email Me
+          <Button color='gradient' auto className='text-center' href=''>
+            <AiOutlineMail className='w-6 h-6 p-1' /> Email Me
           </Button>
         </Tilt>
       </div>
