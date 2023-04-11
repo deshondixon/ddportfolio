@@ -2,12 +2,9 @@ import Image from 'next/image';
 import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
 import { GoLocation } from 'react-icons/go';
 import { GiTie } from 'react-icons/gi';
-import { useTheme as useNextTheme } from 'next-themes';
-import { Switch, useTheme } from '@nextui-org/react';
+import { Button } from '@nextui-org/react';
 
 const Sidebar = () => {
-  const { setTheme } = useNextTheme();
-  const { isDark, type } = useTheme();
   return (
     <div className=''>
       <Image
@@ -50,16 +47,9 @@ const Sidebar = () => {
         <p className='my-2 '>deshondixon@gmail.com</p>
         <p className='my-2 '>253-878-0685</p>
       </div>
-      <button className='w-8/12 px-5 py-2 my-2 text-white rounded-full bg-gradient-to-r from-green-400 to-blue-400'>
+      <Button className='w-8/12 px-5 py-2 my-2 text-white rounded-full bg-gradient-to-r from-green-400 to-blue-400'>
         Email Me
-      </button>
-      <Switch
-        checked={isDark}
-        onChange={(e) => setTheme(e.target.checked ? 'dark' : 'light')}
-        className='w-8/12 px-5 py-2 my-2 text-white rounded-full bg-gradient-to-r from-green-400 to-blue-400'
-      >
-        Toggle Theme
-      </Switch>
+      </Button>
     </div>
   );
 };
