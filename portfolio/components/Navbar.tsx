@@ -10,22 +10,20 @@ const NavItem: FunctionComponent<{
   name: string;
   route: string;
 }> = ({ activeItem, name, route, setActiveItem }) => {
-  return (
-    activeItem !== name ? (
-      <Link href='/'>
-        <Text
-          size={18}
-          css={{
-            textGradient: '45deg, $yellow600 -20%, $red600 100%',
-          }}
-          weight='bold'
-          className='text-3xl font-medium tracking-wider'
-        >
-          <span onClick={() => setActiveItem('About')}>About</span>
-        </Text>
-      </Link>
-    )
-  );
+  return activeItem !== name ? (
+    <Link href={route}>
+      <Text
+        size={18}
+        css={{
+          textGradient: '45deg, $yellow600 -20%, $red600 100%',
+        }}
+        weight='bold'
+        className='text-3xl font-medium tracking-wider'
+      >
+        <span onClick={() => setActiveItem(name)}>{name}</span>
+      </Text>
+    </Link>
+  ) : null;
 };
 
 const Navbar = () => {
@@ -42,7 +40,7 @@ const Navbar = () => {
   return (
     <div>
       <Text
-        size={30}
+        size={40}
         css={{
           textGradient: '45deg, $yellow600 -20%, $red600 100%',
         }}
@@ -52,50 +50,25 @@ const Navbar = () => {
         {activeItem}
       </Text>
 
-      <div className='flex space-x-3 text-red font-lg'>
-        {activeItem !== 'About' && (
-          <Link href='/'>
-            <Text
-              size={18}
-              css={{
-                textGradient: '45deg, $yellow600 -20%, $red600 100%',
-              }}
-              weight='bold'
-              className='text-3xl font-medium tracking-wider'
-            >
-              <span onClick={() => setActiveItem('About')}>About</span>
-            </Text>
-          </Link>
-        )}
-
-        {activeItem !== 'Projects' && (
-          <Link href='/projects'>
-            <Text
-              size={18}
-              css={{
-                textGradient: '45deg, $yellow600 -20%, $red600 100%',
-              }}
-              weight='bold'
-              className='text-3xl font-medium tracking-wider '
-            >
-              <span onClick={() => setActiveItem('Projects')}>Projects</span>
-            </Text>
-          </Link>
-        )}
-        {activeItem !== 'Resume' && (
-          <Link href='/resume'>
-            <Text
-              size={18}
-              css={{
-                textGradient: '45deg, $yellow600 -20%, $red600 100%',
-              }}
-              weight='bold'
-              className='text-3xl font-medium tracking-wider'
-            >
-              <span onClick={() => setActiveItem('Resume')}>Resume</span>
-            </Text>
-          </Link>
-        )}
+      <div className='flex space-x-3'>
+        <NavItem
+          activeItem={activeItem}
+          setActiveItem={setActiveItem}
+          name='About'
+          route='/'
+        />
+        <NavItem
+          activeItem={activeItem}
+          setActiveItem={setActiveItem}
+          name='Projects'
+          route='/projects'
+        />
+        <NavItem
+          activeItem={activeItem}
+          setActiveItem={setActiveItem}
+          name='Resume'
+          route='/resume'
+        />
       </div>
     </div>
   );
