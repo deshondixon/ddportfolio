@@ -26,12 +26,12 @@ const Navbar = () => {
 
         {activeItem !== 'Projects' && (
           <Link href='/projects'>
-            <span onClick={() => setActiveItem('About')}>Projects</span>
+            <span onClick={() => setActiveItem('Projects')}>Projects</span>
           </Link>
         )}
         {activeItem !== 'Resume' && (
           <Link href='/resume'>
-            <span onClick={() => setActiveItem('About')}>Resume</span>
+            <span onClick={() => setActiveItem('Resume')}>Resume</span>
           </Link>
         )}
       </div>
