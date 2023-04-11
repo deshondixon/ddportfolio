@@ -20,18 +20,18 @@ const Navbar = () => {
       <div>
         {activeItem !== 'About' && (
           <Link href='#'>
-            <span>About</span>
+            <span onClick={() => setActiveItem('About')}>About</span>
           </Link>
         )}
 
         {activeItem !== 'Projects' && (
           <Link href='/projects'>
-            <span>Projects</span>
+            <span onClick={() => setActiveItem('About')}>Projects</span>
           </Link>
         )}
         {activeItem !== 'Resume' && (
           <Link href='/resume'>
-            <span>Resume</span>
+            <span onClick={() => setActiveItem('About')}>Resume</span>
           </Link>
         )}
       </div>
