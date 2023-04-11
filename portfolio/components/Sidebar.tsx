@@ -46,7 +46,7 @@ const Sidebar = () => {
         </a>
       </div>
       <div
-        className='py-4 my-5 bg-gray-200'
+        className='py-4 my-5 bg-gray-700'
         style={{ marginLeft: '-1rem', marginRight: '-1rem' }}
       >
         <div className='flex items-center justify-center space-x-2'>
