@@ -1,6 +1,6 @@
 import '/Users/deshondixon/projects/side_projects/ddportfolio/portfolio/src/styles/globals.css';
 import Sidebar from '/Users/deshondixon/projects/side_projects/ddportfolio/portfolio/components/Sidebar';
-import dynamic from 'next/dynamic';
+import { NextUIProvider } from '@nextui-org/react';
 
 export default function MyApp({ Component, pageProps }) {
   return (

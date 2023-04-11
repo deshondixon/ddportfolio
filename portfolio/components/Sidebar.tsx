@@ -27,27 +27,31 @@ const Sidebar = () => {
       >
         <GiTie className='w-6 h-6' /> Download Resume
       </a>
-      <div className='flex w-9/12 mx-auto my-5 text-green-500 justify-evenly md:w-full'>
+      <div className='flex w-9/12 mx-auto my-5 text-green-400 justify-evenly md:w-full'>
         <a href=''>
-          <AiFillGithub className='w-20 h-20 cursor-pointer' />
+          <AiFillGithub className='w-12 h-12 cursor-pointer' />
         </a>
         <a href=''>
-          <AiFillLinkedin className='w-20 h-20 cursor-pointer' />
+          <AiFillLinkedin className='w-12 h-12 cursor-pointer' />
         </a>
       </div>
       <div
         className='py-4 my-5 bg-gray-200'
         style={{ marginLeft: '-1rem', marginRight: '-1rem' }}
       >
-        <div>
+        <div className='flex items-center justify-center space-x-2'>
           <GoLocation />
-          <span> Tacoma, Washington</span>
+          <span className=''> Tacoma, Washington</span>
         </div>
-        <p>deshondixon@gmail.com</p>
-        <p>253-878-0685</p>
+        <p className='my-2 '>deshondixon@gmail.com</p>
+        <p className='my-2 '>253-878-0685</p>
       </div>
-      <button>Email Me</button>
-      <button>Toggle Theme</button>
+      <button className='w-8/12 px-5 py-2 my-2 text-white rounded-full bg-gradient-to-r from-green-400 to-blue-400'>
+        Email Me
+      </button>
+      <button className='w-8/12 px-5 py-2 my-2 text-white rounded-full bg-gradient-to-r from-green-400 to-blue-400'>
+        Toggle Theme
+      </button>
     </div>
   );
 };
