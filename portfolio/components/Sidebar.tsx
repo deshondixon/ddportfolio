@@ -48,8 +48,14 @@ export default function Sidebar({}) {
       </div>
       <div className='flex justify-center p-3'>
         <Tilt>
-          <Button color='gradient' auto className='text-center' href=''>
-            <GiTie className='w-6 h-6' /> Download Resume
+          <Button
+            color='gradient'
+            auto
+            className='text-center focus:outline-none'
+            href='#'
+          >
+            <GiTie className='w-6 h-6' />
+            Resume
           </Button>
         </Tilt>
       </div>
