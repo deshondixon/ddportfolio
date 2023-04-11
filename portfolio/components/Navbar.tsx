@@ -2,9 +2,16 @@ import { useEffect, useState } from 'react';
 import { Switch, useTheme, Button, Text, Badge } from '@nextui-org/react';
 import Link from 'next/link';
 import Tilt from 'react-parallax-tilt';
+import { useRouter } from 'next/router';
 
 const Navbar = () => {
   const [activeItem, setActiveItem] = useState<string>('');
+
+  const { pathname } = useRouter();
+
+  useEffect(() => {
+    if (pathname === '/') setActiveItem('About');
+  }, []);
 
   return (
     <div>
@@ -21,7 +28,7 @@ const Navbar = () => {
 
       <div className='flex space-x-3 text-red font-lg'>
         {activeItem !== 'About' && (
-          <Link href='#'>
+          <Link href='/'>
             <Text
               size={18}
               css={{
