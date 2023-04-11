@@ -1,32 +1,37 @@
-import { useState } from 'react';
-import { Link } from '@nextui-org/react';
+import { useEffect, useState } from 'react';
+import { Switch, useTheme, Button, Text, Badge } from '@nextui-org/react';
+import Link from 'next/link';
 
 const Navbar = () => {
   const [activeItem, setActiveItem] = useState<string>('');
 
   return (
     <div>
-      <span>{activeItem}</span>
+      <Text
+        size={35}
+        css={{
+          textGradient: '45deg, $yellow600 -20%, $red600 100%',
+        }}
+        weight='bold'
+        className='my-4 text-3xl font-medium tracking-wider'
+      >
+        {activeItem}
+      </Text>
       <div>
         {activeItem !== 'About' && (
-          <Link href='/'>
-            <a>
-              <span>About</span>
-            </a>
+          <Link href='#'>
+            <span>About</span>
           </Link>
         )}
+
         {activeItem !== 'Projects' && (
           <Link href='/projects'>
-            <a>
-              <span>Projects</span>
-            </a>
+            <span>Projects</span>
           </Link>
         )}
         {activeItem !== 'Resume' && (
           <Link href='/resume'>
-            <a>
-              <span>Resume</span>
-            </a>
+            <span>Resume</span>
           </Link>
         )}
       </div>
