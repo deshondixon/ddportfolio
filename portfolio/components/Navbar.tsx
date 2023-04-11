@@ -1,8 +1,32 @@
-import { useEffect, useState } from 'react';
+import { FunctionComponent, useEffect, useState } from 'react';
 import { Switch, useTheme, Button, Text, Badge } from '@nextui-org/react';
 import Link from 'next/link';
 import Tilt from 'react-parallax-tilt';
 import { useRouter } from 'next/router';
+
+const NavItem: FunctionComponent<{
+  activeItem: string;
+  setActiveItem: Function;
+  name: string;
+  route: string;
+}> = ({ activeItem, name, route, setActiveItem }) => {
+  return (
+    activeItem !== name && (
+      <Link href='/'>
+        <Text
+          size={18}
+          css={{
+            textGradient: '45deg, $yellow600 -20%, $red600 100%',
+          }}
+          weight='bold'
+          className='text-3xl font-medium tracking-wider'
+        >
+          <span onClick={() => setActiveItem('About')}>About</span>
+        </Text>
+      </Link>
+    )
+  );
+};
 
 const Navbar = () => {
   const [activeItem, setActiveItem] = useState<string>('');
