@@ -109,8 +109,13 @@ export default function Sidebar({}) {
       </div>
       <div className='flex justify-center p-3'>
         <Tilt>
-          <Button color='gradient' auto className='text-center' href=''>
-            <AiOutlineMail className='w-6 h-6 p-1' /> Email Me
+          <Button
+            color='gradient'
+            auto
+            className='text-center'
+            onClick={() => window.open('mailto:deshondixon@gmail.com')}
+          >
+            <AiOutlineMail className='w-6 h-6 p-1' /> Email
           </Button>
         </Tilt>
       </div>
