@@ -1,5 +1,6 @@
 import '/Users/deshondixon/projects/side_projects/ddportfolio/portfolio/src/styles/globals.css';
 import Sidebar from '/Users/deshondixon/projects/side_projects/ddportfolio/portfolio/components/Sidebar';
+import Navbar from '/Users/deshondixon/projects/side_projects/ddportfolio/portfolio/components/Navbar';
 import { createTheme, NextUIProvider } from '@nextui-org/react';
 import { ThemeProvider as NextThemesProvider } from 'next-themes';
 
@@ -21,6 +22,7 @@ export default function MyApp({ Component, pageProps }) {
           <Sidebar />
         </div>
         <div className='col-span-12 bg-gray-800 lg:col-span-9 rounded-2xl'>
+          <Navbar />
           <NextThemesProvider
             defaultTheme='system'
             attribute='class'

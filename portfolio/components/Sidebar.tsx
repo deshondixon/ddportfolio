@@ -112,7 +112,7 @@ export default function Sidebar({}) {
           <Button
             color='gradient'
             auto
-            className='text-center'
+            className='text-center focus:outline-none'
             onClick={() => window.open('mailto:deshondixon@gmail.com')}
           >
             <AiOutlineMail className='w-6 h-6 p-1' /> Email
