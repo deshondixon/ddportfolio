@@ -107,11 +107,13 @@ export default function Sidebar({}) {
           </Text>
         </Tilt>
       </div>
-      <Tilt>
-        <Button className='w-8/12 px-5 py-2 my-2 text-white rounded-full bg-gradient-to-r from-green-400 to-blue-400'>
-          Email Me
-        </Button>
-      </Tilt>
+      <div className='flex justify-center '>
+        <Tilt>
+          <Button className='flex w-8/12 px-5 py-2 my-2 text-white rounded-full bg-gradient-to-r from-green-400 to-blue-400'>
+            Email Me
+          </Button>
+        </Tilt>
+      </div>
       <Switch
         checked={isDark}
         onChange={(e) => setTheme(e.target.checked ? 'dark' : 'light')}
