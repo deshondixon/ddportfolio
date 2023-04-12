@@ -1,6 +1,6 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 import type { NextApiRequest, NextApiResponse } from 'next';
-import { services } from '/Users/deshondixon/projects/side_projects/ddportfolio/portfolio/data.ts';
+import { services } from '/Users/deshondixon/projects/side_projects/ddportfolio/portfolio/data';
 
 type Data = {
   name: string;
