@@ -1,6 +1,7 @@
 import { services } from '/Users/deshondixon/projects/side_projects/ddportfolio/portfolio/data';
 import { GetServerSidePropsContext, GetStaticPropsContext } from 'next';
 import { Text } from '@nextui-org/react';
+import ServiceCard from '../../components/ServiceCard';
 
 const index = ({ services }) => {
   console.log(services);
@@ -27,7 +28,7 @@ const index = ({ services }) => {
           What I offer
         </Text>
         <div>
-          {services.map((services) => (
+          {services.map((service => (
             <ServiceCard service={service} />
           ))}
         </div>
