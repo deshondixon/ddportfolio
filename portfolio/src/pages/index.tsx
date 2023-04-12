@@ -1,8 +1,8 @@
 import { services } from '/Users/deshondixon/projects/side_projects/ddportfolio/portfolio/data.ts';
 import { GetServerSidePropsContext } from 'next';
 
-const index = (props) => {
-  console.log(services);
+const index = ({ services }) => {
+  console.log('CLIENT', services);
 
   return (
     <div>
