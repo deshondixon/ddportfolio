@@ -13,6 +13,7 @@ export default function Sidebar({}) {
     <div className=''>
       <Tilt>
         <Image
+          priority
           src='/profile.jpg'
           alt='avatar'
           width={500}
