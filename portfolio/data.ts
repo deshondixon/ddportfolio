@@ -23,12 +23,6 @@ export const services: IService[] = [
       'I can develop robust REST APIs using <b>django-rest-api</b> & <b>Node API</b> ',
   },
   {
-    Icon: MdDeveloperMode,
-    title: 'Competitive Coder',
-    about:
-      'A daily problem solver utilizing <b>Algo Expert/b> & <b>Leet Code</b> ',
-  },
-  {
     Icon: AiOutlineAntDesign,
     title: 'UI/UX Design',
     about:
