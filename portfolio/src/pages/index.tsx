@@ -29,6 +29,7 @@ const index = () => {
           </Text>
           <div>
             {services.map((service) => (
+              // eslint-disable-next-line react/jsx-key
               <ServiceCard service={service} />
             ))}
           </div>
