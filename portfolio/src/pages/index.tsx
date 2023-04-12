@@ -16,9 +16,14 @@ export default index;
 export const getServerSideProps = async (
   context: GetServerSidePropsContext
 ) => {
-  await fetch('http://localhost:3000/api/services');
+  const res = await fetch('http://localhost:3000/api/services');
+  const data = await res.json();
+
+  console.log('SERVER', services);
 
   return {
-    props: {},
+    props: {
+      services: data.services,
+    },
   };
 };
