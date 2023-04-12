@@ -15,6 +15,23 @@ const index = ({ services }) => {
         high-quality project results; possesses an innate talent for quickly
         mastering technology and new concepts.
       </Text>
+      <div>
+        <Text
+          size={35}
+          css={{
+            textGradient: '45deg, $yellow600 -20%, $red600 100%',
+          }}
+          weight='bold'
+          className='my-4 text-3xl font-medium tracking-wider'
+        >
+          What I offer
+        </Text>
+        <div>
+          {services.map((services) => (
+            <ServiceCard service={service} />
+          ))}
+        </div>
+      </div>
     </div>
   );
 };
