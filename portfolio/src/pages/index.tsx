@@ -8,7 +8,7 @@ const index = () => {
   return (
     <>
       <div className='flex flex-col flex-grow px-6 pt-1 '>
-        <Text className='my-3 text-xl tracking-normal' weight='light'>
+        <Text className='my-3 text-lg tracking-normal' weight='normal'>
           Software Engineer and Army Veteran offering a strong foundation in
           software development and programming principles across multiple
           platforms. Offers knowledge of authoring code derived from designing,

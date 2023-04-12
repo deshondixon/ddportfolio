@@ -21,7 +21,7 @@ export default function MyApp({ Component, pageProps }) {
         <div className='col-span-12 p-4 text-center bg-gray-800 lg:col-span-3 rounded-2xl'>
           <Sidebar />
         </div>
-        <div className='col-span-12 bg-gray-800 lg:col-span-9 rounded-2xl'>
+        <div className='col-span-12 overflow-hidden bg-gray-800 lg:col-span-9 rounded-2xl'>
           <Navbar />
           <NextThemesProvider
             defaultTheme='system'
