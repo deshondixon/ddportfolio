@@ -1,12 +1,15 @@
-import { RiComputerLine } from 'react-icons/ri';
 import { IService } from './type';
+import { FaServer } from 'react-icons/fa';
+import { RiComputerLine } from 'react-icons/ri';
+import { MdDeveloperMode } from 'react-icons/md';
+import { AiOutlineAntDesign, AiOutlineApi } from 'react-icons/ai';
 
 export const services: IService[] = [
   {
     Icon: RiComputerLine,
     title: 'Frontend Development',
     about:
-      'HTML, CSS, Javascript, Typescript, Tailwind, Bootstrap, React.js, React Native, Next.js, Chakra UI, Astro,',
+      '<b>HTML</b>, <b>CSS</b>, <b>Javascript</b>, <b>Typescript</b>, <b>Tailwind</b>, <b>Bootstrap</b>, <b>React.js</b>, <b>React Native</b>, <b>Next.js</b>, <b>Chakra UI</b>, and <b>Astro</b>',
   },
   {
     Icon: FaServer,
@@ -14,13 +17,21 @@ export const services: IService[] = [
     about: 'Python, Django, Flask, Node.js, Express.js, Golang',
   },
   {
-    Icon: RiComputerLine,
-    title: 'title',
-    about: 'lorem....',
+    Icon: AiOutlineApi,
+    title: 'API Development',
+    about:
+      'I can develop robust REST APIs using <b>django-rest-api</b> & <b>Node API</b> ',
   },
   {
-    Icon: RiComputerLine,
-    title: 'title',
-    about: 'lorem....',
+    Icon: MdDeveloperMode,
+    title: 'Competitive Coder',
+    about:
+      'A daily problem solver utilizing <b>Algo Expert/b> & <b>Leet Code</b> ',
+  },
+  {
+    Icon: AiOutlineAntDesign,
+    title: 'UI/UX Design',
+    about:
+      'Stunning user interface design using <b>Figma</b> and <b>Framer</b>',
   },
 ];
