@@ -13,8 +13,10 @@ const index = (props) => {
 
 export default index;
 
-export const getServerSideProps = (context: GetServerSidePropsContext) => {
-  fetch('http://localhost:3000/api/services');
+export const getServerSideProps = async (
+  context: GetServerSidePropsContext
+) => {
+  await fetch('http://localhost:3000/api/services');
 
   return {
     props: {},
