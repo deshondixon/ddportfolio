@@ -1,5 +1,6 @@
 import { IService, ISkill } from './type';
 import { FaServer } from 'react-icons/fa';
+import { BsCircleFill } from 'react-icons/bs';
 import { RiComputerLine } from 'react-icons/ri';
 import { MdDeveloperMode } from 'react-icons/md';
 import { AiOutlineAntDesign, AiOutlineApi } from 'react-icons/ai';
@@ -30,4 +31,10 @@ export const services: IService[] = [
   },
 ];
 
-export const languages: ISkill[] = [];
+export const languages: ISkill[] = [
+  {
+    name: 'Python',
+    level: '70%',
+    Icon: BsCircleFill,
+  },
+];
