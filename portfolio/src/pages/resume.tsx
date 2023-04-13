@@ -16,11 +16,23 @@ const resume = () => {
             Education
           </Text>
           <div>
-            <Text className='my-3 text-lg tracking-normal' weight='normal'>
+            <Text
+              size={20}
+              css={{
+                textGradient: '45deg, $blue600 -20%, $pink600 50%',
+              }}
+              weight='bold'
+            >
               Advanced Software Development in Python
             </Text>
-            <Text className='my-3 text-lg tracking-normal' weight='normal'>
-              Code Fellows(2022-2023)
+            <Text
+              size={15}
+              css={{
+                textGradient: '45deg, $purple600 -20%, $pink600 100%',
+              }}
+              weight='bold'
+            >
+              Code Fellows (2022-2023)
             </Text>
           </div>
         </div>
