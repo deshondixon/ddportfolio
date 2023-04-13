@@ -29,3 +29,5 @@ export const services: IService[] = [
       'Stunning user interface design using <b>Figma</b> and <b>Framer</b>',
   },
 ];
+
+export const skills: languages[] = [];
