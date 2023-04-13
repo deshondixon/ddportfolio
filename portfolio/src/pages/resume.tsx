@@ -60,18 +60,17 @@ const resume = () => {
             </Text>
           </div>
         </div>
-        <div className='grid gap-6 md:grid-cols-2'>
-          <div>
-            <Text className='my-3 text-lg tracking-normal' weight='normal'>
-              Languages & Frameworks
-            </Text>
-            <div className='my-3'>
-              {languages.map((language) => (
-                <Bar data={language} key={language.name} />
-              ))}
-            </div>
+
+        <div>
+          <Text className='my-3 text-lg tracking-normal' weight='normal'>
+            Languages & Frameworks
+          </Text>
+          <div className='my-3'>
+            {languages.map((language) => (
+              <Bar data={language} key={language.name} />
+            ))}
           </div>
-        </div>{' '}
+        </div>
         <div>
           <Text className='my-3 text-lg tracking-normal' weight='normal'>
             Tools & Software

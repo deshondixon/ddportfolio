@@ -32,19 +32,14 @@ export const services: IService[] = [
 
 export const languages: ISkill[] = [
   {
+    Icon: BsCircleFill,
     name: 'Python',
     level: '70%',
-    Icon: BsCircleFill,
   },
   {
     Icon: BsCircleFill,
     name: 'JavaScript',
-    level: '60%',
-  },
-  {
-    Icon: BsCircleFill,
-    name: 'React Native',
-    level: '80%',
+    level: '85%',
   },
   {
     Icon: BsCircleFill,
@@ -73,11 +68,6 @@ export const tools: ISkill[] = [
     Icon: BsCircleFill,
     name: 'Framer',
     level: '45%',
-  },
-  {
-    Icon: BsCircleFill,
-    name: 'Charka UI',
-    level: '40%',
   },
   {
     Icon: BsCircleFill,
