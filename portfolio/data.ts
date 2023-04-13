@@ -36,4 +36,24 @@ export const languages: ISkill[] = [
     level: '70%',
     Icon: BsCircleFill,
   },
+  {
+    Icon: BsCircleFill,
+    name: 'JavaScript',
+    level: '60%',
+  },
+  {
+    Icon: BsCircleFill,
+    name: 'Python',
+    level: '70%',
+  },
+  {
+    Icon: BsCircleFill,
+    name: 'Python',
+    level: '70%',
+  },
+  {
+    Icon: BsCircleFill,
+    name: 'Python',
+    level: '70%',
+  },
 ];
