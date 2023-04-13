@@ -1,4 +1,5 @@
 import { Text } from '@nextui-org/react';
+import { languages } from '/Users/deshondixon/projects/side_projects/ddportfolio/portfolio/data';
 
 const resume = () => {
   return (
@@ -62,6 +63,11 @@ const resume = () => {
             <Text className='my-3 text-lg tracking-normal' weight='normal'>
               Languages & Frameworks
             </Text>
+            <div className='my-3'>
+              {languages.map((language) => (
+                <Bar data={language} key={language.name} />
+              ))}
+            </div>
           </div>
         </div>
       </div>
