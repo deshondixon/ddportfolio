@@ -76,22 +76,12 @@ export const tools: ISkill[] = [
   },
   {
     Icon: BsCircleFill,
-    name: 'React Native',
-    level: '80%',
+    name: 'Charka UI',
+    level: '40%',
   },
   {
     Icon: BsCircleFill,
-    name: 'React',
+    name: 'Next UI',
     level: '70%',
-  },
-  {
-    Icon: BsCircleFill,
-    name: 'Django',
-    level: '80%',
-  },
-  {
-    Icon: BsCircleFill,
-    name: 'Tailwind',
-    level: '80%',
   },
 ];
