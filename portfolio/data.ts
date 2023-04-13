@@ -2,7 +2,6 @@ import { IService, ISkill } from './type';
 import { FaServer } from 'react-icons/fa';
 import { BsCircleFill } from 'react-icons/bs';
 import { RiComputerLine } from 'react-icons/ri';
-import { MdDeveloperMode } from 'react-icons/md';
 import { AiOutlineAntDesign, AiOutlineApi } from 'react-icons/ai';
 
 export const services: IService[] = [
