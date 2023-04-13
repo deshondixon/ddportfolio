@@ -4,8 +4,8 @@ import { ISkill } from '/Users/deshondixon/projects/side_projects/ddportfolio/po
 
 const Bar: FunctionComponent<{
   data: ISkill;
-}> = () => {
-  return <div>Bar</div>;
+}> = ({ data: { Icon, level, name } }) => {
+  return <div>{name}</div>;
 };
 
 export default Bar;
