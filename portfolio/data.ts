@@ -1,4 +1,4 @@
-import { IService } from './type';
+import { IService, ISkill } from './type';
 import { FaServer } from 'react-icons/fa';
 import { RiComputerLine } from 'react-icons/ri';
 import { MdDeveloperMode } from 'react-icons/md';
@@ -30,4 +30,4 @@ export const services: IService[] = [
   },
 ];
 
-export const skills: languages[] = [];
+export const languages: ISkill[] = [];
