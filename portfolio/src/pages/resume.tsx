@@ -2,7 +2,7 @@ import { Text } from '@nextui-org/react';
 
 const resume = () => {
   return (
-    <div className='p-4'>
+    <div className='px-6 py-2'>
       <div className='grid gap-6 md:grid-cols-2'>
         <div>
           <Text
@@ -54,6 +54,13 @@ const resume = () => {
               interested in accelerating into the next phase of their careers.
               Sessions include hands-on workshops, in-depth discussions with
               industry leaders, and an inside look at top companies.
+            </Text>
+          </div>
+        </div>
+        <div className='grid gap-6 md:grid-cols-2'>
+          <div>
+            <Text className='my-3 text-lg tracking-normal' weight='normal'>
+              Languages & Frameworks
             </Text>
           </div>
         </div>
