@@ -43,17 +43,17 @@ export const languages: ISkill[] = [
   },
   {
     Icon: BsCircleFill,
-    name: 'Python',
+    name: 'React Native',
+    level: '80%',
+  },
+  {
+    Icon: BsCircleFill,
+    name: 'React',
     level: '70%',
   },
   {
     Icon: BsCircleFill,
-    name: 'Python',
-    level: '70%',
-  },
-  {
-    Icon: BsCircleFill,
-    name: 'Python',
-    level: '70%',
+    name: 'Django',
+    level: '80%',
   },
 ];
