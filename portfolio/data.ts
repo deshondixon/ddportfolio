@@ -56,4 +56,42 @@ export const languages: ISkill[] = [
     name: 'Django',
     level: '80%',
   },
+  {
+    Icon: BsCircleFill,
+    name: 'Tailwind',
+    level: '80%',
+  },
+];
+
+export const tools: ISkill[] = [
+  {
+    name: 'Figma',
+    level: '85%',
+    Icon: BsCircleFill,
+  },
+  {
+    Icon: BsCircleFill,
+    name: 'Framer',
+    level: '45%',
+  },
+  {
+    Icon: BsCircleFill,
+    name: 'React Native',
+    level: '80%',
+  },
+  {
+    Icon: BsCircleFill,
+    name: 'React',
+    level: '70%',
+  },
+  {
+    Icon: BsCircleFill,
+    name: 'Django',
+    level: '80%',
+  },
+  {
+    Icon: BsCircleFill,
+    name: 'Tailwind',
+    level: '80%',
+  },
 ];
