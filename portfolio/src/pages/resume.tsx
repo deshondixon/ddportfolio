@@ -15,7 +15,14 @@ const resume = () => {
           >
             Education
           </Text>
-          <div></div>
+          <div>
+            <Text className='my-3 text-lg tracking-normal' weight='normal'>
+              Advanced Software Development in Python
+            </Text>
+            <Text className='my-3 text-lg tracking-normal' weight='normal'>
+              Code Fellows(2022-2023)
+            </Text>
+          </div>
         </div>
       </div>
     </div>
