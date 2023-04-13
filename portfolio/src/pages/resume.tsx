@@ -11,28 +11,22 @@ const resume = () => {
               textGradient: '45deg, $yellow600 -20%, $red600 100%',
             }}
             weight='bold'
-            className='my-4 text-3xl font-medium tracking-wider'
+            className='my-3 text-3xl font-medium tracking-wide'
           >
             Education
           </Text>
           <div>
-            <Text
-              size={20}
-              css={{
-                textGradient: '45deg, $blue600 -20%, $pink600 50%',
-              }}
-              weight='bold'
-            >
+            <Text size={20} weight='bold' className='my-2'>
               Advanced Software Development in Python
             </Text>
-            <Text
-              size={15}
-              css={{
-                textGradient: '45deg, $purple600 -20%, $pink600 100%',
-              }}
-              weight='bold'
-            >
+            <Text size={20} weight='bold' className='my-2'>
               Code Fellows (2022-2023)
+            </Text>
+            <Text className='my-3 text-lg tracking-normal' weight='normal'>
+              Wrote clean, well-tested, advanced Python code using
+              industry-standard software engineering patterns; studied the
+              foundational structures of programming, from object-oriented
+              principles to advanced topics
             </Text>
           </div>
         </div>
