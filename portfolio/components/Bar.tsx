@@ -5,7 +5,14 @@ import { ISkill } from '/Users/deshondixon/projects/side_projects/ddportfolio/po
 const Bar: FunctionComponent<{
   data: ISkill;
 }> = ({ data: { Icon, level, name } }) => {
-  return <div>{name}</div>;
+  return (
+    <div>
+      <div className='flex items-center px-4 py-1 rounded-full bg-gradient-to-r from-yellow-300 to-red-600 '>
+        <Icon className='mr-3' />
+        {name}
+      </div>
+    </div>
+  );
 };
 
 export default Bar;

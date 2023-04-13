@@ -1,5 +1,6 @@
 import { Text } from '@nextui-org/react';
 import { languages } from '/Users/deshondixon/projects/side_projects/ddportfolio/portfolio/data';
+import { tools } from '/Users/deshondixon/projects/side_projects/ddportfolio/portfolio/data';
 import Bar from '../../components/Bar';
 
 const resume = () => {
@@ -69,6 +70,16 @@ const resume = () => {
                 <Bar data={language} key={language.name} />
               ))}
             </div>
+          </div>
+        </div>{' '}
+        <div>
+          <Text className='my-3 text-lg tracking-normal' weight='normal'>
+            Tools & Software
+          </Text>
+          <div className='my-3'>
+            {tools.map((tool) => (
+              <Bar data={tool} key={tool.name} />
+            ))}
           </div>
         </div>
       </div>
