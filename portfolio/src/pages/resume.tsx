@@ -1,5 +1,6 @@
 import { Text } from '@nextui-org/react';
 import { languages } from '/Users/deshondixon/projects/side_projects/ddportfolio/portfolio/data';
+import Bar from '../../components/Bar';
 
 const resume = () => {
   return (
