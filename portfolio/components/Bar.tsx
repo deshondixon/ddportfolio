@@ -14,6 +14,7 @@ const Bar: FunctionComponent<{
         <Icon className='mr-3' />
         {name}
       </div>
+      <div></div>
     </div>
   );
 };
