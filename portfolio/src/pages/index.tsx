@@ -1,6 +1,10 @@
 import { services } from '/Users/deshondixon/projects/side_projects/ddportfolio/portfolio/data';
 import { Text } from '@nextui-org/react';
 import ServiceCard from '/Users/deshondixon/projects/side_projects/ddportfolio/portfolio/components/ServiceCard';
+import type { NextPage } from 'next';
+import { Sun1 as Sun, Moon } from 'iconsax-react';
+import { Grid, Text, Switch, Dropdown, Snippet } from '@nextui-org/react';
+import { useTheme } from '@hooks';
 
 const index = () => {
   return (
