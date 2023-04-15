@@ -1,12 +1,8 @@
 import '/Users/deshondixon/projects/side_projects/ddportfolio/portfolio/src/styles/globals.css';
 import Sidebar from '/Users/deshondixon/projects/side_projects/ddportfolio/portfolio/components/Sidebar';
 import Navbar from '/Users/deshondixon/projects/side_projects/ddportfolio/portfolio/components/Navbar';
-import { NextUIProvider } from '@nextui-org/react';
-import type { NextPage } from 'next';
-import type { AppProps } from 'next/app';
-import { Fragment } from 'react';
-import { ThemeProvider } from 'next-themes';
-import { themeProps } from '@styles';
+import { createTheme, NextUIProvider } from '@nextui-org/react';
+import { ThemeProvider as NextThemesProvider } from 'next-themes';
 
 const lightTheme = createTheme({
   type: 'light',
@@ -18,29 +14,29 @@ const darkTheme = createTheme({
   theme: {},
 });
 
-const App: NextPage<AppProps> = (props: AppProps) => {
-  const { Component, pageProps } = props;
+export default function MyApp({ Component, pageProps }) {
   return (
-    <Fragment>
-      <meta
-        content='width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover'
-        name='viewport'
-      />
+    <div>
       <div className='grid grid-cols-12 gap-6 px-5 my-14 lg:px-48'>
         <div className='col-span-12 p-4 text-center bg-gray-800 lg:col-span-3 rounded-2xl'>
           <Sidebar />
         </div>
         <div className='col-span-12 overflow-hidden bg-gray-800 lg:col-span-9 rounded-2xl'>
           <Navbar />
-          <ThemeProvider {...themeProps}>
+          <NextThemesProvider
+            defaultTheme='system'
+            attribute='class'
+            value={{
+              light: lightTheme.className,
+              dark: darkTheme.className,
+            }}
+          >
             <NextUIProvider>
               <Component {...pageProps} />
             </NextUIProvider>
-          </ThemeProvider>
+          </NextThemesProvider>
         </div>
       </div>
-    </Fragment>
+    </div>
   );
-};
-
-export default App;
+}
