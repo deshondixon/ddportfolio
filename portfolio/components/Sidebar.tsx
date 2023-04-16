@@ -10,11 +10,7 @@ export default function Sidebar({}) {
   const { theme, setTheme } = useTheme();
 
   const handleThemeChange = () => {
-    if (theme === 'light') {
-      setTheme('dark');
-    } else {
-      setTheme('light');
-    }
+    setTheme(theme === 'light' ? 'dark' : 'light');
   };
   return (
     <div className=''>
@@ -133,7 +129,7 @@ export default function Sidebar({}) {
           </Button>
         </Tilt>
       </div>
-      <Switch onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}>
+      <Switch checked={theme === 'dark'} onChange={handleThemeChange}>
         {theme === 'dark' ? 'Switch to Light Mode' : 'Switch to Dark Mode'}
       </Switch>
     </div>
