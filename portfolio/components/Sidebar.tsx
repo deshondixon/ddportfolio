@@ -134,10 +134,7 @@ export default function Sidebar({}) {
           </Button>
         </Tilt>
       </div>
-      <Switch
-        checked={isDark}
-        onChange={(e) => setTheme(e.target.checked ? 'dark' : 'light')}
-      />
+      <Switch checked={theme === 'dark'} onChange={handleThemeChange} />
     </div>
   );
 }
