@@ -2,13 +2,12 @@ import Image from 'next/image';
 import { AiFillGithub, AiFillLinkedin, AiOutlineMail } from 'react-icons/ai';
 import { GoLocation } from 'react-icons/go';
 import { GiTie } from 'react-icons/gi';
-import { useTheme as useNextTheme } from 'next-themes';
-import { Switch, useTheme, Button, Text, Badge } from '@nextui-org/react';
+import { useTheme } from 'next-themes';
+import { Switch, Button, Text, Badge } from '@nextui-org/react';
 import Tilt from 'react-parallax-tilt';
 
 export default function Sidebar({}) {
-  const { theme, setTheme } = useNextTheme();
-  const { isDark, type } = useTheme();
+  const { theme, setTheme } = useTheme();
 
   const handleThemeChange = () => {
     if (theme === 'light') {
@@ -134,7 +133,9 @@ export default function Sidebar({}) {
           </Button>
         </Tilt>
       </div>
-      <Switch checked={theme === 'dark'} onChange={handleThemeChange} />
+      <Switch onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}>
+        {theme === 'dark' ? 'Switch to Light Mode' : 'Switch to Dark Mode'}
+      </Switch>
     </div>
   );
 }
