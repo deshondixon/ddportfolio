@@ -5,6 +5,8 @@ import { GiTie } from 'react-icons/gi';
 import { useTheme } from 'next-themes';
 import { Switch, Button, Text, Badge } from '@nextui-org/react';
 import Tilt from 'react-parallax-tilt';
+import { SunIcon } from '/Users/deshondixon/projects/side_projects/ddportfolio/portfolio/components/SunIcon';
+import { MoonIcon } from '/Users/deshondixon/projects/side_projects/ddportfolio/portfolio/components/MoonIcon';
 
 export default function Sidebar({}) {
   const { theme, setTheme } = useTheme();
@@ -129,7 +131,15 @@ export default function Sidebar({}) {
           </Button>
         </Tilt>
       </div>
-      <Switch checked={theme === 'dark'} onChange={handleThemeChange}>
+      <Switch
+        iconOn={<SunIcon filled />}
+        iconOff={<MoonIcon filled />}
+        bordered
+        size='xl'
+        color='secondary'
+        checked={theme === 'dark'}
+        onChange={handleThemeChange}
+      >
         {theme === 'dark' ? 'Switch to Light Mode' : 'Switch to Dark Mode'}
       </Switch>
     </div>
