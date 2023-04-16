@@ -1,6 +1,6 @@
 import React, { FunctionComponent } from 'react';
 import { IService } from '../type';
-import { Text } from '@nextui-org/react';
+import { Text, Textarea } from '@nextui-org/react';
 
 const ServiceCard: FunctionComponent<{ service: IService }> = ({
   service: { Icon, about, title },
@@ -17,7 +17,7 @@ const ServiceCard: FunctionComponent<{ service: IService }> = ({
         <Text
           size={18}
           css={{
-            textGradient: '45deg, $yellow600 -20%, $red600 100%',
+            textGradient: '45deg, $purple600 -20%, $pink600 100%',
           }}
           weight='bold'
           className='text-3xl font-medium tracking-wider'

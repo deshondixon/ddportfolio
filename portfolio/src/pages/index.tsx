@@ -1,5 +1,5 @@
 import { services } from '/Users/deshondixon/projects/side_projects/ddportfolio/portfolio/data';
-import { Text } from '@nextui-org/react';
+import { Text, Textarea } from '@nextui-org/react';
 import ServiceCard from '/Users/deshondixon/projects/side_projects/ddportfolio/portfolio/components/ServiceCard';
 
 const index = () => {
@@ -22,7 +22,7 @@ const index = () => {
           <Text
             size={35}
             css={{
-              textGradient: '45deg, $yellow600 -20%, $red600 100%',
+              textGradient: '45deg, $purple600 -20%, $pink600 100%',
             }}
             weight='bold'
             className='my-4 text-3xl font-medium tracking-wider'

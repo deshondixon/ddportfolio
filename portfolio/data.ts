@@ -1,7 +1,8 @@
 import { IService, ISkill } from './type';
-import { FaServer } from 'react-icons/fa';
-import { BsCircleFill } from 'react-icons/bs';
+import { FaFigma, FaPython, FaReact, FaServer } from 'react-icons/fa';
+import { TbBrandJavascript } from 'react-icons/tb';
 import { RiComputerLine } from 'react-icons/ri';
+import { SiDjango, SiFramer, SiNextdotjs, SiTailwindcss } from 'react-icons/si';
 import { AiOutlineAntDesign, AiOutlineApi } from 'react-icons/ai';
 
 export const services: IService[] = [
@@ -32,27 +33,27 @@ export const services: IService[] = [
 
 export const languages: ISkill[] = [
   {
-    Icon: BsCircleFill,
+    Icon: FaPython,
     name: 'Python',
     level: '70%',
   },
   {
-    Icon: BsCircleFill,
+    Icon: TbBrandJavascript,
     name: 'JavaScript',
     level: '85%',
   },
   {
-    Icon: BsCircleFill,
+    Icon: FaReact,
     name: 'React',
     level: '70%',
   },
   {
-    Icon: BsCircleFill,
+    Icon: SiDjango,
     name: 'Django',
     level: '80%',
   },
   {
-    Icon: BsCircleFill,
+    Icon: SiTailwindcss,
     name: 'Tailwind',
     level: '80%',
   },
@@ -62,15 +63,15 @@ export const tools: ISkill[] = [
   {
     name: 'Figma',
     level: '85%',
-    Icon: BsCircleFill,
+    Icon: FaFigma,
   },
   {
-    Icon: BsCircleFill,
+    Icon: SiFramer,
     name: 'Framer',
     level: '45%',
   },
   {
-    Icon: BsCircleFill,
+    Icon: SiNextdotjs,
     name: 'Next UI',
     level: '70%',
   },
