@@ -3,10 +3,11 @@ import { AiFillGithub, AiFillLinkedin, AiOutlineMail } from 'react-icons/ai';
 import { GoLocation } from 'react-icons/go';
 import { GiTie } from 'react-icons/gi';
 import { useTheme } from 'next-themes';
-import { Switch, Button, Text, Badge } from '@nextui-org/react';
+import { Avatar, Switch, Button, Text, Badge, Spacer } from '@nextui-org/react';
 import Tilt from 'react-parallax-tilt';
 import { SunIcon } from '/Users/deshondixon/projects/side_projects/ddportfolio/portfolio/components/SunIcon';
 import { MoonIcon } from '/Users/deshondixon/projects/side_projects/ddportfolio/portfolio/components/MoonIcon';
+import { Send } from 'react-iconly';
 
 export default function Sidebar({}) {
   const { theme, setTheme } = useTheme();
@@ -16,16 +17,17 @@ export default function Sidebar({}) {
   };
   return (
     <div className=''>
-      <Tilt>
-        <Image
-          priority
-          src='/profile.jpg'
-          alt='avatar'
-          width={500}
-          height={500}
-          className='mx-auto rounded-full '
-        />
-      </Tilt>
+      <Avatar
+        css={{ mw: '400px', height: '13rem', width: '13rem' }}
+        zoomed
+        size='xl'
+        src='/profile.jpg'
+        color='gradient'
+        bordered
+        className='mx-auto rounded-full '
+        pointer
+      />
+
       <Tilt>
         <Text
           size={35}
@@ -53,17 +55,17 @@ export default function Sidebar({}) {
         </Tilt>
       </div>
       <div className='flex justify-center p-3'>
-        <Tilt>
-          <Button
-            color='gradient'
-            auto
-            className='text-center focus:outline-none'
-            href='#'
-          >
-            <GiTie className='w-6 h-6' />
-            Resume
-          </Button>
-        </Tilt>
+        <Button
+          rounded
+          shadow
+          color='gradient'
+          auto
+          className='text-center focus:outline-none'
+          href='#'
+        >
+          <GiTie className='w-6 h-6' />
+          Resume
+        </Button>
       </div>
       <div className='flex w-9/12 mx-auto my-5 text-green-400 justify-evenly md:w-full'>
         <Tilt>
@@ -120,23 +122,25 @@ export default function Sidebar({}) {
         </Tilt>
       </div>
       <div className='flex justify-center p-3'>
-        <Tilt>
-          <Button
-            color='gradient'
-            auto
-            className='text-center focus:outline-none'
-            onClick={() => window.open('mailto:deshondixon@gmail.com')}
-          >
-            <AiOutlineMail className='w-6 h-6 p-1' /> Email
-          </Button>
-        </Tilt>
+        <Button
+          rounded
+          shadow
+          color='gradient'
+          auto
+          className='text-center focus:outline-none'
+          onClick={() => window.open('mailto:deshondixon@gmail.com')}
+        >
+          <AiOutlineMail className='w-6 h-6 p-1' /> Email
+        </Button>
       </div>
+      <Spacer />
       <Switch
         iconOn={<SunIcon filled />}
         iconOff={<MoonIcon filled />}
         bordered
         size='xl'
-        color='secondary'
+        shadow
+        color='primary'
         checked={theme === 'dark'}
         onChange={handleThemeChange}
       >
