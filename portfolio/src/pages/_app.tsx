@@ -17,14 +17,7 @@ const darkTheme = createTheme({
 export default function MyApp({ Component, pageProps }) {
   const { theme, setTheme } = useTheme();
   return (
-    <NextThemesProvider
-      defaultTheme='light'
-      attribute='class'
-      value={{
-        light: lightTheme.className,
-        dark: darkTheme.className,
-      }}
-    >
+    <NextThemesProvider defaultTheme='light'>
       <NextUIProvider theme={theme === 'light' ? lightTheme : darkTheme}>
         <div>
           <div className='grid grid-cols-12 gap-6 px-5 my-14 lg:px-48'>
