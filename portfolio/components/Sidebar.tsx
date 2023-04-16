@@ -7,8 +7,16 @@ import { Switch, useTheme, Button, Text, Badge } from '@nextui-org/react';
 import Tilt from 'react-parallax-tilt';
 
 export default function Sidebar({}) {
-  const { setTheme } = useNextTheme();
+  const { theme, setTheme } = useNextTheme();
   const { isDark, type } = useTheme();
+
+  const handleThemeChange = () => {
+    if (theme === 'light') {
+      setTheme('dark');
+    } else {
+      setTheme('light');
+    }
+  };
   return (
     <div className=''>
       <Tilt>
