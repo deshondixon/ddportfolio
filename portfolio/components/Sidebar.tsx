@@ -134,7 +134,7 @@ export default function Sidebar({}) {
       </div>
       <Spacer />
       <Switch
-        iconOn={<SunIcon filled />}
+        iconOn={<SunIcon />}
         iconOff={<MoonIcon filled />}
         bordered
         size='xl'
