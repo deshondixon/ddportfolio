@@ -2,6 +2,7 @@ import React, { FunctionComponent } from 'react';
 import { ISkill } from '../src/type';
 import { Progress } from '@nextui-org/react';
 import Skeleton from 'react-loading-skeleton';
+import './skeleton.css';
 
 const Bar: FunctionComponent<{
   data: ISkill;
