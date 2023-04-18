@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import { AiFillGithub, AiFillLinkedin, AiOutlineMail } from 'react-icons/ai';
 import { GoLocation } from 'react-icons/go';
 import { GiTie } from 'react-icons/gi';

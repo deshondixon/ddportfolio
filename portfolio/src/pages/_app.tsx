@@ -1,6 +1,7 @@
 import '/Users/deshondixon/projects/side_projects/ddportfolio/portfolio/src/styles/globals.css';
-import Sidebar from '/Users/deshondixon/projects/side_projects/ddportfolio/portfolio/components/Sidebar';
-import Navbar from '/Users/deshondixon/projects/side_projects/ddportfolio/portfolio/components/Navbar';
+import Sidebar from '../../components/Sidebar';
+import Navbar from '../../components/Navbar';
+
 import { createTheme, NextUIProvider } from '@nextui-org/react';
 import { ThemeProvider as NextThemesProvider, useTheme } from 'next-themes';
 

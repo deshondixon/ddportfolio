@@ -1,7 +1,6 @@
 import { FunctionComponent, useEffect, useState } from 'react';
-import { Switch, useTheme, Button, Text, Badge } from '@nextui-org/react';
+import { Text } from '@nextui-org/react';
 import Link from 'next/link';
-import Tilt from 'react-parallax-tilt';
 import { useRouter } from 'next/router';
 
 const NavItem: FunctionComponent<{
