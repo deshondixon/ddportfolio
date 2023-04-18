@@ -12,14 +12,14 @@ const Index = () => {
     setTimeout(() => {
       setLoading(false); // Update loading state to false after 1000ms (1 second)
       setTitle('Dashboard');
-    }, 900);
+    }, 90);
   }, []);
 
   return (
     <>
       <div className='flex flex-col flex-grow px-6 pt-1 '>
         {loading ? (
-          <Skeleton />
+          <Skeleton /> // Render Skeleton component while loading is true
         ) : (
           <>
             <Text className='my-3 text-lg tracking-normal' weight='normal'>
