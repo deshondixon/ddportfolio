@@ -1,4 +1,4 @@
-import '/Users/deshondixon/projects/side_projects/ddportfolio/portfolio/src/styles/globals.css';
+import '../styles/Home.module.css';
 import Sidebar from '../../components/Sidebar';
 import Navbar from '../../components/Navbar';
 
