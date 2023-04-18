@@ -5,8 +5,6 @@ import { GiTie } from 'react-icons/gi';
 import { useTheme } from 'next-themes';
 import { Avatar, Switch, Button, Text, Badge, Spacer } from '@nextui-org/react';
 import Tilt from 'react-parallax-tilt';
-import { SunIcon } from '/Users/deshondixon/projects/side_projects/ddportfolio/portfolio/components/SunIcon';
-import { MoonIcon } from '/Users/deshondixon/projects/side_projects/ddportfolio/portfolio/components/MoonIcon';
 
 export default function Sidebar({}) {
   const { theme, setTheme } = useTheme();
