@@ -1,6 +1,5 @@
-// @ts-ignore
 import { FunctionComponent } from 'react';
-import { ISkill } from '/Users/deshondixon/projects/side_projects/ddportfolio/portfolio/type';
+import { ISkill } from '../src/type';
 import { Progress } from '@nextui-org/react';
 
 const Bar: FunctionComponent<{

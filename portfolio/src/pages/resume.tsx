@@ -1,6 +1,6 @@
 import { Text, Progress } from '@nextui-org/react';
-import { languages } from '/Users/deshondixon/projects/side_projects/ddportfolio/portfolio/data';
-import { tools } from '/Users/deshondixon/projects/side_projects/ddportfolio/portfolio/data';
+import { languages } from '../data';
+import { tools } from '../data';
 import Bar from '../../components/Bar';
 
 const resume = () => {

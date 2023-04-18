@@ -1,5 +1,5 @@
 import React, { FunctionComponent } from 'react';
-import { IService } from '../type';
+import { IService } from '../src/type';
 import { Text, Textarea } from '@nextui-org/react';
 
 const ServiceCard: FunctionComponent<{ service: IService }> = ({

@@ -1,4 +1,4 @@
-import { services } from '/Users/deshondixon/projects/side_projects/ddportfolio/portfolio/data';
+import { services } from '../data';
 import { Text, Textarea } from '@nextui-org/react';
 import ServiceCard from '/Users/deshondixon/projects/side_projects/ddportfolio/portfolio/components/ServiceCard';
 
