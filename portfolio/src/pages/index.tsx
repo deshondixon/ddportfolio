@@ -1,6 +1,6 @@
 import { services } from '../data';
 import { Text, Textarea } from '@nextui-org/react';
-import ServiceCard from '/Users/deshondixon/projects/side_projects/ddportfolio/portfolio/components/ServiceCard';
+import ServiceCard from '../../components/ServiceCard';
 
 const index = () => {
   return (
