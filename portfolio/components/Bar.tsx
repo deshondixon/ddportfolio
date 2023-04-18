@@ -4,7 +4,7 @@ import { Progress } from '@nextui-org/react';
 
 const Bar: FunctionComponent<{
   data: ISkill;
-}> = ({ data: { Icon, name } }) => {
+}> = ({ data: { Icon, level, name } }) => {
   return (
     <div className='my-2'>
       <div className='flex items-center px-4 py-1 '>
