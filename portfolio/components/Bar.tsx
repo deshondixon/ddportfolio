@@ -1,4 +1,4 @@
-import React from 'react';
+// @ts-ignore
 import { FunctionComponent } from 'react';
 import { ISkill } from '/Users/deshondixon/projects/side_projects/ddportfolio/portfolio/type';
 import { Progress } from '@nextui-org/react';
