@@ -4,6 +4,8 @@ import { GiTie } from 'react-icons/gi';
 import { useTheme } from 'next-themes';
 import { Avatar, Switch, Button, Text, Badge, Spacer } from '@nextui-org/react';
 import Tilt from 'react-parallax-tilt';
+import React from 'react';
+import Skeleton from 'react-loading-skeleton';
 
 export default function Sidebar({}) {
   const { theme, setTheme } = useTheme();
@@ -11,6 +13,16 @@ export default function Sidebar({}) {
   const handleThemeChange = () => {
     setTheme(theme === 'light' ? 'dark' : 'light');
   };
+
+  const [loading, setLoading] = React.useState(true);
+
+  React.useEffect(() => {
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 900);
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
     <div className=''>
       <Avatar
@@ -25,43 +37,59 @@ export default function Sidebar({}) {
       />
 
       <Tilt>
-        <Text
-          size={35}
-          css={{
-            textGradient: '45deg, $purple600 -20%, $pink600 100%',
-          }}
-          weight='bold'
-          className='my-4 text-3xl font-medium tracking-wider'
-        >
-          <span>DESHON </span>
-          DIXON
-        </Text>
+        {loading ? (
+          <Skeleton height={40} width={200} style={{ marginBottom: '1rem' }} />
+        ) : (
+          <Text
+            size={35}
+            css={{
+              textGradient: '45deg, $purple600 -20%, $pink600 100%',
+            }}
+            weight='bold'
+            className='my-4 text-3xl font-medium tracking-wider'
+          >
+            <span>DESHON </span>
+            DIXON
+          </Text>
+        )}
       </Tilt>
       <div className='flex justify-center '>
         <Tilt>
-          <Text
-            css={{
-              textGradient: '45deg, $white -20%, $white 100%',
-            }}
-            weight='bold'
-            className='my-2 tracking-wider text-md'
-          >
-            Software Engineer
-          </Text>
+          {loading ? (
+            <Skeleton
+              height={20}
+              width={150}
+              style={{ marginBottom: '0.5rem' }}
+            />
+          ) : (
+            <Text
+              css={{
+                textGradient: '45deg, $white -20%, $white 100%',
+              }}
+              weight='bold'
+              className='my-2 tracking-wider text-md'
+            >
+              Software Engineer
+            </Text>
+          )}
         </Tilt>
       </div>
       <div className='flex justify-center p-3'>
-        <Button
-          rounded
-          shadow
-          color='gradient'
-          auto
-          className='text-center focus:outline-none'
-          href='#'
-        >
-          <GiTie className='w-6 h-6' />
-          Resume
-        </Button>
+        {loading ? (
+          <Skeleton height={40} width={150} />
+        ) : (
+          <Button
+            rounded
+            shadow
+            color='gradient'
+            auto
+            className='text-center focus:outline-none'
+            href='#'
+          >
+            <GiTie className='w-6 h-6' />
+            Resume
+          </Button>
+        )}
       </div>
       <div className='flex w-9/12 mx-auto my-5 text-green-400 justify-evenly md:w-full'>
         <Tilt>

@@ -2,6 +2,7 @@ import { FunctionComponent, useEffect, useState } from 'react';
 import { Text } from '@nextui-org/react';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
+import Skeleton from 'react-loading-skeleton';
 
 const NavItem: FunctionComponent<{
   activeItem: string;
@@ -27,10 +28,14 @@ const NavItem: FunctionComponent<{
 
 const Navbar = () => {
   const [activeItem, setActiveItem] = useState<string>('');
+  const [loading, setLoading] = useState(true);
 
   const { pathname } = useRouter();
 
   useEffect(() => {
+    setTimeout(() => {
+      setLoading(false);
+    }, 900);
     if (pathname === '/') setActiveItem('About');
     if (pathname === '/projects') setActiveItem('Projects');
     if (pathname === '/resume') setActiveItem('Resume');
@@ -38,16 +43,20 @@ const Navbar = () => {
 
   return (
     <div className='flex justify-between px-5 py-3 my-3'>
-      <Text
-        size={40}
-        css={{
-          textGradient: '45deg, $yellow600 -20%, $red600 100%',
-        }}
-        weight='bold'
-        className='tracking-normal'
-      >
-        {activeItem}
-      </Text>
+      {loading ? (
+        <Skeleton width={150} height={40} />
+      ) : (
+        <Text
+          size={40}
+          css={{
+            textGradient: '45deg, $yellow600 -20%, $red600 100%',
+          }}
+          weight='bold'
+          className='tracking-normal'
+        >
+          {activeItem}
+        </Text>
+      )}
 
       <div className='flex space-x-3'>
         <NavItem
