@@ -25,16 +25,22 @@ export default function Sidebar({}) {
 
   return (
     <div className=''>
-      <Avatar
-        css={{ mw: '400px', height: '13rem', width: '13rem' }}
-        zoomed
-        size='xl'
-        src='/profile.jpg'
-        color='gradient'
-        bordered
-        className='mx-auto rounded-full '
-        pointer
-      />
+      {loading ? (
+        <div className='w-20 md:mr-4'>
+          <Skeleton className='h-20' circle={true} />
+        </div>
+      ) : (
+        <Avatar
+          css={{ mw: '400px', height: '13rem', width: '13rem' }}
+          zoomed
+          size='xl'
+          src='/profile.jpg'
+          color='gradient'
+          bordered
+          className='mx-auto rounded-full '
+          pointer
+        />
+      )}
 
       <Tilt>
         {loading ? (
