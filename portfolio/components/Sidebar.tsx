@@ -6,8 +6,6 @@ import { Avatar, Switch, Button, Text, Badge, Spacer } from '@nextui-org/react';
 
 import Tilt from 'react-parallax-tilt';
 
-export default function Sidebar({}) {
-  const { theme, setTheme } = useTheme();
 
   const handleThemeChange = () => {
     setTheme(theme === 'light' ? 'dark' : 'light');
