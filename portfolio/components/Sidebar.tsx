@@ -13,6 +13,17 @@ export default function Sidebar({}) {
     setTheme(theme === 'light' ? 'dark' : 'light');
   };
   return (
+    <div className=''>
+      <Avatar
+        css={{ mw: '400px', height: '13rem', width: '13rem' }}
+        zoomed
+        size='xl'
+        src='/profile.jpg'
+        color='gradient'
+        bordered
+        className='mx-auto rounded-full '
+        pointer
+      />
 
       <Tilt>
         <Text
