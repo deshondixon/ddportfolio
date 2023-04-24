@@ -101,27 +101,7 @@ export default function Sidebar({}) {
               textGradient: '45deg, $yellow600 -20%, $red600 100%',
             }}
             weight='bold'
-            className='my-2 '
-          >
-            deshondixon@gmail.com
-          </Text>
-        </Tilt>
-        <Tilt>
-          <Text
-            css={{
-              textGradient: '45deg, $yellow600 -20%, $red600 100%',
-            }}
-            weight='bold'
-            className='my-2 '
-          >
-            253-878-0685{' '}
-          </Text>
-        </Tilt>
-      </div>
-      <div className='flex justify-center p-3'>
-        <Button
-          rounded
-          shadow
+
           color='gradient'
           auto
           className='text-center focus:outline-none'
