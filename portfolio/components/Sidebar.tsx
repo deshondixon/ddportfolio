@@ -106,16 +106,17 @@ export default function Sidebar({}) {
             deshondixon@gmail.com
           </Text>
         </Tilt>
-
-        <Text
-          css={{
-            textGradient: '45deg, $yellow600 -20%, $red600 100%',
-          }}
-          weight='bold'
-          className='my-2 '
-        >
-          253-878-0685{' '}
-        </Text>
+        <Tilt>
+          <Text
+            css={{
+              textGradient: '45deg, $yellow600 -20%, $red600 100%',
+            }}
+            weight='bold'
+            className='my-2 '
+          >
+            253-878-0685{' '}
+          </Text>
+        </Tilt>
       </div>
       <div className='flex justify-center p-3'>
         <Button
