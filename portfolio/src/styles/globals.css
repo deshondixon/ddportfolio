@@ -15,7 +15,6 @@ body {
   border-radius: 4px; 
 }
 
-/* Add margin or padding to the skeleton element */
 .react-loading-skeleton {
   margin: 10px; /* Replace with your desired margin value */
 }
