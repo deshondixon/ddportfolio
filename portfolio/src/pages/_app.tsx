@@ -50,7 +50,6 @@ export default function MyApp({ Component, pageProps }) {
               <Navbar />
 
               {loading ? (
-                // Render Skeleton loading component while loading is true
                 <Skeleton height={2000} />
               ) : (
                 <Component {...pageProps} />
