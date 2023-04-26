@@ -20,7 +20,7 @@ body {
 }
 
 .react-loading-skeleton {
-  width: 100%; /* Replace with your desired width value */
+  width: 100%; 
   height: 40px; /* Replace with your desired height value */
 }
 
