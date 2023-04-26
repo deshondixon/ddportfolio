@@ -24,7 +24,6 @@ body {
   height: 40px;
 }
 
-/* Change the animation duration of the skeleton effect */
 .react-loading-skeleton {
   animation-duration: 1s; /* Replace with your desired animation duration value */
 }
