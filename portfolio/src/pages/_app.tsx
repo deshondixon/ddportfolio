@@ -22,7 +22,7 @@ export default function MyApp({ Component, pageProps }) {
 
   useEffect(() => {
     setTimeout(() => {
-      setLoading(false); // Set loading to false after 1 second
+      setLoading(false);
     }, 0);
   }, []);
 
