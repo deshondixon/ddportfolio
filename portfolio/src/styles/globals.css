@@ -8,7 +8,7 @@ body {
 }
 
 .react-loading-skeleton {
-  background-color: #f0f0f0; /* Replace with your desired background color */
+  background-color: #f0f0f0;
 }
 
 /* Add a border-radius to the skeleton element */
