@@ -5,7 +5,7 @@ import Skeleton from 'react-loading-skeleton';
 import { createTheme, NextUIProvider } from '@nextui-org/react';
 import { ThemeProvider as NextThemesProvider, useTheme } from 'next-themes';
 import { useState, useEffect } from 'react';
-import { Analytics } from '@vercel/analytics';
+import { Analytics } from '@vercel/analytics/react';
 
 const lightTheme = createTheme({
   type: 'light',
@@ -17,7 +17,7 @@ const darkTheme = createTheme({
   theme: {},
 });
 
-export default function MyApp({ Component, pageProps }) {
+export default function MyApp({ Component, pageProps }: AppProps) {
   const { theme, setTheme } = useTheme();
   const [loading, setLoading] = useState(true);
   useEffect(() => {
