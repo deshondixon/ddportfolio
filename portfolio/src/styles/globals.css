@@ -16,7 +16,7 @@ body {
 }
 
 .react-loading-skeleton {
-  margin: 10px; /* Replace with your desired margin value */
+  margin: 10px; 
 }
 
 /* Change the width and height of the skeleton element */
