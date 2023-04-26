@@ -10,7 +10,7 @@ const Index = () => {
 
   useEffect(() => {
     setTimeout(() => {
-      setLoading(false); // Update loading state to false after 1000ms (1 second)
+      setLoading(false);
       setTitle('Dashboard');
     }, 90);
   }, []);
