@@ -19,7 +19,6 @@ body {
   margin: 10px; 
 }
 
-/* Change the width and height of the skeleton element */
 .react-loading-skeleton {
   width: 100%; /* Replace with your desired width value */
   height: 40px; /* Replace with your desired height value */
