@@ -19,7 +19,7 @@ const Index = () => {
     <>
       <div className='flex flex-col flex-grow px-6 pt-1 '>
         {loading ? (
-          <Skeleton /> // Render Skeleton component while loading is true
+          <Skeleton />
         ) : (
           <>
             <Text className='my-3 text-lg tracking-normal' weight='normal'>
