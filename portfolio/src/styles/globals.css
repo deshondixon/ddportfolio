@@ -12,7 +12,7 @@ body {
 }
 
 .react-loading-skeleton {
-  border-radius: 4px; /* Replace with your desired border radius value */
+  border-radius: 4px; 
 }
 
 /* Add margin or padding to the skeleton element */
