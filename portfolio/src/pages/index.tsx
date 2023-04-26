@@ -5,7 +5,7 @@ import { useEffect, useState } from 'react';
 import Skeleton from 'react-loading-skeleton';
 
 const Index = () => {
-  const [loading, setLoading] = useState(true); // Set initial loading state to true
+  const [loading, setLoading] = useState(true);
   const [title, setTitle] = useState('');
 
   useEffect(() => {
