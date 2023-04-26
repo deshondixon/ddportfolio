@@ -29,7 +29,7 @@ body {
 }
 
 .react-loading-skeleton {
-  animation-timing-function: linear; /* Replace with your desired timing function value */
+  animation-timing-function: linear; 
 }
 
 /* skeleton.css */
