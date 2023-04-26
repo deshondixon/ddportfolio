@@ -7,8 +7,6 @@ body {
   font-family: sans-serif;
 }
 
-/* Example CSS styles for Skeleton component */
-/* Add a background color to the skeleton element */
 .react-loading-skeleton {
   background-color: #f0f0f0; /* Replace with your desired background color */
 }
