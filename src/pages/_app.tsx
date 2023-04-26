@@ -6,6 +6,7 @@ import { createTheme, NextUIProvider } from '@nextui-org/react';
 import { ThemeProvider as NextThemesProvider, useTheme } from 'next-themes';
 import { useState, useEffect } from 'react';
 import { Analytics } from '@vercel/analytics/react';
+import { AppProps } from 'next/app';
 
 const lightTheme = createTheme({
   type: 'light',
