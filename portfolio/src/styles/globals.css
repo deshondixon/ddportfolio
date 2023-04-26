@@ -28,7 +28,6 @@ body {
   animation-duration: 1s;
 }
 
-/* Change the animation timing function of the skeleton effect */
 .react-loading-skeleton {
   animation-timing-function: linear; /* Replace with your desired timing function value */
 }
