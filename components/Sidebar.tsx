@@ -7,11 +7,6 @@ import { Avatar, Button, Text, Badge, Spacer } from '@nextui-org/react';
 import Tilt from 'react-parallax-tilt';
 
 export default function Sidebar({}) {
-  const { theme, setTheme } = useTheme();
-
-  const handleThemeChange = () => {
-    setTheme(theme === 'light' ? 'dark' : 'light');
-  };
   return (
     <div className='text-white'>
       <Avatar
@@ -38,7 +33,7 @@ export default function Sidebar({}) {
           DIXON
         </Text>
       </Tilt>
-      <div className='flex justify-center text-white '>
+      <div className='flex justify-center'>
         <Tilt>
           <Text
             css={{
@@ -77,7 +72,7 @@ export default function Sidebar({}) {
         </Tilt>
       </div>
       <div
-        className='py-4 my-5 '
+        className='py-4 my-5 bg-gray-800'
         style={{ marginLeft: '-1rem', marginRight: '-1rem' }}
       >
         <div className='flex items-center justify-center space-x-2'>

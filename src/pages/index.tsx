@@ -38,7 +38,7 @@ const Index = () => {
               innate talent for quickly mastering technology and new concepts.
             </Text>
             <div
-              className='flex-grow p-4 mt-5 text-white bg-gray-900 dark:bg-dark-100 '
+              className='flex-grow p-4 mt-5 text-white bg-gray-900 '
               style={{ marginLeft: '-1.5rem', marginRight: '-1.5rem' }}
             >
               <Text
@@ -54,7 +54,7 @@ const Index = () => {
               <div className='grid gap-6 my-3 text-white md:grid-cols-2'>
                 {services.map((service) => (
                   <div
-                    className='col-span-2 p-2 bg-gray-800 rounded-lg dark:bg-dark-200 md:col-span-1 '
+                    className='col-span-2 p-2 rounded-lg md:col-span-1 '
                     key={service.title}
                   >
                     <ServiceCard service={service} />

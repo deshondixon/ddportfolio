@@ -19,11 +19,11 @@ export default function MyApp({ Component, pageProps }: AppProps) {
   return (
     <div>
       <NextUIProvider>
-        <div className='grid grid-cols-12 gap-6 px-5 text-white pt-7 lg:px-48'>
-          <div className='col-span-12 p-4 text-center bg-gray-800 lg:col-span-3 rounded-2xl'>
+        <div className='grid grid-cols-12 gap-6 px-5 pt-7 lg:px-48'>
+          <div className='col-span-12 p-4 text-center bg-gray-900 lg:col-span-3 rounded-2xl'>
             {loading ? <Skeleton height={500} /> : <Sidebar />}
           </div>
-          <div className='col-span-12 overflow-hidden bg-gray-800 lg:col-span-9 rounded-2xl'>
+          <div className='col-span-12 overflow-hidden bg-gray-900 lg:col-span-9 rounded-2xl'>
             <Navbar />
 
             {loading ? (
