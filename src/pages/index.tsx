@@ -3,18 +3,31 @@ import { Text } from '@nextui-org/react';
 import ServiceCard from '../../components/ServiceCard';
 import { useEffect, useState } from 'react';
 import Skeleton from 'react-loading-skeleton';
-
-document.body.addEventListener('pointermove', (e) => {
-    const { currentTarget: el, clientX: x, clientY: y } = e;
-    const { top: t, left: 1, width: w, height: h} = el.getBoundingclientRect();
-    el.style.setProperty('--posX', x-1-w/2);
-    el.style.setProperty('--posY', y-t-h/2);
-  });
-
+import './index.css';
 
 const Index = () => {
   const [loading, setLoading] = useState(true);
   const [title, setTitle] = useState('');
+
+  useEffect(() => {
+    const handlePointerMove = (e: PointerEvent) => {
+      const { currentTarget: el, clientX: x, clientY: y } = e;
+      const {
+        top: t,
+        left: l,
+        width: w,
+        height: h,
+      } = el.getBoundingClientRect();
+      el.style.setProperty('--posX', `${x - 1 - w / 2}px`);
+      el.style.setProperty('--posY', `${y - t - h / 2}px`);
+    };
+
+    document.body.addEventListener('pointermove', handlePointerMove);
+
+    return () => {
+      document.body.removeEventListener('pointermove', handlePointerMove);
+    };
+  }, []);
 
   useEffect(() => {
     setTimeout(() => {
@@ -27,10 +40,15 @@ const Index = () => {
     <>
       <div className='flex flex-col flex-grow px-6 pt-1 '>
         {loading ? (
-          <Skeleton />
+          <Skeleton width={500} height={200} />
         ) : (
           <>
-            <Text className='my-3 text-lg tracking-normal' weight='normal'>
+            <Text
+              className={`my-3 text-lg tracking-normal ${
+                loading ? 'hidden' : ''
+              }`}
+              weight='normal'
+            >
               Software Engineer and Army Veteran offering a strong foundation in
               software development and programming principles across multiple
               platforms. Offers knowledge of authoring code derived from
@@ -39,10 +57,7 @@ const Index = () => {
               history of producing high-quality project results; possesses an
               innate talent for quickly mastering technology and new concepts.
             </Text>
-            <div
-              className='flex-grow p-4 mt-5 bg-gray-900 dark:bg-dark-100 '
-              style={{ marginLeft: '-1.5rem', marginRight: '-1.5rem' }}
-            >
+            <div className='flex-grow p-4 mt-5 bg-gray-900 dark:bg-dark-100 service-section'>
               <Text
                 size={35}
                 css={{
