@@ -24,7 +24,7 @@ const Index = () => {
           <>
             <Text
               css={{
-                color: '$gray100',
+                color: 'gray100',
               }}
               className='my-3 text-lg tracking-normal '
               weight='normal'
