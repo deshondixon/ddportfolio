@@ -4,9 +4,9 @@
 
 body {
   font-family: sans-serif;
-  margin: 0px;
+  margin: 0;
   color: #fff;
-  height: 100vh;
+  min-height: 150vh;
   --x: calc(var(--posX, 0) * 1px);
   --y: calc(var(--posY, 0) * 1px);
   background-image: linear-gradient(115deg, rgba(211 255 215), rgb(0 0 0)),
@@ -32,6 +32,11 @@ body {
     ),
     linear-gradient(60deg, rgba(255 000 000), rgb(120 086 255));
   background-blend-mode: overlay, overlay, difference, difference, normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
 }
 
 .service-section {
