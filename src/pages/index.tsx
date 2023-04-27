@@ -4,6 +4,14 @@ import ServiceCard from '../../components/ServiceCard';
 import { useEffect, useState } from 'react';
 import Skeleton from 'react-loading-skeleton';
 
+document.body.addEventListener('pointermove', (e) => {
+    const { currentTarget: el, clientX: x, clientY: y } = e;
+    const { top: t, left: 1, width: w, height: h} = el.getBoundingclientRect();
+    el.style.setProperty('--posX', x-1-w/2);
+    el.style.setProperty('--posY', y-t-h/2);
+  });
+
+
 const Index = () => {
   const [loading, setLoading] = useState(true);
   const [title, setTitle] = useState('');
