@@ -23,7 +23,7 @@ const resume = () => {
               size={20}
               weight='bold'
               css={{
-                color: 'white',
+                color: '$gray100',
               }}
             >
               Advanced Software Development in Python
@@ -41,7 +41,7 @@ const resume = () => {
               className='my-3 text-lg tracking-normal'
               weight='normal'
               css={{
-                color: 'white',
+                color: '$gray100',
               }}
             >
               Wrote clean, well-tested, advanced Python code using
@@ -67,7 +67,7 @@ const resume = () => {
               size={20}
               weight='bold'
               css={{
-                color: 'white',
+                color: '$gray100',
               }}
             >
               Breakline Software Engineer Participant
@@ -76,7 +76,7 @@ const resume = () => {
               size={20}
               weight='bold'
               css={{
-                color: 'white',
+                color: '$gray100',
               }}
             >
               Breakline (2023-)
@@ -85,7 +85,7 @@ const resume = () => {
               className='my-3 text-lg tracking-normal'
               weight='normal'
               css={{
-                color: 'white',
+                color: '$gray100',
               }}
             >
               BreakLine provides education and coaching for exceptional, women,
@@ -102,7 +102,7 @@ const resume = () => {
             className='my-3 text-lg tracking-normal'
             weight='normal'
             css={{
-              color: 'white',
+              color: '$gray100',
             }}
           >
             Languages & Frameworks
@@ -118,7 +118,7 @@ const resume = () => {
             className='my-3 text-lg tracking-normal'
             weight='normal'
             css={{
-              color: 'white',
+              color: '$gray100',
             }}
           >
             Tools & Software

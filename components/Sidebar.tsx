@@ -8,7 +8,7 @@ import Tilt from 'react-parallax-tilt';
 
 export default function Sidebar({}) {
   return (
-    <div className='text-white'>
+    <div className=''>
       <Avatar
         css={{ mw: '600px', height: '22vh', width: '22vh' }}
         zoomed
@@ -72,7 +72,7 @@ export default function Sidebar({}) {
         </Tilt>
       </div>
       <div
-        className='py-4 my-5 bg-gray-800'
+        className='py-4 my-5 bg-gray-900'
         style={{ marginLeft: '-1rem', marginRight: '-1rem' }}
       >
         <div className='flex items-center justify-center space-x-2'>

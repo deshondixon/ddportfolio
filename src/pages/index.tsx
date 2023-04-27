@@ -17,16 +17,16 @@ const Index = () => {
 
   return (
     <>
-      <div className='flex flex-col flex-grow px-6 pt-1 text-white '>
+      <div className='flex flex-col flex-grow px-6 pt-1 '>
         {loading ? (
           <Skeleton />
         ) : (
           <>
             <Text
               css={{
-                color: 'white',
+                color: '$gray100',
               }}
-              className='my-3 text-lg tracking-normal text-white'
+              className='my-3 text-lg tracking-normal '
               weight='normal'
             >
               Software Engineer and Army Veteran offering a strong foundation in
@@ -38,7 +38,7 @@ const Index = () => {
               innate talent for quickly mastering technology and new concepts.
             </Text>
             <div
-              className='flex-grow p-4 mt-5 text-white bg-gray-900 '
+              className='flex-grow p-4 mt-5 '
               style={{ marginLeft: '-1.5rem', marginRight: '-1.5rem' }}
             >
               <Text
