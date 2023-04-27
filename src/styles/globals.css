@@ -22,25 +22,25 @@ body {
     ),
     /* Gradient 2: radial gradient */
       radial-gradient(
-        90% 100% at calc(50% + var(--x)) calc(0% + var(--y)),
+        90% 100% at calc(50%),
         rgb(200, 200, 200),
         rgb(022, 000, 045)
       ),
     /* Gradient 3: radial gradient */
       radial-gradient(
-        100% 100% at calc(80% + var(--x)) calc(0% + var(--y)),
+        100% 100% at calc(80%),
         rgb(250, 255, 000),
         rgb(036, 000, 000)
       ),
     /* Gradient 4: radial gradient */
       radial-gradient(
-        150% 210% at calc(100% + var(--x)) calc(0% + var(--y)),
+        150% 210% at calc(100%),
         rgb(020, 175, 125),
         rgb(000, 200, 255)
       ),
     /* Gradient 5: radial gradient */
       radial-gradient(
-        100% 100% at calc(100% + var(--x)) calc(30% + var(--y)),
+        100% 100% at calc(100%),
         rgb(255, 077, 000),
         rgb(000, 200, 045)
       ),

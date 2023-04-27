@@ -2,7 +2,7 @@ import { AiFillGithub, AiFillLinkedin, AiOutlineMail } from 'react-icons/ai';
 import { GoLocation } from 'react-icons/go';
 import { GiTie } from 'react-icons/gi';
 import { useTheme } from 'next-themes';
-import { Avatar, Switch, Button, Text, Badge, Spacer } from '@nextui-org/react';
+import { Avatar, Button, Text, Badge, Spacer } from '@nextui-org/react';
 
 import Tilt from 'react-parallax-tilt';
 
@@ -130,17 +130,6 @@ export default function Sidebar({}) {
           <AiOutlineMail className='w-6 h-6 p-1' /> Email
         </Button>
       </div>
-      <Spacer />
-      <Switch
-        bordered
-        size='xl'
-        shadow
-        color='primary'
-        checked={theme === 'dark'}
-        onChange={handleThemeChange}
-      >
-        {theme === 'dark' ? 'Switch to Light Mode' : 'Switch to Dark Mode'}
-      </Switch>
     </div>
   );
 }
