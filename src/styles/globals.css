@@ -2,61 +2,65 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Set some global styles */
 body {
   font-family: sans-serif;
   margin: 0;
   color: #fff;
-  min-height: 150vh;
+  height: 100vh;
+
+  /* Define custom properties for mouse position */
   --x: calc(var(--posX, 0) * 1px);
   --y: calc(var(--posY, 0) * 1px);
-  background-image: linear-gradient(115deg, rgba(211 255 215), rgb(0 0 0)),
-    radial-gradient(
-      90% 100% at calc(50% + var(--x)) calc(0% + var(--y)),
-      rgb(200 200 200),
-      rgb(022 000 045)
+
+  /* Define background using multiple gradients */
+  background-image: 
+    /* Gradient 1: diagonal linear gradient */ linear-gradient(
+      115deg,
+      rgba(211, 255, 215),
+      rgb(0, 0, 0)
     ),
-    radial-gradient(
-      100% 100% at calc(80% + var(--x)) calc(0% + var(--y)),
-      rgb(250 255 000),
-      rgb(036 000 000)
-    ),
-    radial-gradient(
-      150% 210% at calc(100% + var(--x)) calc(0% + var(--y)),
-      rgb(020 175 125),
-      rgb(000 200 255)
-    ),
-    radial-gradient(
-      100% 100% at calc(100% + var(--x)) calc(30% + var(--y)),
-      rgb(255 077 000),
-      rgb(000 200 045)
-    ),
-    linear-gradient(60deg, rgba(255 000 000), rgb(120 086 255));
-  background-blend-mode: overlay, overlay, difference, difference, normal;
+    /* Gradient 2: radial gradient */
+      radial-gradient(
+        90% 100% at calc(50% + var(--x)) calc(0% + var(--y)),
+        rgb(200, 200, 200),
+        rgb(022, 000, 045)
+      ),
+    /* Gradient 3: radial gradient */
+      radial-gradient(
+        100% 100% at calc(80% + var(--x)) calc(0% + var(--y)),
+        rgb(250, 255, 000),
+        rgb(036, 000, 000)
+      ),
+    /* Gradient 4: radial gradient */
+      radial-gradient(
+        150% 210% at calc(100% + var(--x)) calc(0% + var(--y)),
+        rgb(020, 175, 125),
+        rgb(000, 200, 255)
+      ),
+    /* Gradient 5: radial gradient */
+      radial-gradient(
+        100% 100% at calc(100% + var(--x)) calc(30% + var(--y)),
+        rgb(255, 077, 000),
+        rgb(000, 200, 045)
+      ),
+    /* Gradient 6: diagonal linear gradient */
+      linear-gradient(60deg, rgba(255, 000, 000), rgb(120, 086, 255));
+
+  /* Define how the gradients blend with each other */
+  background-blend-mode: overlay, /* blend mode for gradient 1 */ overlay,
+    /* blend mode for gradient 2 */ difference,
+    /* blend mode for gradient 3 */ difference,
+    /* blend mode for gradient 4 */ normal; /* blend mode for gradient 5 and 6 */
 }
 
+/* Reset margin and padding for all elements */
 * {
   margin: 0;
   padding: 0;
 }
 
-.service-section {
-  margin-left: -1.5rem;
-  margin-right: -1.5rem;
-  --posX: 0;
-  --posY: 0;
-}
-.service-section::before {
-  content: "";
-  display: block;
-  position: absolute;
-  top: var(--posY);
-  left: var(--posX);
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  background-color: rgba(255, 255, 255, 0.2);
-}
-
+/* Define styles for the loading skeleton */
 .react-loading-skeleton {
   background-color: #f0f0f0;
   border-radius: 4px;
@@ -67,14 +71,17 @@ body {
   animation-timing-function: linear;
 }
 
+/* Define styles for the skeleton effect */
 .skeleton {
   background-color: #f0f0f0;
 }
 
+/* Define styles for the line skeleton effect */
 .skeleton-line {
   background-color: #f0f0f0;
 }
 
+/* Define styles for the circle skeleton effect */
 .skeleton-circle {
   background-color: #f0f0f0;
 }

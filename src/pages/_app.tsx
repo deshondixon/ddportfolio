@@ -29,16 +29,16 @@ export default function MyApp({ Component, pageProps }: AppProps) {
   }, []);
 
   return (
-    <NextThemesProvider
-      defaultTheme='system'
-      attribute='class'
-      value={{
-        light: lightTheme.className,
-        dark: darkTheme.className,
-      }}
-    >
-      <NextUIProvider theme={theme === 'light' ? lightTheme : darkTheme}>
-        <div>
+    <div>
+      <NextThemesProvider
+        defaultTheme='system'
+        attribute='class'
+        value={{
+          light: lightTheme.className,
+          dark: darkTheme.className,
+        }}
+      >
+        <NextUIProvider theme={theme === 'light' ? lightTheme : darkTheme}>
           <div className='grid grid-cols-12 gap-6 px-5 my-14 lg:px-48'>
             <div className='col-span-12 p-4 text-center bg-gray-800 lg:col-span-3 rounded-2xl'>
               {loading ? <Skeleton height={500} /> : <Sidebar />}
@@ -54,8 +54,8 @@ export default function MyApp({ Component, pageProps }: AppProps) {
               <Analytics />
             </div>
           </div>
-        </div>
-      </NextUIProvider>
-    </NextThemesProvider>
+        </NextUIProvider>
+      </NextThemesProvider>
+    </div>
   );
 }

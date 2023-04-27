@@ -15,13 +15,13 @@ export default function Sidebar({}) {
   return (
     <div className=''>
       <Avatar
-        css={{ mw: '400px', height: '13rem', width: '13rem' }}
+        css={{ mw: '600px', height: '22vh', width: '22vh' }}
         zoomed
         size='xl'
         src='/profile.jpg'
         color='gradient'
         bordered
-        className='mx-auto rounded-full '
+        className='flex mx-auto rounded-full md:w-full '
         pointer
       />
 
