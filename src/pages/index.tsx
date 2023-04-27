@@ -3,7 +3,6 @@ import { Text } from '@nextui-org/react';
 import ServiceCard from '../../components/ServiceCard';
 import { useEffect, useState } from 'react';
 import Skeleton from 'react-loading-skeleton';
-import './index.css';
 
 const Index = () => {
   const [loading, setLoading] = useState(true);

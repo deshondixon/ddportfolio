@@ -7,6 +7,7 @@ import { ThemeProvider as NextThemesProvider, useTheme } from 'next-themes';
 import { useState, useEffect } from 'react';
 import { Analytics } from '@vercel/analytics/react';
 import { AppProps } from 'next/app';
+import 'tailwindcss/tailwind.css';
 
 const lightTheme = createTheme({
   type: 'light',
