@@ -13,7 +13,7 @@ export default function Sidebar({}) {
     setTheme(theme === 'light' ? 'dark' : 'light');
   };
   return (
-    <div className=''>
+    <div className='text-white'>
       <Avatar
         css={{ mw: '600px', height: '22vh', width: '22vh' }}
         zoomed
@@ -38,7 +38,7 @@ export default function Sidebar({}) {
           DIXON
         </Text>
       </Tilt>
-      <div className='flex justify-center '>
+      <div className='flex justify-center text-white '>
         <Tilt>
           <Text
             css={{

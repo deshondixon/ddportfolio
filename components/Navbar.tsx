@@ -37,7 +37,7 @@ const Navbar = () => {
   }, [pathname]);
 
   return (
-    <div className='flex justify-between px-5 py-3 my-3'>
+    <div className='flex justify-between px-5 py-3 my-3 text-white'>
       <Text
         size={40}
         css={{

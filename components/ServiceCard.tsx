@@ -11,16 +11,16 @@ const ServiceCard: FunctionComponent<{ service: IService }> = ({
     };
   };
   return (
-    <div className='flex items-center p-2 space-x-7'>
+    <div className='flex items-center p-2 text-white space-x-7'>
       <Icon className='w-16 h-16' />
-      <div className='items-center'>
+      <div className='items-center text-white'>
         <Text
           size={18}
           css={{
             textGradient: '45deg, $purple600 -20%, $pink600 100%',
           }}
           weight='bold'
-          className='text-3xl font-medium tracking-wider'
+          className='text-3xl font-medium tracking-wider text-white'
         >
           {title}
         </Text>
@@ -29,6 +29,9 @@ const ServiceCard: FunctionComponent<{ service: IService }> = ({
           size={14}
           weight='extrabold'
           className='text-3xl font-medium tracking-wide'
+          css={{
+            color: 'white',
+          }}
         />
       </div>
     </div>

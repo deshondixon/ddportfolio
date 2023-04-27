@@ -19,13 +19,31 @@ const resume = () => {
             Education
           </Text>
           <div>
-            <Text size={20} weight='bold'>
+            <Text
+              size={20}
+              weight='bold'
+              css={{
+                color: 'white',
+              }}
+            >
               Advanced Software Development in Python
             </Text>
-            <Text size={20} weight='bold'>
+            <Text
+              size={20}
+              weight='bold'
+              css={{
+                color: 'white',
+              }}
+            >
               Code Fellows (2022-2023)
             </Text>
-            <Text className='my-3 text-lg tracking-normal' weight='normal'>
+            <Text
+              className='my-3 text-lg tracking-normal'
+              weight='normal'
+              css={{
+                color: 'white',
+              }}
+            >
               Wrote clean, well-tested, advanced Python code using
               industry-standard software engineering patterns; studied the
               foundational structures of programming, from object-oriented
@@ -45,13 +63,31 @@ const resume = () => {
             Experience
           </Text>
           <div>
-            <Text size={20} weight='bold'>
+            <Text
+              size={20}
+              weight='bold'
+              css={{
+                color: 'white',
+              }}
+            >
               Breakline Software Engineer Participant
             </Text>
-            <Text size={20} weight='bold'>
+            <Text
+              size={20}
+              weight='bold'
+              css={{
+                color: 'white',
+              }}
+            >
               Breakline (2023-)
             </Text>
-            <Text className='my-3 text-lg tracking-normal' weight='normal'>
+            <Text
+              className='my-3 text-lg tracking-normal'
+              weight='normal'
+              css={{
+                color: 'white',
+              }}
+            >
               BreakLine provides education and coaching for exceptional, women,
               people of color, people with disabilities, and veterans who are
               interested in accelerating into the next phase of their careers.
@@ -62,7 +98,13 @@ const resume = () => {
         </div>
 
         <div>
-          <Text className='my-3 text-lg tracking-normal' weight='normal'>
+          <Text
+            className='my-3 text-lg tracking-normal'
+            weight='normal'
+            css={{
+              color: 'white',
+            }}
+          >
             Languages & Frameworks
           </Text>
           <div className='my-3'>
@@ -72,7 +114,13 @@ const resume = () => {
           </div>
         </div>
         <div>
-          <Text className='my-3 text-lg tracking-normal' weight='normal'>
+          <Text
+            className='my-3 text-lg tracking-normal'
+            weight='normal'
+            css={{
+              color: 'white',
+            }}
+          >
             Tools & Software
           </Text>
           <div className='my-3'>

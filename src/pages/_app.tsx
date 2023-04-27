@@ -19,7 +19,7 @@ export default function MyApp({ Component, pageProps }: AppProps) {
   return (
     <div>
       <NextUIProvider>
-        <div className='grid grid-cols-12 gap-6 px-5 my-14 lg:px-48'>
+        <div className='grid grid-cols-12 gap-6 px-5 text-white pt-7 lg:px-48'>
           <div className='col-span-12 p-4 text-center bg-gray-800 lg:col-span-3 rounded-2xl'>
             {loading ? <Skeleton height={500} /> : <Sidebar />}
           </div>

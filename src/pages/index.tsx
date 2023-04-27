@@ -17,12 +17,18 @@ const Index = () => {
 
   return (
     <>
-      <div className='flex flex-col flex-grow px-6 pt-1 '>
+      <div className='flex flex-col flex-grow px-6 pt-1 text-white '>
         {loading ? (
           <Skeleton />
         ) : (
           <>
-            <Text className='my-3 text-lg tracking-normal' weight='normal'>
+            <Text
+              css={{
+                color: 'white',
+              }}
+              className='my-3 text-lg tracking-normal text-white'
+              weight='normal'
+            >
               Software Engineer and Army Veteran offering a strong foundation in
               software development and programming principles across multiple
               platforms. Offers knowledge of authoring code derived from
@@ -32,7 +38,7 @@ const Index = () => {
               innate talent for quickly mastering technology and new concepts.
             </Text>
             <div
-              className='flex-grow p-4 mt-5 bg-gray-900 dark:bg-dark-100 '
+              className='flex-grow p-4 mt-5 text-white bg-gray-900 dark:bg-dark-100 '
               style={{ marginLeft: '-1.5rem', marginRight: '-1.5rem' }}
             >
               <Text
@@ -45,7 +51,7 @@ const Index = () => {
               >
                 Technical Skills
               </Text>
-              <div className='grid gap-6 my-3 md:grid-cols-2'>
+              <div className='grid gap-6 my-3 text-white md:grid-cols-2'>
                 {services.map((service) => (
                   <div
                     className='col-span-2 p-2 bg-gray-800 rounded-lg dark:bg-dark-200 md:col-span-1 '
