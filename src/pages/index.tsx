@@ -51,7 +51,7 @@ const Index = () => {
               >
                 Technical Skills
               </Text>
-              <div className='grid gap-6 my-3 text-white md:grid-cols-2'>
+              <div className='grid gap-6 my-3 md:grid-cols-2'>
                 {services.map((service) => (
                   <div
                     className='col-span-2 p-2 rounded-lg md:col-span-1 '
