@@ -5,9 +5,7 @@
 body {
   font-family: sans-serif;
   margin: 0;
-  color: #000000;
-  height: 100vh;
-
+  min-height: 200vh;
   /* Define custom properties for mouse position */
   --x: calc(var(--posX, 0) * 1px);
   --y: calc(var(--posY, 0) * 1px);
@@ -28,8 +26,8 @@ body {
     /* Gradient 3: radial gradient */
       radial-gradient(
         100% 100% at calc(80% + var(--x)) calc(0% + var(--y)),
-        rgb(250, 255, 000),
-        rgb(036, 000, 000)
+        rgb(7, 17, 152),
+        rgb(38, 2, 2)
       ),
     /* Gradient 4: radial gradient */
       radial-gradient(
@@ -48,9 +46,9 @@ body {
 
   /* Define how the gradients blend with each other */
   background-blend-mode: overlay, /* blend mode for gradient 1 */ overlay,
-    /* blend mode for gradient 2 */ difference,
+    /* blend mode for gradient 2 */ normal,
     /* blend mode for gradient 3 */ difference,
-    /* blend mode for gradient 4 */ normal; /* blend mode for gradient 5 and 6 */
+    /* blend mode for gradient 4 */ overlay; /* blend mode for gradient 5 and 6 */
 }
 
 /* Reset margin and padding for all elements */
