@@ -30,7 +30,8 @@ body {
       rgb(255 077 000),
       rgb(000 200 045)
     ),
-    linear-gradient(60deg, rgba(211 255 215), rgb(0 0 0));
+    linear-gradient(60deg, rgba(255 000 000), rgb(120 086 255));
+  background-blend-mode: overlay, overlay, difference, difference, normal;
 }
 
 .react-loading-skeleton {
