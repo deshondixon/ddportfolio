@@ -30,7 +30,7 @@ const ServiceCard: FunctionComponent<{ service: IService }> = ({
           weight='extrabold'
           className='text-3xl font-medium tracking-wide'
           css={{
-            color: 'white',
+            color: 'gray100',
           }}
         />
       </div>
