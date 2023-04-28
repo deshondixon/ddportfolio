@@ -30,12 +30,7 @@ export default function MyApp({ Component, pageProps }: AppProps) {
         value={{
           dark: darkTheme.className,
         }}
-      >
-        <NextUIProvider>
-       
-          </div>
-        </NextUIProvider>
-      </NextThemesProvider>
-    </div>
+    
+  
   );
 }
