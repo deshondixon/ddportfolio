@@ -10,17 +10,18 @@ const Bar: FunctionComponent<{
   return (
     <div className='my-2'>
       {level ? (
-        <div className='flex items-center px-4 py-1'>
+        <div className='flex flex-wrap items-center px-2 py-3 pl-2 text-md'>
           <Progress
             value={levelNumber}
             color='gradient'
             size='xl'
             status='secondary'
             shadow
-          >
-            {name}
-            <Icon className='mr-3' />
-          </Progress>
+          />
+          <div className='flex items-center mr-5'>
+            <Icon className='mr-1' />
+            <span>{name}</span>
+          </div>
         </div>
       ) : (
         <Skeleton width='100%' height={40} />
