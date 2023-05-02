@@ -62,7 +62,7 @@ const ProjectCard: FunctionComponent<{
               ))}
             </div>
           </div>
-          <button onClick={() => setShowDetail(true)}>
+          <button onClick={() => setShowDetail(false)}>
             <MdClose size={30} />
           </button>
         </div>
