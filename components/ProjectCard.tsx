@@ -3,6 +3,7 @@ import { IProject } from '../src/type';
 import { Text } from '@nextui-org/react';
 import Image from 'next/image';
 import { AiFillGithub, AiFillProject } from 'react-icons/ai';
+import { MdClose } from 'react-icons/md';
 
 const ProjectCard: FunctionComponent<{
   project: IProject;
@@ -49,6 +50,18 @@ const ProjectCard: FunctionComponent<{
             </a>
           </div>
         </div>
+        <div>
+          <h2>{name}</h2>
+          <h3>{description}</h3>
+          <div>
+            {key_techs.map((tech) => (
+              <span key={tech}>{tech}</span>
+            ))}
+          </div>
+        </div>
+        <button>
+          <MdClose size={30} />
+        </button>
       </div>
     </div>
   );
