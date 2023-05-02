@@ -113,7 +113,7 @@ export const projects: IProject[] = [
     name: 'Pigs and Bulls',
     description:
       'As a developer, I created a word-guessing game using React, JavaScript, and CSS. The game is similar to Wordle, in which the player is required to guess a 5-letter word. Upon guessing the word, the game will inform the player how many letters are correct (pigs) and how many words are correct and in the correct spot (bulls). I utilized React for the front-end of the game, allowing for a smooth and interactive user experience. The game logic was implemented using JavaScript, and the overall design and styling was achieved through the use of CSS. Overall, it was a great opportunity for me to further enhance my skills in these technologies and create a fun and engaging game for players.',
-    image_path: '/images/openimg1.png',
+    image_path: '/images/pigs1.png',
     deployed_url: 'https://thewordgame.github.io/pigs-and-bulls/',
     github_url: 'https://github.com/thewordgame/pigs-and-bulls',
     category: ['react'],
