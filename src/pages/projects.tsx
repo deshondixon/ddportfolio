@@ -1,11 +1,18 @@
-import Navbar from '../../components/Navbar';
+import { projects } from '../data';
 
-const projects = () => {
+const Projects = () => {
   return (
-    <div className='px-6 py-2'>
-      <nav>Navbar</nav>
+    <div>
+      <div className='px-6 py-2'>
+        <nav>Navbar</nav>
+      </div>
+      {projects.map((projects) => (
+        <div>
+          <ProjectCard />
+        </div>
+      ))}
     </div>
   );
 };
 
-export default projects;
+export default Projects;
