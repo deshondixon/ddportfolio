@@ -5,7 +5,7 @@ import Bar from '../../components/Bar';
 
 const resume = () => {
   return (
-    <div className='px-6 py-2'>
+    <div className='flex px-6 py-2 '>
       <div className='grid gap-6 md:grid-cols-2'>
         <div>
           <Text
