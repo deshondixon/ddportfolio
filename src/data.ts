@@ -1,4 +1,4 @@
-import { IService, ISkill } from './type';
+import { IService, ISkill, IProject } from './type';
 import { FaFigma, FaPython, FaReact, FaServer } from 'react-icons/fa';
 import { TbBrandJavascript } from 'react-icons/tb';
 import { RiComputerLine } from 'react-icons/ri';
@@ -76,3 +76,5 @@ export const tools: ISkill[] = [
     level: '70%',
   },
 ];
+
+export const projects: IProject[] = [];
