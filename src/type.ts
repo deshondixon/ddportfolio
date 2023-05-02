@@ -21,3 +21,13 @@ export interface IProject {
   category: string[];
   key_techs: string[];
 }
+
+export type Category =
+  | 'react'
+  | 'python'
+  | 'django'
+  | 'golang'
+  | 'mongodb'
+  | 'express'
+  | 'node'
+  | 'mongodb';
