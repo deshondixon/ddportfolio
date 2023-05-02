@@ -46,15 +46,7 @@ const Navbar = () => {
         weight='bold'
         className='tracking-normal'
       >
-        {activeItem}
-      </Text>
-
-      <div className='flex space-x-3'>
-        <NavItem
-          activeItem={activeItem}
-          setActiveItem={setActiveItem}
-          name='About'
-          route='/'
+   
         />
         <NavItem
           activeItem={activeItem}
