@@ -14,7 +14,7 @@ const ProjectCard: FunctionComponent<{
     key_techs,
   },
 }) => {
-  return <div>ProjectCard</div>;
+  return <div>{name}</div>;
 };
 
 export default ProjectCard;
