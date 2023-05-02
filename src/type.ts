@@ -18,5 +18,6 @@ export interface IProject {
   image_path: string;
   deployed_url: string;
   github_url: string;
-  category: string;
+  category: string[];
+  key_techs: string[];
 }
