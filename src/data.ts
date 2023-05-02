@@ -87,7 +87,16 @@ export const projects: IProject[] = [
     github_url:
       'https://github.com/orgs/Oxygen-Oriented-Programming/repositories',
     category: ['python'],
-    key_techs: ['python', 'react', 'django'],
+    key_techs: [
+      'python',
+      'react',
+      'django',
+      'html',
+      'css',
+      'javascript',
+      'tailwind',
+      'rest-api',
+    ],
   },
   {
     name: 'JobHunter',
@@ -97,7 +106,18 @@ export const projects: IProject[] = [
     deployed_url: 'https://github.com/CodingAcademics/JobHunter',
     github_url: 'https://github.com/CodingAcademics/JobHunter',
     category: ['python'],
-    key_techs: ['python'],
+    key_techs: [
+      'python',
+      'rich library',
+      'cloud scraper',
+      'scraping bee api',
+      'requests',
+      'pyfiglet',
+      'beautifulsoup',
+      'dotenv',
+      'playwright',
+      'pytest',
+    ],
   },
   {
     name: 'OpenImg',
@@ -107,7 +127,16 @@ export const projects: IProject[] = [
     deployed_url: 'https://openimg.netlify.app/',
     github_url: 'https://github.com/orgs/Full-Stack-Fluency/repositories',
     category: ['react'],
-    key_techs: ['react', 'mongodb', 'express', 'node'],
+    key_techs: [
+      'react',
+      'mongodb',
+      'express',
+      'node',
+      'html',
+      'css',
+      'javascript',
+      'rest-api',
+    ],
   },
   {
     name: 'Pigs and Bulls',
@@ -117,7 +146,7 @@ export const projects: IProject[] = [
     deployed_url: 'https://thewordgame.github.io/pigs-and-bulls/',
     github_url: 'https://github.com/thewordgame/pigs-and-bulls',
     category: ['react'],
-    key_techs: ['react'],
+    key_techs: ['react-native', 'html', 'css', 'javascript'],
   },
   {
     name: 'Ask Genie',
@@ -127,7 +156,7 @@ export const projects: IProject[] = [
     deployed_url: 'https://github.com/deshondixon/askgenie',
     github_url: 'https://github.com/deshondixon/askgenie',
     category: ['golang'],
-    key_techs: ['golang'],
+    key_techs: ['golang', 'rest-api'],
   },
   {
     name: 'Gallery of Horns',
@@ -137,6 +166,6 @@ export const projects: IProject[] = [
     deployed_url: 'https://galleryofhornsdd.netlify.app',
     github_url: 'https://github.com/deshondixon/gallery-of-horns',
     category: ['react'],
-    key_techs: ['react'],
+    key_techs: ['react', 'html', 'css', 'javascript', 'bootstrap'],
   },
 ];
