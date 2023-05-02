@@ -89,4 +89,24 @@ export const projects: IProject[] = [
     category: ['python'],
     key_techs: ['python', 'react', 'django'],
   },
+  {
+    name: 'JobHunter',
+    description:
+      'An automated job application tool that uses web scraping to gather job listings from various job websites as well as utilizing regex to extract relevant information such as job title, company, and application link, and then uses remote APIs to gather information about the companies and the application process.',
+    image_path: '/images/jobhunter5.png',
+    deployed_url: 'https://github.com/CodingAcademics/JobHunter',
+    github_url: 'https://github.com/CodingAcademics/JobHunter',
+    category: ['python'],
+    key_techs: ['python'],
+  },
+  {
+    name: 'OpenImg',
+    description:
+      'OpenImg is an AI-powered image rendering platform that allows users to turn their creative ideas into realistic images. With OpenImg, users can simply input their desired image concept and the AI technology will generate a high-quality rendering of the image. The platform also features a login system where users can save their rendered images to their personal collection for future use or reference.',
+    image_path: '/images/jobhunter5.png',
+    deployed_url: 'https://github.com/CodingAcademics/JobHunter',
+    github_url: 'https://github.com/orgs/Full-Stack-Fluency/repositories',
+    category: ['react'],
+    key_techs: ['react', 'mongodb', 'express', 'node'],
+  },
 ];

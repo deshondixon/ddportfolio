@@ -29,5 +29,4 @@ export type Category =
   | 'golang'
   | 'mongodb'
   | 'express'
-  | 'node'
-  | 'mongodb';
+  | 'node';
