@@ -2,6 +2,7 @@ import { FunctionComponent } from 'react';
 import { IProject } from '../src/type';
 import { Text } from '@nextui-org/react';
 import Image from 'next/image';
+import { AiFillGithub } from 'react-icons/ai';
 
 const ProjectCard: FunctionComponent<{
   project: IProject;
@@ -35,6 +36,16 @@ const ProjectCard: FunctionComponent<{
       >
         {name}
       </Text>
+      <div className='grid md:grid-cols-2'>
+        <div>
+          <Image src={image_path} alt={name} width={500} height={500} />
+          <div>
+            <a href={github_url}>
+              <AiFillGithub /> <span>Github</span>
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
