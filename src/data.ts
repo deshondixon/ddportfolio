@@ -152,7 +152,7 @@ export const projects: IProject[] = [
     name: 'Ask Genie',
     description:
       'Ask genie any questions and an answer shall be granted. Utilizes chat-gpt api to answer any questions a user requests.',
-    image_path: '/images/ask1.png',
+    image_path: '/images/askimage.png',
     deployed_url: 'https://github.com/deshondixon/askgenie',
     github_url: 'https://github.com/deshondixon/askgenie',
     category: ['golang'],

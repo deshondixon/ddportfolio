@@ -1,7 +1,7 @@
 import { FunctionComponent, useState } from 'react';
 import { IProject } from '../src/type';
 import { Text } from '@nextui-org/react';
-import Image from 'next/image';
+import { Image } from '@nextui-org/react';
 import { AiFillGithub, AiFillProject } from 'react-icons/ai';
 import { MdClose } from 'react-icons/md';
 
@@ -22,15 +22,18 @@ const ProjectCard: FunctionComponent<{
   return (
     <div>
       <Image
+        showSkeleton
+        maxDelay={10000}
         src={image_path}
         alt={name}
         className='cursor-pointer'
         onClick={() => setShowDetail(true)}
-        width={500}
-        height={500}
+        width={300}
+        height={180}
+        objectFit='fill'
       />
       <Text
-        size={20}
+        size={30}
         css={{
           textGradient: '45deg, $yellow600 -20%, $red600 100%',
         }}
@@ -41,7 +44,7 @@ const ProjectCard: FunctionComponent<{
       </Text>
 
       {showDetail && (
-        <div className='grid md:grid-cols-2'>
+        <div className='grid md:grid-cols-2 '>
           <div>
             <Image src={image_path} alt={name} width={500} height={500} />
             <div>
