@@ -1,4 +1,4 @@
-import { FunctionComponent } from 'react';
+import { FunctionComponent, useState } from 'react';
 import { IProject } from '../src/type';
 import { Text } from '@nextui-org/react';
 import Image from 'next/image';
@@ -18,6 +18,7 @@ const ProjectCard: FunctionComponent<{
     key_techs,
   },
 }) => {
+  const [showDetail, setShowDetail] = useState(false);
   return (
     <div>
       <Image
@@ -38,31 +39,33 @@ const ProjectCard: FunctionComponent<{
         {name}
       </Text>
 
-      <div className='grid md:grid-cols-2'>
-        <div>
-          <Image src={image_path} alt={name} width={500} height={500} />
+      {showDetail && (
+        <div className='grid md:grid-cols-2'>
           <div>
-            <a href={github_url}>
-              <AiFillGithub /> <span>Github</span>
-            </a>
-            <a href={deployed_url}>
-              <AiFillProject /> <span>Project</span>
-            </a>
+            <Image src={image_path} alt={name} width={500} height={500} />
+            <div>
+              <a href={github_url}>
+                <AiFillGithub /> <span>Github</span>
+              </a>
+              <a href={deployed_url}>
+                <AiFillProject /> <span>Project</span>
+              </a>
+            </div>
           </div>
-        </div>
-        <div>
-          <h2>{name}</h2>
-          <h3>{description}</h3>
           <div>
-            {key_techs.map((tech) => (
-              <span key={tech}>{tech}</span>
-            ))}
+            <h2>{name}</h2>
+            <h3>{description}</h3>
+            <div>
+              {key_techs.map((tech) => (
+                <span key={tech}>{tech}</span>
+              ))}
+            </div>
           </div>
+          <button>
+            <MdClose size={30} />
+          </button>
         </div>
-        <button>
-          <MdClose size={30} />
-        </button>
-      </div>
+      )}
     </div>
   );
 };
