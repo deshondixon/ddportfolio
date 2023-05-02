@@ -25,6 +25,7 @@ const ProjectCard: FunctionComponent<{
         src={image_path}
         alt={name}
         className='cursor-pointer'
+        onClick={() => setShowDetail(true)}
         width={500}
         height={500}
       />
