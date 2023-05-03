@@ -1,23 +1,53 @@
 import { AiFillGithub, AiFillLinkedin, AiOutlineMail } from 'react-icons/ai';
 import { GoLocation } from 'react-icons/go';
 import { GiTie } from 'react-icons/gi';
-import { Avatar, Button, Text, Badge, Spacer } from '@nextui-org/react';
-
+import {
+  Avatar,
+  Button,
+  Text,
+  Badge,
+  Spacer,
+  Tooltip,
+} from '@nextui-org/react';
+import { UserCard } from './UserCard';
 import Tilt from 'react-parallax-tilt';
 
 export default function Sidebar({}) {
   return (
-    <div className=''>
-      <Avatar
-        css={{ mw: '600px', height: '22vh', width: '22vh' }}
-        zoomed
-        size='xl'
-        src='/profile.jpg'
-        color='gradient'
-        bordered
-        className='flex mx-auto rounded-full md:w-full '
-        pointer
-      />
+    <div className='flex flex-col items-center'>
+      <Tooltip
+        placement='left'
+        content={
+          <UserCard
+            avatarUrl={undefined}
+            avatarProps={undefined}
+            css={undefined}
+            onClick={undefined}
+          />
+        }
+        hideArrow
+        trigger='click'
+      >
+        <Badge
+          content='👨🏿‍💻'
+          color='secondary'
+          disableOutline
+          placement='top-right'
+          size='lg'
+        >
+          <Avatar
+            scale-down
+            css={{ mw: '600px', height: '22vh', width: '22vh' }}
+            zoomed
+            size='xl'
+            src='/profile.jpg'
+            color='gradient'
+            bordered
+            className='flex mx-auto rounded-full md:w-full cursor-none'
+            pointer
+          />
+        </Badge>
+      </Tooltip>
 
       <Tilt>
         <Text
@@ -71,7 +101,7 @@ export default function Sidebar({}) {
         </Tilt>
       </div>
       <div
-        className='py-4 my-5 bg-gray-900'
+        className='py-4 my-5'
         style={{ marginLeft: '-1rem', marginRight: '-1rem' }}
       >
         <div className='flex items-center justify-center space-x-2'>
