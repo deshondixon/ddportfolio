@@ -8,7 +8,7 @@ export const NavItem: FunctionComponent<{
   active: string;
 }> = ({ value, handlerFilterCategory, active }) => {
   let className =
-    'text-xl font-semibold capitalize cursor-pointer text-violet-300 hover:text-violet-400';
+    'text-xl font-semibold capitalize cursor-pointer text-violet-200 hover:text-violet-400';
 
   if (active === value) className += 'text-violet-300';
   return (
