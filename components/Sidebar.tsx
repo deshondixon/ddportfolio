@@ -104,7 +104,7 @@ export default function Sidebar({}) {
         </Tilt>
         <Tilt>
           <a
-            href='https://www.linkedin.com/in/deshondixon'
+            href='https://www.linkedin.com/in/deshondixon/'
             target='_blank'
             rel='noopener noreferrer'
           >
