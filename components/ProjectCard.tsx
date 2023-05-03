@@ -28,6 +28,7 @@ const ProjectCard: FunctionComponent<{
   return (
     <div className='flex flex-col items-center justify-center gap-2'>
       <Image
+        onClick={handler}
         showSkeleton
         maxDelay={10000}
         src={image_path}
@@ -36,7 +37,7 @@ const ProjectCard: FunctionComponent<{
         height={180}
         objectFit='fill'
       />
-      <Button color='gradient' light onPress={handler} className='p-3'>
+      <Button light onPress={handler} className='p-3'>
         <Text
           size={20}
           css={{
