@@ -1,6 +1,7 @@
 import { AiFillGithub, AiFillLinkedin, AiOutlineMail } from 'react-icons/ai';
+import { AiOutlineCloudDownload } from 'react-icons/ai';
 import { GoLocation } from 'react-icons/go';
-import { GiTie } from 'react-icons/gi';
+
 import {
   Avatar,
   Button,
@@ -76,17 +77,21 @@ export default function Sidebar({}) {
         </Tilt>
       </div>
       <div className='flex justify-center p-3'>
-        <Button
-          rounded
-          shadow
-          color='gradient'
-          auto
-          className='text-center focus:outline-none'
-          href='#'
+        <a
+          href='https://docs.google.com/uc?id=1d73IepzRX6SZyfnCu0iAI34jGwQhwu2G&export=download'
+          target='_blank'
+          rel='noopener noreferrer'
         >
-          <GiTie className='w-6 h-6' />
-          Resume
-        </Button>
+          <Button
+            rounded
+            shadow
+            color='gradient'
+            auto
+            className='text-center focus:outline-none'
+          >
+            <AiOutlineCloudDownload className='p-1 w-7 h-7' /> Resume
+          </Button>
+        </a>
       </div>
       <div className='flex w-9/12 mx-auto my-5 text-green-400 justify-evenly md:w-full'>
         <Tilt>
