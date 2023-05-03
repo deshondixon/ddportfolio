@@ -86,7 +86,7 @@ export const projects: IProject[] = [
     deployed_url: 'https://clean-air-compass-mzvbj.ondigitalocean.app/',
     github_url:
       'https://github.com/orgs/Oxygen-Oriented-Programming/repositories',
-    category: ['python'],
+    category: ['python', 'react', 'django'],
     key_techs: [
       'python',
       'react',
@@ -126,7 +126,7 @@ export const projects: IProject[] = [
     image_path: '/images/openimg1.png',
     deployed_url: 'https://openimg.netlify.app/',
     github_url: 'https://github.com/orgs/Full-Stack-Fluency/repositories',
-    category: ['react'],
+    category: ['react', 'mongodb', 'express', 'node'],
     key_techs: [
       'react',
       'mongodb',
@@ -146,7 +146,7 @@ export const projects: IProject[] = [
     deployed_url: 'https://thewordgame.github.io/pigs-and-bulls/',
     github_url: 'https://github.com/thewordgame/pigs-and-bulls',
     category: ['react'],
-    key_techs: ['react-native', 'html', 'css', 'javascript'],
+    key_techs: ['react', 'html', 'css', 'javascript'],
   },
   {
     name: 'Ask Genie',
