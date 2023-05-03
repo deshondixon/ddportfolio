@@ -1,7 +1,6 @@
 import { AiFillGithub, AiFillLinkedin, AiOutlineMail } from 'react-icons/ai';
 import { GoLocation } from 'react-icons/go';
 import { GiTie } from 'react-icons/gi';
-import { useTheme } from 'next-themes';
 import { Avatar, Button, Text, Badge, Spacer } from '@nextui-org/react';
 
 import Tilt from 'react-parallax-tilt';
