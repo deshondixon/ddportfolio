@@ -94,12 +94,20 @@ export default function Sidebar({}) {
       </div>
       <div className='flex w-9/12 mx-auto my-5 text-green-400 justify-evenly md:w-full'>
         <Tilt>
-          <a href=''>
+          <a
+            href='https://github.com/deshondixon'
+            target='_blank'
+            rel='noopener noreferrer'
+          >
             <AiFillGithub className='w-12 h-12 cursor-pointer' />
           </a>
         </Tilt>
         <Tilt>
-          <a href=''>
+          <a
+            href='https://www.linkedin.com/in/deshondixon'
+            target='_blank'
+            rel='noopener noreferrer'
+          >
             <AiFillLinkedin className='w-12 h-12 cursor-pointer' />
           </a>
         </Tilt>
