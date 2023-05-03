@@ -55,6 +55,7 @@ const ProjectCard: FunctionComponent<{
         aria-labelledby='modal-title'
         open={visible}
         onClose={closeHandler}
+        className='absolute top-0 left-0 z-10 grid w-full h-auto md:grid-cols-2 gap-x-12'
       >
         <Modal.Header>
           <Image src={image_path} alt={name} width={500} height={500} />
