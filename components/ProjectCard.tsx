@@ -2,7 +2,6 @@ import { FunctionComponent, useState } from 'react';
 import { IProject } from '../src/type';
 import { Image } from '@nextui-org/react';
 import { AiFillGithub, AiFillProject } from 'react-icons/ai';
-import { MdClose } from 'react-icons/md';
 import { Modal, Input, Row, Checkbox, Button, Text } from '@nextui-org/react';
 import React from 'react';
 
@@ -55,28 +54,21 @@ const ProjectCard: FunctionComponent<{
         aria-labelledby='modal-title'
         open={visible}
         onClose={closeHandler}
-        className='absolute top-0 left-0 z-10 grid w-full h-auto md:grid-cols-2 gap-x-12'
       >
-        <Modal.Header>
+        <Modal.Header className='flex flex-col'>
           <Image src={image_path} alt={name} width={500} height={500} />
         </Modal.Header>
 
         <Modal.Body>
           <h2>{name}</h2>
-          <h3>{description}</h3>
-
-          {key_techs.map((tech) => (
-            <span key={tech}>{tech}</span>
-          ))}
-        </Modal.Body>
-        <Modal.Footer>
+          <Text>{description}</Text>
           <a href={github_url}>
             <AiFillGithub /> <span>Github</span>
           </a>
           <a href={deployed_url}>
             <AiFillProject /> <span>Project</span>
           </a>
-        </Modal.Footer>
+        </Modal.Body>
       </Modal>
     </div>
   );
