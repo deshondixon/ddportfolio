@@ -43,7 +43,6 @@ const ProjectCard: FunctionComponent<{
           css={{
             textGradient: '45deg, $yellow600 -20%, $red600 100%',
           }}
-          weight='bold'
           className='flex items-center justify-center text-3xl font-medium tracking-wider'
         >
           {name}
