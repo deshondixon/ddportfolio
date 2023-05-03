@@ -1,8 +1,9 @@
 import { FunctionComponent, useState } from 'react';
 import { IProject } from '../src/type';
 import { AiFillGithub, AiFillProject } from 'react-icons/ai';
-import { Modal, Image, Button, Text, Spacer, Badge } from '@nextui-org/react';
+import { Modal, Button, Text, Spacer, Badge } from '@nextui-org/react';
 import React from 'react';
+import Image from 'next/image';
 
 const ProjectCard: FunctionComponent<{
   project: IProject;
@@ -21,20 +22,16 @@ const ProjectCard: FunctionComponent<{
   const handler = () => setVisible(true);
   const closeHandler = () => {
     setVisible(false);
-    console.log('closed');
   };
 
   return (
     <div className='flex flex-col items-center justify-center gap-2 '>
       <Image
         onClick={handler}
-        showSkeleton
-        maxDelay={10000}
         src={image_path}
         alt={name}
         width={300}
         height={180}
-        objectFit='scale-down'
       />
       <Button light onClick={handler} className='p-3'>
         <Text

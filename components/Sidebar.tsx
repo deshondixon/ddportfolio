@@ -37,7 +37,6 @@ export default function Sidebar({}) {
           size='lg'
         >
           <Avatar
-            scale-down
             css={{ mw: '600px', height: '22vh', width: '22vh' }}
             zoomed
             size='xl'
