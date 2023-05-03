@@ -17,7 +17,9 @@ export const NavItem: FunctionComponent<{
   );
 };
 
-const ProjectsNavbar = (props) => {
+const ProjectsNavbar: FunctionComponent<{ handlerFilterCategory: Function }> = (
+  props
+) => {
   return (
     <div className='flex px-3 py-2 space-x-3 overflow-x-auto text-2xl list-none'>
       <NavItem value='all' {...props} />
