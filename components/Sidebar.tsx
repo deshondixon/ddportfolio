@@ -40,7 +40,7 @@ export default function Sidebar({}) {
             css={{ mw: '600px', height: '22vh', width: '22vh' }}
             zoomed
             size='xl'
-            src='/profile.jpg'
+            src='images/profile.webp'
             color='gradient'
             bordered
             className='flex mx-auto rounded-full md:w-full cursor-none'
