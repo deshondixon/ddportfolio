@@ -3,6 +3,8 @@ import { Text } from '@nextui-org/react';
 import ServiceCard from '../../components/ServiceCard';
 import { useEffect, useState } from 'react';
 import Skeleton from 'react-loading-skeleton';
+import { motion } from 'framer-motion';
+import { fadeInUp } from '../animations';
 
 const Index = () => {
   const [loading, setLoading] = useState(true);
@@ -51,7 +53,12 @@ const Index = () => {
               >
                 Technical Skills
               </Text>
-              <div className='grid gap-6 my-3 md:grid-cols-2'>
+              <motion.div
+                variants={fadeInUp}
+                initial='initial'
+                animate='animate'
+                className='grid gap-6 my-3 md:grid-cols-2'
+              >
                 {services.map((service) => (
                   <div
                     className='col-span-2 p-2 rounded-lg md:col-span-1 '
@@ -60,7 +67,7 @@ const Index = () => {
                     <ServiceCard service={service} />
                   </div>
                 ))}
-              </div>
+              </motion.div>
             </div>
           </>
         )}
