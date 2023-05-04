@@ -3,7 +3,7 @@ import { languages } from '../data';
 import { tools } from '../data';
 import Bar from '../../components/Bar';
 import { motion } from 'framer-motion';
-import { fadeInUp } from '../animations';
+import { fadeInUp, stagger } from '../animations';
 
 const resume = () => {
   return (

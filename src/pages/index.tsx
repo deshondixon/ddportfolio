@@ -64,8 +64,6 @@ const Index = () => {
                     className='col-span-2 p-2 rounded-lg md:col-span-1 '
                     key={service.title}
                     variants={fadeInUp}
-                    initial='initial'
-                    animate='animate'
                   >
                     <ServiceCard service={service} />
                   </motion.div>
