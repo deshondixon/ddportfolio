@@ -1,6 +1,8 @@
 import { AiFillGithub, AiFillLinkedin, AiOutlineMail } from 'react-icons/ai';
 import { AiOutlineCloudDownload } from 'react-icons/ai';
 import { GoLocation } from 'react-icons/go';
+import { motion } from 'framer-motion';
+import { stagger, fadeInUp } from '../src/animations';
 
 import {
   Avatar,
@@ -15,7 +17,13 @@ import Tilt from 'react-parallax-tilt';
 
 export default function Sidebar({}) {
   return (
-    <div className='flex flex-col items-center'>
+    <motion.div
+      className='flex flex-col items-center'
+      variants={stagger}
+      animate='animate'
+      initial='initial'
+      exit='exit'
+    >
       <Tooltip
         placement='left'
         content={
@@ -62,7 +70,7 @@ export default function Sidebar({}) {
           DIXON
         </Text>
       </Tilt>
-      <div className='flex justify-center'>
+      <motion.div className='flex justify-center' variants={fadeInUp}>
         <Tilt>
           <Text
             css={{
@@ -74,9 +82,10 @@ export default function Sidebar({}) {
             Software Engineer
           </Text>
         </Tilt>
-      </div>
-      <div className='flex justify-center p-3'>
-        <a
+      </motion.div>
+      <motion.div className='flex justify-center p-3' variants={fadeInUp}>
+        <motion.a
+          variants={fadeInUp}
           href='https://docs.google.com/uc?id=1d73IepzRX6SZyfnCu0iAI34jGwQhwu2G&export=download'
           target='_blank'
           rel='noopener noreferrer'
@@ -90,33 +99,42 @@ export default function Sidebar({}) {
           >
             <AiOutlineCloudDownload className='p-1 w-7 h-7' /> Resume
           </Button>
-        </a>
-      </div>
-      <div className='flex w-9/12 mx-auto my-5 text-green-400 justify-evenly md:w-full'>
+        </motion.a>
+      </motion.div>
+      <motion.div
+        className='flex w-9/12 mx-auto my-5 text-green-400 justify-evenly md:w-full'
+        variants={fadeInUp}
+      >
         <Tilt>
-          <a
+          <motion.a
+            variants={fadeInUp}
             href='https://github.com/deshondixon'
             target='_blank'
             rel='noopener noreferrer'
           >
             <AiFillGithub className='w-12 h-12 cursor-pointer' />
-          </a>
+          </motion.a>
         </Tilt>
         <Tilt>
-          <a
+          <motion.a
+            variants={fadeInUp}
             href='https://www.linkedin.com/in/deshondixon/'
             target='_blank'
             rel='noopener noreferrer'
           >
             <AiFillLinkedin className='w-12 h-12 cursor-pointer' />
-          </a>
+          </motion.a>
         </Tilt>
-      </div>
-      <div
+      </motion.div>
+      <motion.div
+        variants={fadeInUp}
         className='py-4 my-5'
         style={{ marginLeft: '-1rem', marginRight: '-1rem' }}
       >
-        <div className='flex items-center justify-center space-x-2'>
+        <motion.div
+          className='flex items-center justify-center space-x-2'
+          variants={fadeInUp}
+        >
           <Tilt>
             <GoLocation />
           </Tilt>
@@ -127,10 +145,13 @@ export default function Sidebar({}) {
               }}
               weight='bold'
             >
-              <span className=''> Tacoma, Washington</span>
+              <motion.span variants={fadeInUp} className=''>
+                {' '}
+                Tacoma, Washington
+              </motion.span>
             </Text>
           </Tilt>
-        </div>
+        </motion.div>
         <Tilt>
           <Text
             css={{
@@ -153,8 +174,8 @@ export default function Sidebar({}) {
             253-878-0685{' '}
           </Text>
         </Tilt>
-      </div>
-      <div className='flex justify-center p-3'>
+      </motion.div>
+      <motion.div variants={fadeInUp} className='flex justify-center p-3'>
         <Button
           rounded
           shadow
@@ -165,7 +186,7 @@ export default function Sidebar({}) {
         >
           <AiOutlineMail className='w-6 h-6 p-1' /> Email
         </Button>
-      </div>
-    </div>
+      </motion.div>
+    </motion.div>
   );
 }
