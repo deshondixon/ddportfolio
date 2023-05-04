@@ -15,7 +15,7 @@ const darkTheme = createTheme({
   theme: {},
 });
 
-export default function MyApp({ Component, pageProps }: AppProps) {
+export default function MyApp({ Component, pageProps, router }: AppProps) {
   const [loading, setLoading] = useState(true);
   useEffect(() => {
     setTimeout(() => {
@@ -44,7 +44,7 @@ export default function MyApp({ Component, pageProps }: AppProps) {
                 <Skeleton height={2000} />
               ) : (
                 <AnimatePresence>
-                  <Component {...pageProps} />
+                  <Component {...pageProps} key={router.route} />
                 </AnimatePresence>
               )}
               <Analytics />
