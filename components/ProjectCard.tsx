@@ -26,7 +26,7 @@ const ProjectCard: FunctionComponent<{
   };
 
   return (
-    <div className='flex flex-col items-center justify-center gap-2 '>
+    <motion.div className='flex flex-col items-center justify-center gap-2 '>
       <Image
         onClick={handler}
         showSkeleton
@@ -59,7 +59,13 @@ const ProjectCard: FunctionComponent<{
           open={visible}
           onClose={closeHandler}
         >
-          <Modal.Header id='modal-title' className='flex flex-col w-96 h-96'>
+          <Modal.Header
+            variants={stagger}
+            initial='initial'
+            animate='animate'
+            id='modal-title'
+            className='flex flex-col w-96 h-96'
+          >
             <Text
               size={32}
               css={{
@@ -75,13 +81,13 @@ const ProjectCard: FunctionComponent<{
             </motion.div>
 
             <motion.div className='flex flex-row' variants={fadeInUp}>
-              <a href={github_url}>
+              <motion.a href={github_url}>
                 <AiFillGithub className='w-8 h-8' /> <span>Github</span>
-              </a>
+              </motion.a>
               <Spacer />
-              <a href={deployed_url}>
+              <motion.a href={deployed_url}>
                 <AiFillProject className='w-8 h-8' /> <span>Project</span>
-              </a>
+              </motion.a>
             </motion.div>
           </Modal.Header>
 
@@ -91,7 +97,7 @@ const ProjectCard: FunctionComponent<{
             </motion.div>
           </Modal.Body>
           <Modal.Footer>
-            <div className='flex flex-wrap text-sm '>
+            <motion.div className='flex flex-wrap text-sm '>
               {key_techs.map((tech) => (
                 <Badge
                   color='secondary'
@@ -103,11 +109,11 @@ const ProjectCard: FunctionComponent<{
                   {tech}
                 </Badge>
               ))}
-            </div>
+            </motion.div>
           </Modal.Footer>
         </Modal>
       </motion.div>
-    </div>
+    </motion.div>
   );
 };
 
