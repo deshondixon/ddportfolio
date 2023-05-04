@@ -4,7 +4,7 @@ import ServiceCard from '../../components/ServiceCard';
 import { useEffect, useState } from 'react';
 import Skeleton from 'react-loading-skeleton';
 import { motion } from 'framer-motion';
-import { fadeInUp } from '../animations';
+import { fadeInUp, stagger } from '../animations';
 
 const Index = () => {
   const [loading, setLoading] = useState(true);
@@ -54,18 +54,21 @@ const Index = () => {
                 Technical Skills
               </Text>
               <motion.div
-                variants={fadeInUp}
+                className='grid gap-6 my-3 md:grid-cols-2'
+                variants={stagger}
                 initial='initial'
                 animate='animate'
-                className='grid gap-6 my-3 md:grid-cols-2'
               >
                 {services.map((service) => (
-                  <div
+                  <motion.div
                     className='col-span-2 p-2 rounded-lg md:col-span-1 '
                     key={service.title}
+                    variants={fadeInUp}
+                    initial='initial'
+                    animate='animate'
                   >
                     <ServiceCard service={service} />
-                  </div>
+                  </motion.div>
                 ))}
               </motion.div>
             </div>
