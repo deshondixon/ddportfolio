@@ -2,12 +2,14 @@ import { Text, Progress } from '@nextui-org/react';
 import { languages } from '../data';
 import { tools } from '../data';
 import Bar from '../../components/Bar';
+import { motion } from 'framer-motion';
+import { fadeInUp } from '../animations';
 
 const resume = () => {
   return (
     <div className='flex px-6 py-2 '>
       <div className='grid gap-6 md:grid-cols-2'>
-        <div>
+        <motion.div variants={fadeInUp} initial='initial' animate='animate'>
           <Text
             size={35}
             css={{
@@ -50,8 +52,8 @@ const resume = () => {
               principles to advanced topics
             </Text>
           </div>
-        </div>
-        <div>
+        </motion.div>
+        <motion.div variants={fadeInUp} initial='initial' animate='animate'>
           <Text
             size={35}
             css={{
@@ -95,7 +97,7 @@ const resume = () => {
               industry leaders, and an inside look at top companies.
             </Text>
           </div>
-        </div>
+        </motion.div>
 
         <div>
           <Text
