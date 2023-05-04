@@ -59,13 +59,7 @@ const ProjectCard: FunctionComponent<{
           open={visible}
           onClose={closeHandler}
         >
-          <Modal.Header
-            variants={stagger}
-            initial='initial'
-            animate='animate'
-            id='modal-title'
-            className='flex flex-col w-96 h-96'
-          >
+          <Modal.Header id='modal-title' className='flex flex-col w-96 h-96'>
             <Text
               size={32}
               css={{
@@ -81,11 +75,11 @@ const ProjectCard: FunctionComponent<{
             </motion.div>
 
             <motion.div className='flex flex-row' variants={fadeInUp}>
-              <motion.a href={github_url}>
+              <motion.a variants={fadeInUp} href={github_url}>
                 <AiFillGithub className='w-8 h-8' /> <span>Github</span>
               </motion.a>
               <Spacer />
-              <motion.a href={deployed_url}>
+              <motion.a variants={fadeInUp} href={deployed_url}>
                 <AiFillProject className='w-8 h-8' /> <span>Project</span>
               </motion.a>
             </motion.div>
@@ -97,7 +91,7 @@ const ProjectCard: FunctionComponent<{
             </motion.div>
           </Modal.Body>
           <Modal.Footer>
-            <motion.div className='flex flex-wrap text-sm '>
+            <motion.div variants={fadeInUp} className='flex flex-wrap text-sm '>
               {key_techs.map((tech) => (
                 <Badge
                   color='secondary'
