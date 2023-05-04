@@ -4,7 +4,7 @@ import ServiceCard from '../../components/ServiceCard';
 import { useEffect, useState } from 'react';
 import Skeleton from 'react-loading-skeleton';
 import { motion } from 'framer-motion';
-import { fadeInUp, stagger, routeAnimation } from '../animations';
+import { fadeInUp, stagger } from '../animations';
 
 const Index = () => {
   const [loading, setLoading] = useState(true);
@@ -19,13 +19,7 @@ const Index = () => {
 
   return (
     <>
-      <motion.div
-        className='flex flex-col flex-grow px-6 pt-1 '
-        variants={routeAnimation}
-        initial='initial'
-        animate='animate'
-        exit='exit'
-      >
+      <div className='flex flex-col flex-grow px-6 pt-1 '>
         {loading ? (
           <Skeleton />
         ) : (
@@ -80,7 +74,7 @@ const Index = () => {
             </div>
           </>
         )}
-      </motion.div>
+      </div>
     </>
   );
 };

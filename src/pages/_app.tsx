@@ -8,7 +8,6 @@ import { Analytics } from '@vercel/analytics/react';
 import { AppProps } from 'next/app';
 import { ThemeProvider as NextThemesProvider } from 'next-themes';
 import 'tailwindcss/tailwind.css';
-import { AnimatePresence } from 'framer-motion';
 
 const darkTheme = createTheme({
   type: 'dark',
@@ -43,9 +42,7 @@ export default function MyApp({ Component, pageProps, router }: AppProps) {
               {loading ? (
                 <Skeleton height={2000} />
               ) : (
-                <AnimatePresence>
-                  <Component {...pageProps} key={router.route} />
-                </AnimatePresence>
+                <Component {...pageProps} key={router.route} />
               )}
               <Analytics />
             </div>

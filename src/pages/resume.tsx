@@ -3,17 +3,11 @@ import { languages } from '../data';
 import { tools } from '../data';
 import Bar from '../../components/Bar';
 import { motion } from 'framer-motion';
-import { fadeInUp, stagger, routeAnimation } from '../animations';
+import { fadeInUp, stagger } from '../animations';
 
 const resume = () => {
   return (
-    <motion.div
-      className='flex px-6 py-2 '
-      variants={routeAnimation}
-      initial='initial'
-      animate='animate'
-      exit='exit'
-    >
+    <div className='flex px-6 py-2 '>
       <div className='grid gap-6 md:grid-cols-2'>
         <motion.div variants={fadeInUp} initial='initial' animate='animate'>
           <Text
@@ -138,7 +132,7 @@ const resume = () => {
           </div>
         </div>
       </div>
-    </motion.div>
+    </div>
   );
 };
 
