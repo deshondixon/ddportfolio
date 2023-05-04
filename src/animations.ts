@@ -37,3 +37,11 @@ export const routeAnimation = {
     },
   },
 };
+exit: {
+  opacity: 0,
+  transition: {
+    delay: 0.1,
+    ease: 'easeInOut',
+  },
+},
+};
