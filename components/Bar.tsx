@@ -1,7 +1,6 @@
 import React, { FunctionComponent } from 'react';
 import { ISkill } from '../src/type';
 import { Progress } from '@nextui-org/react';
-import Skeleton from 'react-loading-skeleton';
 import { motion } from 'framer-motion';
 
 const Bar: FunctionComponent<{
