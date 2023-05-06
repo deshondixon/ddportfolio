@@ -1,6 +1,7 @@
 import React, { FunctionComponent } from 'react';
 import { ISkill } from '../src/type';
 import { Progress } from '@nextui-org/react';
+import Skeleton from 'react-loading-skeleton';
 import { motion } from 'framer-motion';
 
 const Bar: FunctionComponent<{
@@ -44,8 +45,8 @@ const Bar: FunctionComponent<{
             <span>{name}</span>
           </div>
         </motion.div>
-
-     
+      ) : (
+        <Skeleton width='100%' height={40} />
       )}
     </div>
   );
