@@ -45,7 +45,7 @@ const Bar: FunctionComponent<{
             <span>{name}</span>
           </div>
         </motion.div>
-      ) : (
+
      
       )}
     </div>
