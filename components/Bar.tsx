@@ -46,7 +46,7 @@ const Bar: FunctionComponent<{
           </div>
         </motion.div>
       ) : (
-        <Skeleton width='100%' height={40} />
+     
       )}
     </div>
   );
