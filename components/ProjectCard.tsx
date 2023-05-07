@@ -1,21 +1,4 @@
-import { FunctionComponent, useState } from 'react';
-import { IProject } from '../src/type';
-import { AiFillGithub, AiFillProject } from 'react-icons/ai';
-import { Modal, Image, Button, Text, Spacer, Badge } from '@nextui-org/react';
-import React from 'react';
-import { motion } from 'framer-motion';
-import { fadeInUp, stagger } from '../src/animations';
 
-const ProjectCard: FunctionComponent<{
-  project: IProject;
-}> = ({
-  project: {
-    name,
-    image_path,
-    category,
-    deployed_url,
-    description,
-    github_url,
     key_techs,
   },
 }) => {
