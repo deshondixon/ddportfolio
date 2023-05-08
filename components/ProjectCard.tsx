@@ -85,7 +85,22 @@ const ProjectCard: FunctionComponent<{
             </motion.div>
           </Modal.Header>
 
-       
+          <Modal.Body>
+            <motion.div variants={fadeInUp}>
+              <Text id='modal-description'>{description}</Text>
+            </motion.div>
+          </Modal.Body>
+          <Modal.Footer>
+            <motion.div variants={fadeInUp} className='flex flex-wrap text-sm '>
+              {key_techs.map((tech) => (
+                <Badge
+                  color='secondary'
+                  disableOutline
+                  className='px-2 py-1 '
+                  variant='flat'
+                  key={tech}
+                >
+                  {tech}
                 </Badge>
               ))}
             </motion.div>
