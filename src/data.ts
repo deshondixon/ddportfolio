@@ -77,19 +77,9 @@ export const tools: ISkill[] = [
   },
 ];
 
+
 export const projects: IProject[] = [
-  {
-    name: 'CleanAir Compass',
-    description:
-      'A mapping interface and alert system for data from the open Purple Air network of citizen-run air quality sensors.',
-    image_path: '/images/clean1.png',
-    deployed_url: 'https://clean-air-compass.vercel.app/',
-    github_url:
-      'https://github.com/orgs/Oxygen-Oriented-Programming/repositories',
-    category: ['python', 'react', 'django'],
-    key_techs: [
-      'python',
-      'react',
+  {\
       'django',
       'html',
       'css',
