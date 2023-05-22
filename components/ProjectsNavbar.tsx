@@ -33,6 +33,7 @@ const ProjectsNavbar: FunctionComponent<{
       <NavItem value='mongodb' {...props} />
       <NavItem value='express' {...props} />
       <NavItem value='node' {...props} />
+      <NavItem value='java' {...props} />
     </div>
   );
 };
