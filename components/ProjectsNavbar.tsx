@@ -34,6 +34,7 @@ const ProjectsNavbar: FunctionComponent<{
       <NavItem value='express' {...props} />
       <NavItem value='node' {...props} />
       <NavItem value='java' {...props} />
+      <NavItem value='springboot' {...props} />
     </div>
   );
 };
