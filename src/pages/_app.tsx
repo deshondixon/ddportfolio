@@ -20,27 +20,25 @@ export default function MyApp({ Component, pageProps, router }: AppProps) {
 
   return (
     <div>
-      <NextThemesProvider defaultTheme='light' attribute='class'>
-        <NextUIProvider>
-          <div className='grid grid-cols-12 gap-6 px-5 pt-14 lg:px-48'>
-            <div className='col-span-12 p-4 text-center lg:col-span-3 rounded-2xl glass'>
-              {loading ? <Skeleton height={500} /> : <Sidebar />}
-            </div>
-            <div className='col-span-12 overflow-hidden glass lg:col-span-9 rounded-2xl'>
-              <Navbar />
-
-              {loading ? (
-                <Skeleton height={2000} />
-              ) : (
-                <AnimatePresence mode='wait'>
-                  <Component {...pageProps} key={router.route} />
-                </AnimatePresence>
-              )}
-              <Analytics />
-            </div>
+      <NextUIProvider>
+        <div className='grid grid-cols-12 gap-6 px-5 pt-14 lg:px-48'>
+          <div className='col-span-12 p-4 text-center lg:col-span-3 rounded-2xl glass'>
+            {loading ? <Skeleton height={500} /> : <Sidebar />}
           </div>
-        </NextUIProvider>
-      </NextThemesProvider>
+          <div className='col-span-12 overflow-hidden glass lg:col-span-9 rounded-2xl'>
+            <Navbar />
+
+            {loading ? (
+              <Skeleton height={2000} />
+            ) : (
+              <AnimatePresence mode='wait'>
+                <Component {...pageProps} key={router.route} />
+              </AnimatePresence>
+            )}
+            <Analytics />
+          </div>
+        </div>
+      </NextUIProvider>
     </div>
   );
 }
