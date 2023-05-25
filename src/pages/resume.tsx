@@ -78,7 +78,7 @@ const resume = () => {
                 color: 'gray100',
               }}
             >
-              Associate Software Engineer
+              Software Engineer
             </Text>
             <Text
               size={20}
