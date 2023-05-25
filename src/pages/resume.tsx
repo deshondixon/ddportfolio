@@ -43,7 +43,7 @@ const resume = () => {
                 color: 'gray100',
               }}
             >
-              Code Fellows (2022-2023)
+              Code Fellows (Sep 2022 - Mar 2023)
             </Text>
             <Text
               className='my-3 text-lg tracking-normal'
@@ -101,12 +101,7 @@ const resume = () => {
               deadlines. Design models with validation, services, and API
               controllers for data pertaining to domain using Spring Boot
               framework and JSON libraries, allowing data to be passed between
-              front end to back end. Utilization of Git and GitHub as
-              version/source control to send in my working components and to
-              check peers features compatibility with my own. Running unit tests
-              (via JUnit) on finished product to ensure high quality standards
-              and MVPs are met API testing (manual with Postman) & (automation
-              with RestAssured and Selenium)
+              front end to back end.
             </Text>
             <Spacer />
             <Text
