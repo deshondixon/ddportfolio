@@ -103,7 +103,7 @@ const resume = () => {
               framework and JSON libraries, allowing data to be passed between
               front end to back end.
             </Text>
-            <Spacer />
+            {/* <Spacer />
             <Text
               size={20}
               weight='bold'
@@ -134,7 +134,7 @@ const resume = () => {
               interested in accelerating into the next phase of their careers.
               Sessions include hands-on workshops, in-depth discussions with
               industry leaders, and an inside look at top companies.
-            </Text>
+            </Text> */}
           </div>
         </motion.div>
 
