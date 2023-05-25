@@ -102,8 +102,7 @@ const resume = () => {
               Sessions include hands-on workshops, in-depth discussions with
               industry leaders, and an inside look at top companies.
             </Text>
-          </div>
-          <div>
+
             <Text
               size={20}
               weight='bold'
@@ -111,7 +110,7 @@ const resume = () => {
                 color: 'gray100',
               }}
             >
-              Breakline Software Engineer Participant
+              Associate Software Engineer
             </Text>
             <Text
               size={20}
@@ -120,7 +119,7 @@ const resume = () => {
                 color: 'gray100',
               }}
             >
-              Breakline (2023-)
+              Revature (2023-)
             </Text>
             <Text
               className='my-3 text-lg tracking-normal'
