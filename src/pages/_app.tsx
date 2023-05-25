@@ -10,6 +10,11 @@ import { ThemeProvider as NextThemesProvider } from 'next-themes';
 import 'tailwindcss/tailwind.css';
 import { AnimatePresence } from 'framer-motion';
 
+const darkTheme = createTheme({
+  type: 'dark',
+  theme: {},
+});
+
 export default function MyApp({ Component, pageProps, router }: AppProps) {
   const [loading, setLoading] = useState(true);
   useEffect(() => {
@@ -20,7 +25,13 @@ export default function MyApp({ Component, pageProps, router }: AppProps) {
 
   return (
     <div>
-      <NextThemesProvider defaultTheme='light' attribute='class'>
+      <NextThemesProvider
+        defaultTheme='light'
+        attribute='class'
+        value={{
+          dark: darkTheme.className,
+        }}
+      >
         <NextUIProvider>
           <div className='grid grid-cols-12 gap-6 px-5 pt-14 lg:px-48'>
             <div className='col-span-12 p-4 text-center lg:col-span-3 rounded-2xl glass'>

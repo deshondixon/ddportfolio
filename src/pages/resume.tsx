@@ -103,6 +103,39 @@ const resume = () => {
               industry leaders, and an inside look at top companies.
             </Text>
           </div>
+          <div>
+            <Text
+              size={20}
+              weight='bold'
+              css={{
+                color: 'gray100',
+              }}
+            >
+              Breakline Software Engineer Participant
+            </Text>
+            <Text
+              size={20}
+              weight='bold'
+              css={{
+                color: 'gray100',
+              }}
+            >
+              Breakline (2023-)
+            </Text>
+            <Text
+              className='my-3 text-lg tracking-normal'
+              weight='normal'
+              css={{
+                color: 'gray100',
+              }}
+            >
+              BreakLine provides education and coaching for exceptional, women,
+              people of color, people with disabilities, and veterans who are
+              interested in accelerating into the next phase of their careers.
+              Sessions include hands-on workshops, in-depth discussions with
+              industry leaders, and an inside look at top companies.
+            </Text>
+          </div>
         </motion.div>
 
         <div>
