@@ -28,6 +28,7 @@ const ProjectsNavbar: FunctionComponent<{
       <NavItem value='all' {...props} />
       <NavItem value='react' {...props} />
       <NavItem value='python' {...props} />
+      <NavItem value='java' {...props} />
       <NavItem value='django' {...props} />
       <NavItem value='golang' {...props} />
       <NavItem value='mongodb' {...props} />

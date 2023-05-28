@@ -1,5 +1,5 @@
 import { IService, ISkill, IProject } from './type';
-import { FaFigma, FaPython, FaReact, FaServer } from 'react-icons/fa';
+import { FaFigma, FaJava, FaPython, FaReact, FaServer } from 'react-icons/fa';
 import { TbBrandJavascript } from 'react-icons/tb';
 import { RiComputerLine } from 'react-icons/ri';
 import { SiDjango, SiFramer, SiNextdotjs, SiTailwindcss } from 'react-icons/si';
@@ -36,6 +36,11 @@ export const languages: ISkill[] = [
     Icon: FaPython,
     name: 'Python',
     level: '70%',
+  },
+  {
+    Icon: FaJava,
+    name: 'Java',
+    level: '80%',
   },
   {
     Icon: TbBrandJavascript,
@@ -168,4 +173,24 @@ export const projects: IProject[] = [
     category: ['react'],
     key_techs: ['react', 'html', 'css', 'javascript', 'bootstrap'],
   },
+  // {
+  //   name: 'Banking APP',
+  //   description:
+  //     'Coming Soon',
+  //   image_path: '/images/clean1.png',
+  //   deployed_url: 'https://clean-air-compass.vercel.app/',
+  //   github_url:
+  //     'https://github.com/orgs/Oxygen-Oriented-Programming/repositories',
+  //   category: ['python', 'react', 'django'],
+  //   key_techs: [
+  //     'python',
+  //     'react',
+  //     'django',
+  //     'html',
+  //     'css',
+  //     'javascript',
+  //     'tailwind',
+  //     'rest-api',
+  //   ],
+  // },
 ];

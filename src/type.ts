@@ -24,6 +24,7 @@ export interface IProject {
 
 export type Category =
   | 'react'
+  | 'java'
   | 'python'
   | 'django'
   | 'golang'
