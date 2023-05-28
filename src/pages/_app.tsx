@@ -10,8 +10,8 @@ import { ThemeProvider as NextThemesProvider } from 'next-themes';
 import 'tailwindcss/tailwind.css';
 import { AnimatePresence } from 'framer-motion';
 
-const lightTheme = createTheme({
-  type: 'light',
+const darkTheme = createTheme({
+  type: 'dark',
   theme: {},
 });
 
@@ -26,12 +26,14 @@ export default function MyApp({ Component, pageProps, router }: AppProps) {
   return (
     <div>
       <NextThemesProvider
-        defaultTheme={lightTheme.className}
+        defaultTheme='light'
         attribute='class'
-        value={{}}
+        value={{
+          dark: darkTheme.className,
+        }}
       >
         <NextUIProvider>
-          <div className='grid grid-cols-12 gap-6 px-5 text-white whitespace-normal pt-14 lg:px-48 '>
+          <div className='grid grid-cols-12 gap-6 px-5 text-white pt-14 lg:px-48'>
             <div className='col-span-12 p-4 text-center lg:col-span-3 rounded-2xl glass'>
               {loading ? <Skeleton height={500} /> : <Sidebar />}
             </div>
