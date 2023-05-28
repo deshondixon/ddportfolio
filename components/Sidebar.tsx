@@ -112,6 +112,7 @@ export default function Sidebar({}) {
             href='https://github.com/deshondixon'
             target='_blank'
             rel='noopener noreferrer'
+            aria-label='Deshon Dixon GitHub Profile'
           >
             <AiFillGithub className='w-12 h-12 cursor-pointer' />
           </motion.a>
@@ -122,6 +123,7 @@ export default function Sidebar({}) {
             href='https://www.linkedin.com/in/deshondixon/'
             target='_blank'
             rel='noopener noreferrer'
+            aria-label='Deshon Dixon LinkedIn Profile'
           >
             <AiFillLinkedin className='w-12 h-12 cursor-pointer' />
           </motion.a>
