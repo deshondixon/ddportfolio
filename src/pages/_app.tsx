@@ -17,6 +17,7 @@ const darkTheme = createTheme({
 
 export default function MyApp({ Component, pageProps, router }: AppProps) {
   const [loading, setLoading] = useState(true);
+
   useEffect(() => {
     setTimeout(() => {
       setLoading(false);
