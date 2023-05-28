@@ -2,13 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  height: 100%;
+}
+
 body {
+  background-size: cover;
+  height: 100%;
   font-family: sans-serif;
   margin: 0;
-  min-height: 200vh;
+  min-height: 100vh;
   /* Define custom properties for mouse position */
-  --x: calc(var(--posX, 0) * 1px);
-  --y: calc(var(--posY, 0) * 1px);
+  --x: calc(var(--posX, 0) * 2px);
+  --y: calc(var(--posY, 0) * 2px);
 
   /* Define background using multiple gradients */
   background-image: 
@@ -49,12 +55,6 @@ body {
     /* blend mode for gradient 2 */ normal,
     /* blend mode for gradient 3 */ difference,
     /* blend mode for gradient 4 */ overlay; /* blend mode for gradient 5 and 6 */
-}
-
-/* Reset margin and padding for all elements */
-* {
-  margin: 0;
-  padding: 0;
 }
 
 /* Define styles for the loading skeleton */
