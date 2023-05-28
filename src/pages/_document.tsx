@@ -4,9 +4,7 @@ class MyDocument extends Document {
   render() {
     return (
       <Html lang='en'>
-        <Head>
-          <meta name='description' content='DeShon Dixon Portfolio Site' />
-        </Head>
+        <Head></Head>
         <body>
           <Main />
           <NextScript />
