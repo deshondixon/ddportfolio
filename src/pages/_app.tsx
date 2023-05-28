@@ -24,15 +24,15 @@ export default function MyApp({ Component, pageProps, router }: AppProps) {
   }, []);
 
   return (
-    <div className='flex items-center justify-center min-h-screen'>
-      <div>
-        <NextThemesProvider
-          defaultTheme='light'
-          attribute='class'
-          value={{
-            dark: darkTheme.className,
-          }}
-        >
+    <NextThemesProvider
+      defaultTheme='light'
+      attribute='class'
+      value={{
+        dark: darkTheme.className,
+      }}
+    >
+      <div className='flex items-center justify-center min-h-screen'>
+        <div>
           <NextUIProvider>
             <div className='grid grid-cols-12 gap-6 px-5 text-white pt-14 lg:px-48'>
               <div className='col-span-12 p-4 text-center lg:col-span-3 rounded-2xl glass'>
@@ -52,8 +52,8 @@ export default function MyApp({ Component, pageProps, router }: AppProps) {
               </div>
             </div>
           </NextUIProvider>
-        </NextThemesProvider>
+        </div>
       </div>
-    </div>
+    </NextThemesProvider>
   );
 }
