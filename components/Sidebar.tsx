@@ -49,6 +49,7 @@ export default function Sidebar({}) {
             zoomed
             size='xl'
             src='images/profile.webp'
+            alt='deshon dixon'
             color='gradient'
             bordered
             className='flex mx-auto rounded-full md:w-full cursor-none'

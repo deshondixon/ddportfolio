@@ -27,7 +27,6 @@ export default function MyApp({ Component, pageProps, router }: AppProps) {
   return (
     <NextThemesProvider
       defaultTheme='dark'
-      attribute='class'
       value={{
         dark: darkTheme.className,
       }}
