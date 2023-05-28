@@ -52,7 +52,7 @@ const Index = () => {
               <Text
                 size={35}
                 css={{
-                  textGradient: '45deg, $yellow900 -20%, $purple700 100%',
+                  textGradient: '45deg, $white -20%, $purple700 100%',
                 }}
                 weight='bold'
                 className='my-4 text-3xl font-medium tracking-wider'

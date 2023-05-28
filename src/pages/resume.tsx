@@ -31,7 +31,7 @@ const resume = () => {
               size={20}
               weight='bold'
               css={{
-                color: 'gray100',
+                color: '#ffffff',
               }}
             >
               Advanced Software Development in Python
@@ -40,7 +40,7 @@ const resume = () => {
               size={20}
               weight='bold'
               css={{
-                color: 'gray100',
+                color: '#ffffff',
               }}
             >
               Code Fellows (Sep 2022 - Mar 2023)
@@ -49,7 +49,7 @@ const resume = () => {
               className='my-3 text-lg tracking-normal'
               weight='normal'
               css={{
-                color: 'gray100',
+                color: '#ffffff',
               }}
             >
               Wrote clean, well-tested, advanced Python code using
@@ -75,7 +75,7 @@ const resume = () => {
               size={20}
               weight='bold'
               css={{
-                color: 'gray100',
+                color: '#ffffff',
               }}
             >
               Associate Software Engineer
@@ -84,7 +84,7 @@ const resume = () => {
               size={20}
               weight='bold'
               css={{
-                color: 'gray100',
+                color: '#ffffff',
               }}
             >
               Revature (May 2023 -)
@@ -93,7 +93,7 @@ const resume = () => {
               className='my-3 text-lg tracking-normal'
               weight='normal'
               css={{
-                color: 'gray100',
+                color: '#ffffff',
               }}
             >
               Work with Agile methodology and actively participating in Scrum
@@ -108,7 +108,7 @@ const resume = () => {
               size={20}
               weight='bold'
               css={{
-                color: 'gray100',
+                color: '#ffffff',
               }}
             >
               Breakline Software Engineer Participant
@@ -117,7 +117,7 @@ const resume = () => {
               size={20}
               weight='bold'
               css={{
-                color: 'gray100',
+                color: '#ffffff',
               }}
             >
               Breakline (Apr 2023 -)
@@ -126,7 +126,7 @@ const resume = () => {
               className='my-3 text-lg tracking-normal'
               weight='normal'
               css={{
-                color: 'gray100',
+                color: '#ffffff',
               }}
             >
               BreakLine provides education and coaching for exceptional, women,
@@ -143,7 +143,7 @@ const resume = () => {
             className='my-3 text-lg tracking-normal'
             weight='normal'
             css={{
-              color: 'gray100',
+              color: '#ffffff',
             }}
           >
             Languages & Frameworks
@@ -159,7 +159,7 @@ const resume = () => {
             className='my-3 text-lg tracking-normal'
             weight='normal'
             css={{
-              color: 'gray100',
+              color: 'gray400',
             }}
           >
             Tools & Software
