@@ -5,6 +5,7 @@ import { motion } from 'framer-motion';
 import { useState } from 'react';
 import { Category } from '../type';
 import { fadeInUp, stagger, routeAnimation } from '../animations';
+import Head from 'next/head';
 
 const Projects = () => {
   const [projects, setProjects] = useState(projectsData);
@@ -25,35 +26,40 @@ const Projects = () => {
   };
 
   return (
-    <motion.div
-      className='px-5 py-2 overflow-y-scroll'
-      style={{ height: '65vh' }}
-      variants={routeAnimation}
-      animate='animate'
-      initial='initial'
-      exit='exit'
-    >
-      <ProjectsNavbar
-        handlerFilterCategory={handlerFilterCategory}
-        active={active}
-      />
+    <>
+      <Head>
+        <title>Projects</title>
+      </Head>
       <motion.div
-        className='relative grid grid-cols-12 gap-4 my-3'
-        variants={stagger}
-        initial='initial'
+        className='px-5 py-2 overflow-y-scroll'
+        style={{ height: '65vh' }}
+        variants={routeAnimation}
         animate='animate'
+        initial='initial'
+        exit='exit'
       >
-        {projects.map((project) => (
-          <motion.div
-            className='col-span-12 p-2 glassProjectCard sm:col-span-6 lg:col-span-4'
-            key={project.name}
-            variants={fadeInUp}
-          >
-            <ProjectCard project={project} />
-          </motion.div>
-        ))}
+        <ProjectsNavbar
+          handlerFilterCategory={handlerFilterCategory}
+          active={active}
+        />
+        <motion.div
+          className='relative grid grid-cols-12 gap-4 my-3'
+          variants={stagger}
+          initial='initial'
+          animate='animate'
+        >
+          {projects.map((project) => (
+            <motion.div
+              className='col-span-12 p-2 glassProjectCard sm:col-span-6 lg:col-span-4'
+              key={project.name}
+              variants={fadeInUp}
+            >
+              <ProjectCard project={project} />
+            </motion.div>
+          ))}
+        </motion.div>
       </motion.div>
-    </motion.div>
+    </>
   );
 };
 
