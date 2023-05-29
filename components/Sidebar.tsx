@@ -37,13 +37,7 @@ export default function Sidebar({}) {
         hideArrow
         trigger='click'
       >
-        <Badge
-          content='👨🏿‍💻'
-          color='secondary'
-          disableOutline
-          placement='top-right'
-          size='lg'
-        >
+   
           <Avatar
             css={{ mw: '600px', height: '22vh', width: '22vh' }}
             zoomed
