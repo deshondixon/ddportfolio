@@ -29,14 +29,7 @@ export const UserCard = ({
       onClick={onClick}
       {...props}
     >
-      <Text className='user-twitter-card__text' size={15}>
-        Hello, World! 👋
-        <Text
-          className='user-twitter-card__text'
-          size={14}
-          css={{ mt: '$1' }}
-          color='#888888'
-        >
+     
           Currently busy coding but feel free to reach out anytime!
         </Text>
       </Text>
