@@ -42,17 +42,7 @@ const Projects = () => {
           handlerFilterCategory={handlerFilterCategory}
           active={active}
         />
-        <motion.div
-          className='relative grid grid-cols-12 gap-4 my-3'
-          variants={stagger}
-          initial='initial'
-          animate='animate'
-        >
-          {projects.map((project) => (
-            <motion.div
-              className='col-span-12 p-2 glassProjectCard sm:col-span-6 lg:col-span-4'
-              key={project.name}
-              variants={fadeInUp}
+        
             >
               <ProjectCard project={project} />
             </motion.div>
