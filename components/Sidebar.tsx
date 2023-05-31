@@ -48,7 +48,7 @@ export default function Sidebar({}) {
             css={{ mw: '600px', height: '22vh', width: '22vh' }}
             zoomed
             size='xl'
-            src='images/finalProfile.webp'
+            src='images/picofme.png'
             alt='deshon dixon'
             color='gradient'
             bordered
