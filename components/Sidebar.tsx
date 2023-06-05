@@ -106,19 +106,7 @@ export default function Sidebar({}) {
         className='flex w-9/12 mx-auto my-5 text-green-400 justify-evenly md:w-full'
         variants={fadeInUp}
       >
-        <Tilt>
-          <motion.a
-            variants={fadeInUp}
-            href='https://github.com/deshondixon'
-            target='_blank'
-            rel='noopener noreferrer'
-            aria-label='Deshon Dixon GitHub Profile'
-          >
-            <AiFillGithub className='w-12 h-12 cursor-pointer' />
-          </motion.a>
-        </Tilt>
-        <Tilt>
-          <motion.a
+        
             variants={fadeInUp}
             href='https://www.linkedin.com/in/deshondixon/'
             target='_blank'
