@@ -178,18 +178,10 @@ export default function Sidebar({}) {
           </Text>
         </Tilt>
       </motion.div>
-      <motion.div variants={fadeInUp} className='flex justify-center p-3'>
-        <Button
-          rounded
-          shadow
-          color='gradient'
-          auto
-          className='text-center focus:outline-none'
-          onClick={() => window.open('mailto:deshondixon@gmail.com')}
-        >
-          <AiOutlineMail className='w-6 h-6 p-1' /> Email
-        </Button>
-      </motion.div>
+      <motion.div
+        variants={fadeInUp}
+        className='flex justify-center p-3'
+      ></motion.div>
     </motion.div>
   );
 }
