@@ -34,7 +34,7 @@ const Bar: FunctionComponent<{
           animate='animate'
         >
           <Progress
-            value={levelNumber}
+            value={}
             color='gradient'
             size='xl'
             status='secondary'
