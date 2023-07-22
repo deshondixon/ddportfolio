@@ -37,13 +37,14 @@ const Index = () => {
               className='my-3 text-lg tracking-normal '
               weight='normal'
             >
-              Software Engineer and Army Veteran offering a strong foundation in
-              software development and programming principles across multiple
-              platforms. Offers knowledge of authoring code derived from
-              designing, building, and maintaining websites using scripting
-              languages, content creation tools, and digital media. Demonstrated
-              history of producing high-quality project results; possesses an
-              innate talent for quickly mastering technology and new concepts.
+              Full Stack Software Engineer and Army Veteran offering a strong
+              foundation in software development and programming principles
+              across multiple platforms. Offers knowledge of authoring code
+              derived from designing, building, and maintaining websites using
+              scripting languages, content creation tools, and digital media.
+              Demonstrated history of producing high-quality project results;
+              possesses an innate talent for quickly mastering technology and
+              new concepts.
             </Text>
             <div
               className='flex-grow p-4 mt-5 '
