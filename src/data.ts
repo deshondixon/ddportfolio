@@ -184,12 +184,16 @@ export const projects: IProject[] = [
     category: ['java'],
     key_techs: [
       'java',
+      'react',
       'spring framework',
       'html',
       'css',
       'javascript',
       'tailwind',
-      'rest-api',
+      'next-ui',
+      'aws rds',
+      'aws ec2',
+      'aws s3',
     ],
   },
 ];
