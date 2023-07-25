@@ -10,7 +10,7 @@ export const services: IService[] = [
     Icon: RiComputerLine,
     title: 'Frontend Development',
     about:
-      '<b>HTML</b>, <b>CSS</b>, <b>Javascript</b>, <b>Typescript</b>, <b>Tailwind</b>, <b>Bootstrap</b>, <b>React.js</b>, <b>React Native</b>, <b>Next.js</b>, <b>Chakra UI</b>, and <b>Astro</b>',
+      '<b>HTML</b>, <b>CSS</b>, <b>Java</b>, <b>Javascript</b>, <b>Typescript</b>, <b>Tailwind</b>, <b>Bootstrap</b>, <b>React.js</b>, <b>React Native</b>, <b>Next.js</b>, <b>Chakra UI</b>, and <b>Astro</b>',
   },
   {
     Icon: FaServer,
@@ -188,7 +188,7 @@ export const projects: IProject[] = [
       'spring framework',
       'html',
       'css',
-      'javascript',
+      'typescript',
       'tailwind',
       'next-ui',
       'aws rds',
