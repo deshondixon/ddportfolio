@@ -174,7 +174,7 @@ export const projects: IProject[] = [
     key_techs: ['react', 'html', 'css', 'javascript', 'bootstrap'],
   },
   {
-    name: 'Banking APP',
+    name: 'ANT',
     description:
       'A banking web application that consists of a back-end system built with the Spring Framework and a front-end application developed using React. The back-end system utilizes various components of the Spring Framework, including Spring Boot, Spring Data, Spring Web, and Spring Security with JWT authentication. The front-end communicates with the back-end through Axios requests.',
     image_path: '/images/logopage.png',
