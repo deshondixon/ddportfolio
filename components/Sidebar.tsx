@@ -87,7 +87,7 @@ export default function Sidebar({}) {
       <motion.div className='flex justify-center p-3' variants={fadeInUp}>
         <motion.a
           variants={fadeInUp}
-          href='https://docs.google.com/uc?id=1d73IepzRX6SZyfnCu0iAI34jGwQhwu2G&export=download'
+          href='https://drive.google.com/uc?export=download&id=1tm2TdbpvjzcjIRfo4-zBEu_qbfd-EWga'
           target='_blank'
           rel='noopener noreferrer'
         >
