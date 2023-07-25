@@ -173,24 +173,23 @@ export const projects: IProject[] = [
     category: ['react'],
     key_techs: ['react', 'html', 'css', 'javascript', 'bootstrap'],
   },
-  // {
-  //   name: 'Banking APP',
-  //   description:
-  //     'Coming Soon',
-  //   image_path: '/images/clean1.png',
-  //   deployed_url: 'https://clean-air-compass.vercel.app/',
-  //   github_url:
-  //     'https://github.com/orgs/Oxygen-Oriented-Programming/repositories',
-  //   category: ['python', 'react', 'django'],
-  //   key_techs: [
-  //     'python',
-  //     'react',
-  //     'django',
-  //     'html',
-  //     'css',
-  //     'javascript',
-  //     'tailwind',
-  //     'rest-api',
-  //   ],
-  // },
+  {
+    name: 'Banking APP',
+    description:
+      'A banking web application that consists of a back-end system built with the Spring Framework and a front-end application developed using React. The back-end system utilizes various components of the Spring Framework, including Spring Boot, Spring Data, Spring Web, and Spring Security with JWT authentication. The front-end communicates with the back-end through Axios requests.',
+    image_path: '/images/logopage.png',
+    deployed_url:
+      'http://hello-react-antapp.s3-website-us-west-1.amazonaws.com/',
+    github_url: 'https://github.com/orgs/Team1Banking/repositories',
+    category: ['java'],
+    key_techs: [
+      'java',
+      'spring framework',
+      'html',
+      'css',
+      'javascript',
+      'tailwind',
+      'rest-api',
+    ],
+  },
 ];
