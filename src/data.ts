@@ -154,16 +154,6 @@ export const projects: IProject[] = [
     key_techs: ['react', 'html', 'css', 'javascript'],
   },
   {
-    name: 'Ask Genie',
-    description:
-      'Ask genie any questions and an answer shall be granted. Utilizes chat-gpt api to answer any questions a user requests.',
-    image_path: '/images/askimage.png',
-    deployed_url: 'https://github.com/deshondixon/askgenie',
-    github_url: 'https://github.com/deshondixon/askgenie',
-    category: ['golang'],
-    key_techs: ['golang', 'rest-api'],
-  },
-  {
     name: 'Gallery of Horns',
     description:
       'User can view gallery of horned animals as well as 🖤 their favorite ones. There is also a drop down menu that allows the user to search by the amount of horns an animal has to narrow down their search. First, I decided to use React as the framework for my project because of its versatility and ability to efficiently render components. I also used JavaScript and CSS to add interactivity and styling to the project. Next, I began by setting up the basic structure of the app and creating the components that would be necessary, such as the gallery and the drop down menu. I also gathered a list of horned animals and their respective images and information that I wanted to include in the gallery. Once the basic structure was in place, I began implementing the functionality for the drop down menu. This involved adding the search functionality and handling the users input to filter the gallery accordingly. Next, I focused on styling the app to make it visually appealing and easy to navigate. This involved adding custom CSS styles and ensuring that the layout was responsive and looked good on different devices. Finally, I tested the app thoroughly to ensure that it was functioning correctly and made any necessary adjustments. Once I was satisfied with the result, I deployed the app and made it available for users to view and interact with via netlify.',
