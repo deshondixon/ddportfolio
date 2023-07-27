@@ -166,17 +166,6 @@ export default function Sidebar({}) {
             deshondixon@gmail.com
           </Text>
         </Tilt>
-        <Tilt>
-          <Text
-            css={{
-              textGradient: '45deg, $yellow600 -20%, $red600 100%',
-            }}
-            weight='bold'
-            className='my-2 '
-          >
-            253-878-0685{' '}
-          </Text>
-        </Tilt>
       </motion.div>
       <motion.div variants={fadeInUp} className='flex justify-center p-3'>
         <Button
