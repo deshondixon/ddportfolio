@@ -150,7 +150,7 @@ export default function Sidebar({}) {
             >
               <motion.span variants={fadeInUp} className=''>
                 {' '}
-                Tacoma, Washington
+                Dallas, Texas
               </motion.span>
             </Text>
           </Tilt>
