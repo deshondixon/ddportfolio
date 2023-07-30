@@ -4,14 +4,7 @@ import { GoLocation } from 'react-icons/go';
 import { motion } from 'framer-motion';
 import { stagger, fadeInUp } from '../src/animations';
 
-import {
-  Avatar,
-  Button,
-  Text,
-  Badge,
-  Spacer,
-  Tooltip,
-} from '@nextui-org/react';
+import { Avatar, Button, Text, Badge, Tooltip } from '@nextui-org/react';
 import { UserCard } from './UserCard';
 import Tilt from 'react-parallax-tilt';
 
