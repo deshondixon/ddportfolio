@@ -37,7 +37,7 @@ export const UserCard = ({
           css={{ mt: '$1' }}
           color='#888888'
         >
-          Currently busy coding but feel free to reach out anytime!
+          Busy coding!
         </Text>
       </Text>
     </Grid.Container>
