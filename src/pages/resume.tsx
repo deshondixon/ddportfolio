@@ -5,6 +5,7 @@ import Bar from '../../components/Bar';
 import { motion } from 'framer-motion';
 import { fadeInUp, stagger, routeAnimation } from '../animations';
 import Head from 'next/head';
+import Link from 'next/link';
 
 const resume = () => {
   return (
@@ -89,7 +90,9 @@ const resume = () => {
                   color: '#ffffff',
                 }}
               >
-                https://www.credly.com/badges/1eaa4675-fb10-4234-a5e0-2bce9e2cca69/public_url
+                <Link href='https://www.credly.com/badges/1eaa4675-fb10-4234-a5e0-2bce9e2cca69/public_url'>
+                  AWS Certified Cloud Practitioner Certificate
+                </Link>
               </Text>
             </div>
           </motion.div>
