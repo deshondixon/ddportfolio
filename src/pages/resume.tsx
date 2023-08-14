@@ -108,25 +108,26 @@ const resume = () => {
                 framework and JSON libraries, allowing data to be passed between
                 front end to back end.
               </Text>
-              {/* <Spacer />
-    <Text
-      size={20}
-      weight='bold'
-      css={{
-        color: '#ffffff',
-      }}
-    >
-      Breakline Software Engineer Participant
-    </Text>
-    <Text
-      size={20}
-      weight='bold'
-      css={{
-        color: '#ffffff',
-      }}
-    >
-      Breakline (Apr 2023 -)
-    </Text>
+              <Spacer />
+              <Text
+                size={20}
+                weight='bold'
+                css={{
+                  color: '#ffffff',
+                }}
+              >
+                Software Engineer
+              </Text>
+              <Text
+                size={20}
+                weight='bold'
+                css={{
+                  color: '#ffffff',
+                }}
+              >
+                JPMorgan Chase & Co (Aug 2023 -)
+              </Text>
+              {/*
     <Text
       className='my-3 text-lg tracking-normal'
       weight='normal'
