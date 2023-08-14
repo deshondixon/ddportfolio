@@ -63,6 +63,35 @@ const resume = () => {
                 principles to advanced topics
               </Text>
             </div>
+            <div>
+              <Text
+                size={20}
+                weight='bold'
+                css={{
+                  color: '#ffffff',
+                }}
+              >
+                AWS Certified Cloud Practitioner
+              </Text>
+              <Text
+                size={20}
+                weight='bold'
+                css={{
+                  color: '#ffffff',
+                }}
+              >
+                Amazon Web Services (Aug 2023 - Aug 2026)
+              </Text>
+              <Text
+                className='my-3 text-lg tracking-normal'
+                weight='normal'
+                css={{
+                  color: '#ffffff',
+                }}
+              >
+                https://www.credly.com/badges/1eaa4675-fb10-4234-a5e0-2bce9e2cca69/public_url
+              </Text>
+            </div>
           </motion.div>
           <motion.div variants={fadeInUp} initial='initial' animate='animate'>
             <Text
