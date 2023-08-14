@@ -112,39 +112,6 @@ const resume = () => {
                   color: '#ffffff',
                 }}
               >
-                Associate Software Engineer
-              </Text>
-              <Text
-                size={20}
-                weight='bold'
-                css={{
-                  color: '#ffffff',
-                }}
-              >
-                Revature (May 2023 -)
-              </Text>
-              <Text
-                className='my-3 text-lg tracking-normal'
-                weight='normal'
-                css={{
-                  color: '#ffffff',
-                }}
-              >
-                Work with Agile methodology and actively participating in Scrum
-                meetings as a part of SDLC to produce quality deliverables
-                within deadlines. Design models with validation, services, and
-                API controllers for data pertaining to domain using Spring Boot
-                framework and JSON libraries, allowing data to be passed between
-                front end to back end.
-              </Text>
-              <Spacer />
-              <Text
-                size={20}
-                weight='bold'
-                css={{
-                  color: '#ffffff',
-                }}
-              >
                 Software Engineer
               </Text>
               <Text
@@ -170,6 +137,39 @@ const resume = () => {
       Sessions include hands-on workshops, in-depth discussions with
       industry leaders, and an inside look at top companies.
     </Text> */}
+              <Spacer />
+              <Text
+                size={20}
+                weight='bold'
+                css={{
+                  color: '#ffffff',
+                }}
+              >
+                Associate Software Engineer
+              </Text>
+              <Text
+                size={20}
+                weight='bold'
+                css={{
+                  color: '#ffffff',
+                }}
+              >
+                Revature (May 2023 -)
+              </Text>
+              <Text
+                className='my-3 text-lg tracking-normal'
+                weight='normal'
+                css={{
+                  color: '#ffffff',
+                }}
+              >
+                Work with Agile methodology and actively participating in Scrum
+                meetings as a part of SDLC to produce quality deliverables
+                within deadlines. Design models with validation, services, and
+                API controllers for data pertaining to domain using Spring Boot
+                framework and JSON libraries, allowing data to be passed between
+                front end to back end.
+              </Text>
             </div>
           </motion.div>
 
