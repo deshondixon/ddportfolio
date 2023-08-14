@@ -40,6 +40,38 @@ const resume = () => {
                   color: '#ffffff',
                 }}
               >
+                AWS Certified Cloud Practitioner
+              </Text>
+              <Text
+                size={20}
+                weight='bold'
+                css={{
+                  color: '#ffffff',
+                }}
+              >
+                Amazon Web Services (Aug 2023 - Aug 2026)
+              </Text>
+              <Text
+                className='my-3 text-lg tracking-normal'
+                weight='normal'
+                css={{
+                  color: '#ffffff',
+                }}
+              >
+                <Link href='https://www.credly.com/badges/1eaa4675-fb10-4234-a5e0-2bce9e2cca69/public_url'>
+                  AWS Certified Cloud Practitioner Certificate
+                </Link>
+              </Text>
+            </div>
+            <Spacer />
+            <div>
+              <Text
+                size={20}
+                weight='bold'
+                css={{
+                  color: '#ffffff',
+                }}
+              >
                 Advanced Software Development in Python
               </Text>
               <Text
@@ -62,37 +94,6 @@ const resume = () => {
                 industry-standard software engineering patterns; studied the
                 foundational structures of programming, from object-oriented
                 principles to advanced topics
-              </Text>
-            </div>
-            <div>
-              <Text
-                size={20}
-                weight='bold'
-                css={{
-                  color: '#ffffff',
-                }}
-              >
-                AWS Certified Cloud Practitioner
-              </Text>
-              <Text
-                size={20}
-                weight='bold'
-                css={{
-                  color: '#ffffff',
-                }}
-              >
-                Amazon Web Services (Aug 2023 - Aug 2026)
-              </Text>
-              <Text
-                className='my-3 text-lg tracking-normal'
-                weight='normal'
-                css={{
-                  color: '#ffffff',
-                }}
-              >
-                <Link href='https://www.credly.com/badges/1eaa4675-fb10-4234-a5e0-2bce9e2cca69/public_url'>
-                  AWS Certified Cloud Practitioner Certificate
-                </Link>
               </Text>
             </div>
           </motion.div>
