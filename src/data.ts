@@ -127,7 +127,7 @@ export const projects: IProject[] = [
   {
     name: 'OpenImg',
     description:
-      'OpenImg is an AI-powered image rendering platform that allows users to turn their creative ideas into realistic images. With OpenImg, users can simply input their desired image concept and the AI technology will generate a high-quality rendering of the image. The platform also features a login system where users can save their rendered images to their personal collection for future use or reference.',
+      'OpenImg is an AI-powered image rendering platform that allows users to turn their creative ideas into realistic images. With OpenImg, users can simply input their desired image concept and the AI technology will generate a high-quality rendering of the image. The platform also features a login system where users can save their rendered images to their personal collection for future use.',
     image_path: '/images/openimg1.png',
     deployed_url: 'https://openimg.netlify.app/',
     github_url: 'https://github.com/orgs/Full-Stack-Fluency/repositories',
