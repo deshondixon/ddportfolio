@@ -137,14 +137,11 @@ const resume = () => {
               >
                 Spearheaded the development of cutting-edge software solutions
                 for ETF Funds, resulting in a 20% increase in operational
-                efficiency and a 15% reduction in operational costs. Implemented
-                Agile methodologies and streamlined the development process,
-                leading to a 25% improvement in project turnaround time,
-                ensuring prompt delivery of innovative features and enhancements
-                to ETF Fund management. Designed and optimized data models,
-                achieving a 30% reduction in data transfer latency and a 40%
-                increase in data accuracy, contributing to the superior
-                performance of ETF Funds and bolstering client confidence.
+                efficiency and a 15% reduction in operational costs. Designed
+                and optimized data models, achieving a 30% reduction in data
+                transfer latency and a 40% increase in data accuracy,
+                contributing to the superior performance of ETF Funds and
+                bolstering client confidence.
               </Text>
               <Spacer />
               <Text
