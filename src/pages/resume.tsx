@@ -127,20 +127,25 @@ const resume = () => {
               >
                 JPMorgan Chase & Co (Aug 2023 -)
               </Text>
-              {/*
-    <Text
-      className='my-3 text-lg tracking-normal'
-      weight='normal'
-      css={{
-        color: '#ffffff',
-      }}
-    >
-      BreakLine provides education and coaching for exceptional, women,
-      people of color, people with disabilities, and veterans who are
-      interested in accelerating into the next phase of their careers.
-      Sessions include hands-on workshops, in-depth discussions with
-      industry leaders, and an inside look at top companies.
-    </Text> */}
+
+              <Text
+                className='my-3 text-lg tracking-normal'
+                weight='normal'
+                css={{
+                  color: '#ffffff',
+                }}
+              >
+                Spearheaded the development of cutting-edge software solutions
+                for ETF Funds, resulting in a 20% increase in operational
+                efficiency and a 15% reduction in operational costs. Implemented
+                Agile methodologies and streamlined the development process,
+                leading to a 25% improvement in project turnaround time,
+                ensuring prompt delivery of innovative features and enhancements
+                to ETF Fund management. Designed and optimized data models,
+                achieving a 30% reduction in data transfer latency and a 40%
+                increase in data accuracy, contributing to the superior
+                performance of ETF Funds and bolstering client confidence.
+              </Text>
               <Spacer />
               <Text
                 size={20}
