@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import { services } from '../data';
 import { Text } from '@nextui-org/react';
 import ServiceCard from '../../components/ServiceCard';
