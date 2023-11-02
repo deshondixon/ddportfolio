@@ -137,11 +137,7 @@ const resume = () => {
               >
                 Spearheaded the development of cutting-edge software solutions
                 for ETF Funds, resulting in a 20% increase in operational
-                efficiency and a 15% reduction in operational costs. Designed
-                and optimized data models, achieving a 30% reduction in data
-                transfer latency and a 40% increase in data accuracy,
-                contributing to the superior performance of ETF Funds and
-                bolstering client confidence.
+                efficiency and a 15% reduction in operational costs.
               </Text>
               <Spacer />
               <Text
