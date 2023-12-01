@@ -3,7 +3,7 @@ import { languages } from '../data';
 import { tools } from '../data';
 import Bar from '../../components/Bar';
 import { motion } from 'framer-motion';
-import { fadeInUp, stagger, routeAnimation } from '../animations';
+import { fadeInUp, routeAnimation } from '../animations';
 import Head from 'next/head';
 import Link from 'next/link';
 
