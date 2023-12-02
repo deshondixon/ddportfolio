@@ -125,7 +125,7 @@ const resume = () => {
                   color: '#ffffff',
                 }}
               >
-                JPMorgan Chase & Co (Aug 2023 -)
+                JP Morgan & Chase (Aug 2023 -)
               </Text>
 
               <Text
