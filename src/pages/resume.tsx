@@ -135,9 +135,14 @@ const resume = () => {
                   color: '#ffffff',
                 }}
               >
-                Spearheaded the development of cutting-edge software solutions
-                for ETF Funds, resulting in a 20% increase in operational
-                efficiency and a 15% reduction in operational costs.
+                Full Stack Software Engineer and Army Veteran offering a strong
+                foundation in software development and programming principles
+                across multiple platforms. Offers knowledge of authoring code
+                derived from designing, building, and maintaining websites using
+                scripting languages, content creation tools, and digital media.
+                Demonstrated history of producing high-quality project results;
+                possesses an innate talent for quickly mastering technology and
+                new concepts.
               </Text>
               <Spacer />
               <Text
