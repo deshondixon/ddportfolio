@@ -43,7 +43,7 @@ const Index = () => {
               libraries. I work with Agile methodology and participate in Scrum
               meetings to produce quality deliverables within deadlines. I also
               use Git and GitHub for version control, and run unit tests and API
-              tests to ensure high standards and MVPs are met. I have a strong
+              tests to ensure high standards and MVP's are met. I have a strong
               foundation in software engineering and programming principles
               across multiple platforms, thanks to my education and
               certification from Code Fellows and Coursera. I am proficient in
