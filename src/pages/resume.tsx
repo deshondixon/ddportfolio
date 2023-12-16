@@ -49,7 +49,7 @@ const resume = () => {
                   color: '#ffffff',
                 }}
               >
-                Amazon Web Services (Aug 2023 - Aug 2026)
+                Amazon Web Services (2023 - 2026)
               </Text>
               <Text
                 className='my-3 text-lg tracking-normal'
@@ -81,7 +81,7 @@ const resume = () => {
                   color: '#ffffff',
                 }}
               >
-                Code Fellows (Sep 2022 - Mar 2023)
+                Code Fellows (2022 - 2023)
               </Text>
               <Text
                 className='my-3 text-lg tracking-normal'
