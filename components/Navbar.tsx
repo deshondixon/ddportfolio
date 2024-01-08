@@ -32,8 +32,8 @@ const Navbar = () => {
 
   useEffect(() => {
     if (pathname === '/') setActiveItem('About');
-    if (pathname === '/projects') setActiveItem('Projects');
-    if (pathname === '/resume') setActiveItem('Resume');
+    if (pathname === '/Projects') setActiveItem('Projects');
+    if (pathname === '/Resume') setActiveItem('Resume');
   }, [pathname]);
 
   return (

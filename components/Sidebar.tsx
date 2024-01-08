@@ -60,7 +60,7 @@ export default function Sidebar({}) {
           weight='bold'
           className='my-4 text-3xl font-medium tracking-wider'
         >
-          <span>DESHON </span>
+          <span> DESHON </span>
           DIXON
         </Text>
       </Tilt>
@@ -124,30 +124,8 @@ export default function Sidebar({}) {
       </motion.div>
       <motion.div
         variants={fadeInUp}
-        className='py-4 my-5'
         style={{ marginLeft: '-1rem', marginRight: '-1rem' }}
       >
-        <motion.div
-          className='flex items-center justify-center space-x-2'
-          variants={fadeInUp}
-        >
-          <Tilt>
-            <GoLocation />
-          </Tilt>
-          <Tilt>
-            <Text
-              css={{
-                textGradient: '45deg, $yellow600 -20%, $red600 100%',
-              }}
-              weight='bold'
-            >
-              <motion.span variants={fadeInUp} className=''>
-                {' '}
-                Dallas, Texas
-              </motion.span>
-            </Text>
-          </Tilt>
-        </motion.div>
         <Tilt>
           <Text
             css={{

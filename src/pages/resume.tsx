@@ -125,7 +125,7 @@ const resume = () => {
                   color: '#ffffff',
                 }}
               >
-                JP Morgan & Chase (Aug 2023 -)
+                JP Morgan & Chase (Aug 2023 - Dec 2023)
               </Text>
 
               <Text
@@ -161,7 +161,7 @@ const resume = () => {
                   color: '#ffffff',
                 }}
               >
-                Revature (May 2023 -)
+                Revature (May 2023 - Dec 2023)
               </Text>
               <Text
                 className='my-3 text-lg tracking-normal'
@@ -179,39 +179,6 @@ const resume = () => {
               </Text>
             </div>
           </motion.div>
-
-          <div>
-            <Text
-              className='my-3 text-lg tracking-normal'
-              weight='normal'
-              css={{
-                color: '#ffffff',
-              }}
-            >
-              Languages & Frameworks
-            </Text>
-            <div className='my-3'>
-              {languages.map((language) => (
-                <Bar data={language} key={language.name} />
-              ))}
-            </div>
-          </div>
-          <div>
-            <Text
-              className='my-3 text-lg tracking-normal'
-              weight='normal'
-              css={{
-                color: 'gray400',
-              }}
-            >
-              Tools & Software
-            </Text>
-            <div className='my-3'>
-              {tools.map((tool) => (
-                <Bar data={tool} key={tool.name} />
-              ))}
-            </div>
-          </div>
         </div>
       </motion.div>
     </>

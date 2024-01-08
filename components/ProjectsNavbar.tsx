@@ -30,10 +30,6 @@ const ProjectsNavbar: FunctionComponent<{
       <NavItem value='python' {...props} />
       <NavItem value='java' {...props} />
       <NavItem value='django' {...props} />
-      <NavItem value='golang' {...props} />
-      <NavItem value='mongodb' {...props} />
-      <NavItem value='express' {...props} />
-      <NavItem value='node' {...props} />
     </div>
   );
 };
