@@ -90,10 +90,11 @@ const resume = () => {
                   color: '#ffffff',
                 }}
               >
-                Wrote clean, well-tested, advanced Python code using
+                ● Wrote clean, well-tested, advanced Python code using
                 industry-standard software engineering patterns; studied the
                 foundational structures of programming, from object-oriented
-                principles to advanced topics
+                principles to advanced topics. ● Other topics covered – Django,
+                Docker, and Data Science.
               </Text>
             </div>
           </motion.div>
@@ -135,14 +136,16 @@ const resume = () => {
                   color: '#ffffff',
                 }}
               >
-                Full Stack Software Engineer and Army Veteran offering a strong
-                foundation in software development and programming principles
-                across multiple platforms. Offers knowledge of authoring code
-                derived from designing, building, and maintaining websites using
-                scripting languages, content creation tools, and digital media.
-                Demonstrated history of producing high-quality project results;
-                possesses an innate talent for quickly mastering technology and
-                new concepts.
+                ● Played a crucial role in a significant project involving the
+                migration of the ETF file process from Redwing and the
+                subsequent Basket Creation for ETF Funds. ● Implemented Agile
+                methodologies and streamlined the development process, leading
+                to a 25% improvement in project turnaround time, ensuring prompt
+                delivery of innovative features and enhancements to ETF Fund
+                management. ● Designed and optimized data models, achieving a
+                30% reduction in data transfer latency and a 40% increase in
+                data accuracy, contributing to the superior performance of ETF
+                Funds and bolstering client confidence.
               </Text>
               <Spacer />
               <Text
@@ -170,12 +173,14 @@ const resume = () => {
                   color: '#ffffff',
                 }}
               >
-                Work with Agile methodology and actively participating in Scrum
+                ● Work with Agile methodology and actively participate in Scrum
                 meetings as a part of SDLC to produce quality deliverables
-                within deadlines. Design models with validation, services, and
-                API controllers for data pertaining to domain using Spring Boot
-                framework and JSON libraries, allowing data to be passed between
-                front end to back end.
+                within deadlines. ● Design models with validation, services, and
+                API controllers for data pertaining to the domain using Spring
+                Boot framework and JSON libraries, allowing data to be passed
+                between front end to back end. ● Running unit tests (via JUnit)
+                on finished products to ensure high quality standards and MVPs
+                are met.
               </Text>
             </div>
           </motion.div>
