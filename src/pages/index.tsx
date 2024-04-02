@@ -38,21 +38,14 @@ const Index = () => {
               className='my-3 text-lg tracking-normal '
               weight='normal'
             >
-              As an Full-Stack Software Engineer at JP Morgan & Chase, I design
-              and develop web applications using Spring Boot, Java, and JSON
-              libraries. I work with Agile methodology and participate in Scrum
-              meetings to produce quality deliverables within deadlines. I also
-              use Git and GitHub for version control, and run unit tests and API
-              tests to ensure high standards and MVP's are met. I have a strong
-              foundation in software engineering and programming principles
-              across multiple platforms, thanks to my education and
-              certification from Code Fellows and Coursera. I am proficient in
-              HTML, CSS, JavaScript, Python, Django, Flask, React.js, MongoDB,
-              Node.js, Express.js, and Bootstrap. I am also a US Army veteran
-              and a former diesel mechanic, which gives me a unique perspective
-              and a problem-solving mindset. I am passionate about creating
-              innovative and user-friendly solutions that make a positive impact
-              on people's lives.
+              Full Stack Software Engineer and Army Veteran with over 2 years of
+              experience offering a strong foundation in software development
+              and programming principles across multiple platforms. Offers
+              knowledge of authoring code derived from designing, building, and
+              maintaining websites using scripting languages, content creation
+              tools, and digital media. Demonstrated history of producing
+              high-quality project results; possesses an innate talent for
+              quickly mastering technology and new concepts.
             </Text>
             <div
               className='flex-grow p-4 mt-5 '

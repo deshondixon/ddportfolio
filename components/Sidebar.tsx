@@ -80,7 +80,7 @@ export default function Sidebar({}) {
       <motion.div className='flex justify-center p-3' variants={fadeInUp}>
         <motion.a
           variants={fadeInUp}
-          href='https://drive.google.com/uc?export=download&id=1tm2TdbpvjzcjIRfo4-zBEu_qbfd-EWga'
+          href='https://docs.google.com/document/d/1CHsihWS9jtagDkj-Ef8iHLJ1oIxcgbVY/edit?usp=sharing&ouid=116021219066429260280&rtpof=true&sd=true'
           target='_blank'
           rel='noopener noreferrer'
         >
@@ -116,7 +116,7 @@ export default function Sidebar({}) {
             href='https://www.linkedin.com/in/deshondixon/'
             target='_blank'
             rel='noopener noreferrer'
-            aria-label='Deshon Dixon LinkedIn Profile'
+            aria-label='Deshon Dixon Linkedin Profile'
           >
             <AiFillLinkedin className='w-12 h-12 cursor-pointer' />
           </motion.a>
